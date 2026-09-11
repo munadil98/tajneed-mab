@@ -11,6 +11,14 @@
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <link rel="alternate icon" href="./favicon.ico" />
+    <script>
+      // Fallback redirect for GitHub Pages deployments configured to serve from root
+      if (window.location.hostname.endsWith('github.io') && !window.location.pathname.includes('/docs')) {
+        var path = window.location.pathname;
+        var target = path.endsWith('/') ? path + 'docs/' : path + '/docs/';
+        window.location.replace(target);
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

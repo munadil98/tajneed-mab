@@ -11,7 +11,8 @@ import {
   Flame,
   CheckCircle2,
   Calendar,
-  Filter
+  Filter,
+  FileText
 } from 'lucide-react';
 import { 
   ResponsiveContainer, 
@@ -28,6 +29,7 @@ import {
 import { useTajneed } from '../context/TajneedContext';
 import { ALL_REGIONS, getMajlisesForRegion } from '../data/regionsAndMajlis';
 import { CustomDashboardWidget, Member } from '../types/tajneed';
+import { MajlisPdfExportModal } from './MajlisPdfExportModal';
 
 const COLORS = ['#059669', '#2563eb', '#7c3aed', '#d97706', '#dc2626', '#0d9488', '#4b5563', '#ea580c'];
 
@@ -48,6 +50,8 @@ export const Dashboard: React.FC<DashboardProps> = ({
     resetFilters,
     customWidgets 
   } = useTajneed();
+
+  const [isPdfModalOpen, setIsPdfModalOpen] = React.useState(false);
 
   const isFiltered = filters.region || filters.majlis || filters.occupation || filters.education || filters.ageRange !== 'all';
 
@@ -182,6 +186,15 @@ export const Dashboard: React.FC<DashboardProps> = ({
               Reset Filters
             </button>
           )}
+
+          <button
+            onClick={() => setIsPdfModalOpen(true)}
+            className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold bg-emerald-700 hover:bg-emerald-600 text-white rounded-lg shadow-sm transition"
+            title="Export Majlis PDF"
+          >
+            <FileText className="w-3.5 h-3.5 text-emerald-200" />
+            <span>Majlis PDF</span>
+          </button>
         </div>
       </div>
 
@@ -673,6 +686,14 @@ export const Dashboard: React.FC<DashboardProps> = ({
         </div>
 
       </div>
+
+      {/* Majlis PDF Export Modal */}
+      <MajlisPdfExportModal
+        isOpen={isPdfModalOpen}
+        onClose={() => setIsPdfModalOpen(false)}
+        defaultRegion={filters.region}
+        defaultMajlis={filters.majlis}
+      />
 
     </div>
   );

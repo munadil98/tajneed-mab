@@ -18,12 +18,14 @@ import {
   RotateCcw,
   Sparkles,
   ArrowUpDown,
-  Building2
+  Building2,
+  FileText
 } from 'lucide-react';
 import { useTajneed } from '../context/TajneedContext';
 import { Member } from '../types/tajneed';
 import { ALL_REGIONS, getMajlisesForRegion, COMMON_EDUCATIONS, COMMON_OCCUPATIONS } from '../data/regionsAndMajlis';
 import { MemberDetailModal } from './MemberDetailModal';
+import { MajlisPdfExportModal } from './MajlisPdfExportModal';
 
 interface MemberRegistryProps {
   onOpenAddModal: () => void;
@@ -55,6 +57,9 @@ export const MemberRegistry: React.FC<MemberRegistryProps> = ({
 
   // Selected Member for details modal
   const [selectedMember, setSelectedMember] = useState<Member | null>(null);
+
+  // Majlis PDF Export Modal
+  const [isPdfModalOpen, setIsPdfModalOpen] = useState<boolean>(false);
 
   // Deletion confirmation
   const [memberToDelete, setMemberToDelete] = useState<Member | null>(null);
@@ -211,12 +216,21 @@ export const MemberRegistry: React.FC<MemberRegistryProps> = ({
             </button>
 
             <button
+              onClick={() => setIsPdfModalOpen(true)}
+              title="Export Official Majlis PDF"
+              className="flex items-center gap-1.5 px-3 py-2 text-xs font-semibold bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-300 rounded-xl shadow-2xs transition"
+            >
+              <FileText className="w-3.5 h-3.5 text-emerald-700" />
+              <span>Majlis PDF</span>
+            </button>
+
+            <button
               onClick={downloadCSV}
               title="Download CSV"
               className="flex items-center gap-1.5 px-3 py-2 text-xs font-medium bg-white hover:bg-slate-50 border border-slate-300 rounded-xl text-slate-700 transition"
             >
               <Download className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline">Export</span>
+              <span className="hidden sm:inline">CSV</span>
             </button>
 
             <button
@@ -698,6 +712,14 @@ export const MemberRegistry: React.FC<MemberRegistryProps> = ({
           setSelectedMember(null);
           onEditMember(m);
         }}
+      />
+
+      {/* Majlis PDF Export Modal */}
+      <MajlisPdfExportModal
+        isOpen={isPdfModalOpen}
+        onClose={() => setIsPdfModalOpen(false)}
+        defaultRegion={filters.region}
+        defaultMajlis={filters.majlis}
       />
 
       {/* Delete Confirmation Dialog */}

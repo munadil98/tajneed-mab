@@ -7,9 +7,12 @@ import {
   AlertTriangle, 
   CheckCircle2, 
   FileText,
-  Table
+  Table,
+  Printer,
+  Sparkles
 } from 'lucide-react';
 import { useTajneed } from '../context/TajneedContext';
+import { MajlisPdfExportModal } from './MajlisPdfExportModal';
 
 export const ImportExportModal: React.FC = () => {
   const { 
@@ -24,6 +27,7 @@ export const ImportExportModal: React.FC = () => {
   const [importMode, setImportMode] = useState<'merge' | 'replace'>('merge');
   const [isResetConfirmOpen, setIsResetConfirmOpen] = useState(false);
   const [dragActive, setDragActive] = useState(false);
+  const [isPdfModalOpen, setIsPdfModalOpen] = useState(false);
 
   const handleFileUpload = (file: File) => {
     const reader = new FileReader();
@@ -88,6 +92,13 @@ export const ImportExportModal: React.FC = () => {
 
         <div className="flex items-center gap-2">
           <button
+            onClick={() => setIsPdfModalOpen(true)}
+            className="flex items-center gap-1.5 px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold rounded-xl shadow-sm transition"
+          >
+            <FileText className="w-4 h-4 text-emerald-400" />
+            <span>Majlis-Wise PDF Export</span>
+          </button>
+          <button
             onClick={downloadCSV}
             className="flex items-center gap-1.5 px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold rounded-xl shadow-sm transition"
           >
@@ -95,6 +106,30 @@ export const ImportExportModal: React.FC = () => {
             <span>Export to Google Sheet CSV</span>
           </button>
         </div>
+      </div>
+
+      {/* Featured Banner: Majlis PDF Report Generator */}
+      <div className="bg-gradient-to-r from-emerald-900 via-emerald-800 to-slate-900 rounded-2xl p-6 text-white shadow-md flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div className="space-y-2 max-w-xl">
+          <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-[11px] font-bold border border-emerald-400/30">
+            <Sparkles className="w-3 h-3" />
+            <span>Official Majlis Reports & Rosters</span>
+          </div>
+          <h2 className="text-lg font-extrabold text-white">
+            Majlis-Wise PDF Census & Roster Generator
+          </h2>
+          <p className="text-xs text-emerald-100/80 leading-relaxed">
+            Generate formal, high-resolution Landscape A4 PDFs for any Majlis or entire Regions. Includes official Jama'at letterhead, executive KPI statistics, attendance signature blocks, and customized column presets (Comprehensive, Spiritual Observance, or Financial Sacrifice).
+          </p>
+        </div>
+
+        <button
+          onClick={() => setIsPdfModalOpen(true)}
+          className="flex-shrink-0 flex items-center gap-2 px-5 py-3 bg-white text-slate-900 hover:bg-emerald-50 text-xs font-extrabold rounded-xl shadow-lg transition"
+        >
+          <FileText className="w-4 h-4 text-emerald-700" />
+          <span>Launch Majlis PDF Generator</span>
+        </button>
       </div>
 
       {/* Grid: Export Card and Import Card */}
@@ -341,6 +376,12 @@ export const ImportExportModal: React.FC = () => {
           </div>
         </div>
       </div>
+
+      {/* Majlis PDF Export Modal */}
+      <MajlisPdfExportModal
+        isOpen={isPdfModalOpen}
+        onClose={() => setIsPdfModalOpen(false)}
+      />
 
     </div>
   );
