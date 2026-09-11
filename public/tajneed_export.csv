@@ -1,0 +1,860 @@
+Master SL No.,REGION,MAJLIS,MEMBERS NAME,eqm (Age),Date of Baiyat / By Birth,Educational Qualification,Occupation,Monthly Income (BDT),Family Members,5 Daily Prayers,Prayer with Meaning,Regular Friday Prayer,Quran Nazira,Daily Quran Recitation,Quran with Meaning,Quran Tafseer,Reads Jamaat Books,Tableeq Participation,Watches MTA Khutba,Reads Khutba,Chanda Aam Budgeted,Wasiyyat (Musi),Tahrik-e-Jadid,Waqf-e-Jadid,Majlis Chanda,Ijtema Chanda,Bulletin Chanda
+1,Greater Dhaka,DHAKA,Abdullah Youshuf Mohd,65,1989,BA,Service,11800,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+2,Greater Dhaka,DHAKA,Alaiuddin Ahmed (2),54,By Birth,SSC,Business,1600,5,1,1,1,1,1,1,1,1,1,1,0,1,0,0,1,0,1,1
+3,Greater Dhaka,DHAKA,Abdur Rob Choudhury (3),80,By Birth,Masters,Retired,5800,2,1,0,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
+4,Greater Dhaka,DHAKA,Abdur Rouf Khan (4),76,By Birth,HSC,Pensioner,15100,4,1,0,1,1,1,1,0,0,1,1,0,0,0,1,1,1,0,1
+5,Greater Dhaka,DHAKA,Bashir Uddin Ahmed (5),67,By Birth,8th,Service,36500,3,1,1,1,1,0,0,0,1,1,1,1,1,0,1,1,1,1,1
+6,Greater Dhaka,DHAKA,Dr Sabir Ahmad (6),57,1998,MA,Labour,73800,6,1,0,1,1,1,0,0,0,1,0,0,1,1,1,1,1,1,1
+7,Greater Dhaka,DHAKA,Dr Salim Mohammad Shahjahan (7),74,By Birth,Doctor,Labour,361200,1,1,1,1,1,1,1,0,0,0,1,1,0,1,0,0,0,1,1
+8,Greater Dhaka,DHAKA,Maksud Ahmad Roman (8),49,1999,HSC,Service,287200,4,1,1,1,0,0,0,0,1,0,1,1,0,1,1,0,1,1,0
+9,Greater Dhaka,DHAKA,Md Abdul Karim (9),67,By Birth,HSC,Service,32400,2,1,1,1,0,0,0,0,1,1,1,1,1,0,1,1,1,0,1
+10,Greater Dhaka,MIRPUR,Mohammad Fazlur Rahman,82,By Birth,Degree,Retired,27900,4,1,0,1,1,1,1,0,1,1,1,0,1,0,1,1,1,1,0
+11,Greater Dhaka,MIRPUR,Syed Reyaz Ahmed (2),73,By Birth,Masters,Business,42000,4,1,0,1,1,1,1,0,1,1,0,0,1,1,1,0,1,1,1
+12,Greater Dhaka,MIRPUR,Md. Mohiuddin Ahmed (3),63,By Birth,Masters,Labour,2300,4,1,1,1,0,0,0,0,1,0,1,1,1,0,1,1,1,1,1
+13,Greater Dhaka,MIRPUR,Enamul Haque Rasel (4),43,By Birth,Masters,Service,38100,6,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1
+14,Greater Dhaka,MIRPUR,Mohammad Yeamin Natai (5),40,By Birth,Masters,Service,243700,5,1,1,1,1,0,0,0,1,1,1,1,1,0,1,1,1,1,1
+15,Greater Dhaka,MIRPUR,Maolana Ahmed Sadek Mahmud (6),76,By Birth,Degree,Business,13500,4,1,1,1,1,1,0,0,1,0,1,0,1,0,1,1,1,1,0
+16,Greater Dhaka,Nakhalpara,Md Lutfor Rahman Dhali,50,By Birth,HSC,Business,15700,6,1,1,1,1,0,0,0,1,0,0,0,1,0,1,1,1,1,0
+17,Greater Dhaka,Nakhalpara,Dr. Abdur Rashid (2),95,By Birth,Doctor,Retired,1100,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,0,1,1
+18,Greater Dhaka,Nakhalpara,Muhammad Muhibur Rahman (3),76,By Birth,SSC,Retired,15900,6,1,1,1,1,1,1,1,0,1,1,1,1,0,0,1,1,1,1
+19,Greater Dhaka,Nakhalpara,Dr. Mojahid Uddin Ahmad (4),83,By Birth,Degree,Professor,22000,2,1,0,1,1,0,0,0,1,0,1,1,0,0,1,1,1,1,1
+20,Greater Dhaka,Nakhalpara,Engr. Hafizur rahman (5),66,2009,Doctor,Doctor,44100,4,1,1,1,1,0,0,0,1,1,1,1,1,0,1,1,1,1,0
+21,Greater Dhaka,Nakhalpara,Mozammel Haque (6),51,By Birth,Kamil,Retired,19000,5,1,0,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1
+22,Greater Dhaka,MADARTEK,Abdul Ajiz,77,By Birth,Masters,Business,1800,4,1,1,1,1,1,1,1,1,0,1,1,1,0,1,1,1,1,1
+23,Greater Dhaka,MADARTEK,Abdul Awal Master (2),74,By Birth,SSC,Retired,26300,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,0
+24,Greater Dhaka,MADARTEK,Ehsanur Rahman (3),56,By Birth,HSC,Farmer,13700,3,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,0,1
+25,Greater Dhaka,MADARTEK,Mahbubur Rahman (4),47,1993,L.L.B,Law,11500,8,0,0,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1
+26,Greater Dhaka,MADARTEK,DR. Amin Ahmad (5),50,By Birth,I.COM,Business,39700,6,0,0,1,1,0,0,0,1,0,1,1,1,0,1,0,1,1,1
+27,Greater Dhaka,Ashulia,Yaqub Laskar,62,By Birth,SSC,Farmer,10800,3,1,1,1,1,1,1,0,1,0,1,0,1,0,1,1,1,1,1
+28,Greater Dhaka,Ashulia,Alhaj Nesar Ahmad (2),57,By Birth,HSC,BUSINESS,227800,6,1,0,0,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1
+29,Greater Dhaka,Ashulia,M Arifuzzaman (3),53,By Birth,MBA,Business,43200,6,0,0,1,1,1,1,1,1,0,1,1,1,0,1,0,1,0,1
+30,Greater Dhaka,Ashulia,Raza Rizwan Ahmad (4),50,By Birth,BSC,Service,177000,4,0,0,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1
+31,Greater Dhaka,Ashulia,SM Nosrullah (5),72,By Birth,BA,Service,30800,3,1,1,1,1,1,1,0,1,1,1,1,0,0,1,1,1,0,1
+32,Greater Dhaka,Ashulia,DR. Rejaul Karim (6),64,By Birth,HSC,Business,17900,7,1,1,1,1,0,0,0,1,0,1,1,1,1,1,1,1,1,1
+33,Greater Dhaka,Ashulia,Maolana Bashirur Rahman (7),60,By Birth,Masters,Murubbi,31400,2,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0
+34,Greater Dhaka,Ashulia,Khondokar Mahbubul Islam (8),68,By Birth,BA,Business,58100,3,1,0,1,1,1,0,0,1,1,1,0,1,1,1,1,0,1,1
+35,Greater Dhaka,Ashulia,Dr. Mahfuzar Rahman (9),62,By Birth,SSC,Farmer,76100,5,1,1,1,1,1,0,0,1,1,1,0,1,1,1,1,1,1,1
+36,Greater Dhaka,TEJGAON,Md. Abdur Razzaq,65,By Birth,SSC,Labour,115200,5,1,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1
+37,Greater Dhaka,TEJGAON,Md. Ahsan Jamil (2),64,By Birth,BA,Business,98400,5,1,1,1,0,0,0,0,1,1,1,1,1,0,1,1,1,0,1
+38,Greater Dhaka,TEJGAON,Ahmad Mollah (3),48,By Birth,SSC,Business,31700,6,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1
+39,Greater Dhaka,TEJGAON,Mojibar Rahman (4),73,1981,Masters,Retired,14800,3,0,0,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,0
+40,Greater Dhaka,TEJGAON,Md. Mamun Or Rasshid (5),58,By Birth,HSC,Service,54900,5,1,1,1,1,1,1,1,0,0,1,0,1,0,1,1,1,1,1
+41,Greater Dhaka,TEJGAON,Md. Haydar Ali (6),55,1979,SSC,Farmer,7400,5,1,0,1,1,1,1,1,1,0,1,0,1,0,1,1,1,1,1
+42,Greater Dhaka,TEJGAON,Mawlana Abu Bakar Siddik (7),79,By Birth,8th,Business,13000,1,1,1,1,1,0,0,0,0,0,1,0,1,0,1,1,1,1,1
+43,Greater Dhaka,TEJGAON,Md. Lutfar Rahman Master (8),57,2005,MA,Service,49400,6,1,0,1,1,1,0,0,1,1,1,1,1,0,1,1,1,1,0
+44,Greater Dhaka,TEJGAON,Md. Nazrul Islam (9),81,By Birth,SSC,Farmer,9500,2,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,0
+45,Greater Dhaka,Gazipur,Muhammad Ismail,58,By Birth,LLB,Business,140200,6,1,1,1,1,1,0,0,1,1,0,0,1,1,1,1,1,0,1
+46,Greater Dhaka,Gazipur,Hafizur Rahman (2),48,By Birth,Degree,Business,9800,3,1,0,1,1,1,1,0,1,0,1,1,1,0,1,1,1,1,1
+47,Greater Dhaka,Gazipur,Tofazzol Hoassain (3),70,By Birth,BA,Service,29800,4,1,1,1,1,1,1,0,0,1,1,1,1,0,1,1,1,1,1
+48,Greater Dhaka,Gazipur,Anwar Ahmad Choudhury (4),51,2007,BA,Service,27400,5,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1
+49,Greater Dhaka,Gazipur,Md. Iqbal Choudhury (5),57,By Birth,BA,Service,67700,5,1,0,1,1,0,0,0,1,1,0,0,1,0,1,1,1,1,1
+50,Greater Dhaka,Kabirpur,Md. Samsur Rahman,44,1981,8th,Business,98100,6,1,1,1,1,0,0,0,1,0,1,1,1,0,1,1,0,1,0
+51,Greater Dhaka,Kabirpur,Abdullah Ahamed (2),53,2004,MA,Retired,74000,7,1,0,1,1,1,0,0,1,1,1,0,1,0,1,1,1,1,1
+52,Greater Dhaka,Kabirpur,Ishak Ali Mollah (3),71,1977,SSC,Service,6700,9,1,1,1,1,1,0,0,1,0,1,0,1,1,1,1,1,1,0
+53,Greater Dhaka,Kabirpur,Dr. Abdullah Shams Bin Tariq (4),47,1994,PhD,Service,134900,5,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
+54,Greater Dhaka,Ashkona,Dr. Kamrullah Bin Tariq,40,1993,BA,Business,109200,5,1,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,0
+55,Greater Dhaka,Ashkona,GM Siraj Uddin (2),64,By Birth,BCOM,Service,133600,5,1,1,1,0,0,0,0,1,0,1,1,1,0,1,1,1,1,0
+56,Greater Dhaka,Ashkona,Alhaj Md. Unus Ali (3),85,By Birth,BA,Retired,16900,2,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
+57,Greater Dhaka,Ashkona,Md. Abdus Sattar (4),69,By Birth,BSC,Farmer,11400,5,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,0,1,1
+58,Greater Dhaka,Ashkona,A K M Ataur Rahman (5),70,By Birth,Degree,Service,19600,4,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1
+59,Greater Dhaka,Ashkona,Abdullah Youshuf Mohd (6),65,By Birth,Masters,Retired,6900,1,1,0,1,1,1,1,0,1,0,0,0,0,0,1,1,1,0,1
+60,Greater Dhaka,Ashkona,Alaiuddin Ahmed (7),63,By Birth,SSC,Business,1600,8,1,0,1,1,0,0,0,0,0,1,1,1,0,1,1,1,0,1
+61,Greater Dhaka,NARAYANGONJ,Abdur Rob Choudhury,76,By Birth,Masters,Retired,3000,3,1,0,0,1,1,0,0,1,1,1,1,1,1,1,0,1,0,1
+62,Greater Dhaka,NARAYANGONJ,Abdur Rouf Khan (2),66,By Birth,HSC,Service,16100,3,1,1,1,0,0,0,0,1,1,0,0,1,0,1,1,1,0,1
+63,Greater Dhaka,NARAYANGONJ,Bashir Uddin Ahmed (3),63,By Birth,HSC,Service,51100,5,1,1,1,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1
+64,Greater Dhaka,NARAYANGONJ,Dr Sabir Ahmad (4),62,By Birth,MA,Service,45000,4,1,0,1,1,1,0,0,0,1,1,1,1,1,1,0,1,1,1
+65,Greater Dhaka,NARAYANGONJ,Dr Salim Mohammad Shahjahan (5),65,By Birth,Degree,Business,303100,1,1,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1
+66,Greater Dhaka,NARAYANGONJ,Maksud Ahmad Roman (6),48,By Birth,Masters,Business,136500,2,1,1,1,1,1,0,0,1,0,1,1,1,1,1,1,1,0,1
+67,Greater Dhaka,NARAYANGONJ,Md Abdul Karim (7),65,1984,Degree,Pensioner,25900,4,1,1,1,1,1,1,1,0,0,0,0,1,0,1,1,1,1,1
+68,Greater Dhaka,NARSINDI,Mohammad Fazlur Rahman,82,By Birth,Degree,Retired,25100,1,0,0,1,0,0,0,0,1,1,0,0,1,1,1,1,1,1,1
+69,Greater Dhaka,NARSINDI,Syed Reyaz Ahmed (2),78,By Birth,HSC,Service,39400,4,1,0,1,1,0,0,0,1,1,1,0,1,0,1,1,1,1,1
+70,Greater Dhaka,NARSINDI,Md. Mohiuddin Ahmed (3),60,By Birth,Degree,Retired,1600,5,1,1,1,1,1,0,0,1,1,1,1,1,0,0,1,1,1,1
+71,Greater Dhaka,NARSINDI,Enamul Haque Rasel (4),48,By Birth,Masters,Service,82800,5,1,1,1,1,0,0,0,1,0,0,0,1,1,1,1,1,1,1
+72,Greater Dhaka,NARSINDI,Mohammad Yeamin Natai (5),43,By Birth,Masters,Service,217500,6,1,1,0,1,1,0,0,1,0,1,1,1,1,1,0,0,0,1
+73,Greater Dhaka,NARSINDI,Maolana Ahmed Sadek Mahmud (6),78,1967,Maolana,Retired,11000,4,1,0,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1
+74,Greater Dhaka,NARSINDI,Md Lutfor Rahman Dhali (7),50,By Birth,HSC,Business,25300,4,1,1,1,1,0,0,0,1,1,1,1,1,0,1,1,1,1,1
+75,Greater Dhaka,REKAVI BAZAR,Dr. Abdur Rashid,95,By Birth,Doctor,Retired,1100,1,1,0,1,1,1,0,0,0,1,1,1,1,0,1,1,1,1,0
+76,Greater Dhaka,REKAVI BAZAR,Muhammad Muhibur Rahman (2),72,By Birth,Degree,Labour,17000,6,1,1,0,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1
+77,Greater Dhaka,REKAVI BAZAR,Dr. Mojahid Uddin Ahmad (3),83,By Birth,PhD,Professor,19700,3,1,1,1,1,0,0,0,1,0,1,1,1,0,1,1,1,1,1
+78,Greater Dhaka,REKAVI BAZAR,Engr. Hafizur rahman (4),61,2000,BA,Doctor,29100,4,1,1,1,1,1,1,0,0,1,1,0,1,0,1,1,1,1,1
+79,Greater Dhaka,REKAVI BAZAR,Mozammel Haque (5),51,By Birth,Kamil,Moallem,28600,5,1,1,1,1,0,0,0,1,1,1,1,1,0,1,1,1,1,0
+80,Greater Dhaka,REKAVI BAZAR,Abdul Ajiz (6),77,By Birth,Degree,Business,2600,1,0,0,1,0,0,0,0,1,0,1,1,1,1,1,1,1,0,0
+81,Greater Dhaka,REKAVI BAZAR,Abdul Awal Master (7),72,By Birth,B.COM,Farmer,27100,2,1,1,1,1,1,0,0,1,0,0,0,1,0,1,1,1,1,1
+82,Greater Dhaka,REKAVI BAZAR,Ehsanur Rahman (8),55,By Birth,BA,Service,12900,3,1,0,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1
+83,Greater Dhaka,SAVAR,Mahbubur Rahman,49,By Birth,L.L.B,Law,9600,5,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1
+84,Greater Dhaka,SAVAR,DR. Amin Ahmad (2),47,By Birth,I.COM,Business,33700,4,1,1,1,0,0,0,0,0,0,1,0,1,1,1,0,1,1,1
+85,Greater Dhaka,SAVAR,Yaqub Laskar (3),57,By Birth,SSC,SERVICE,19300,5,1,1,1,1,1,0,0,1,1,0,0,1,0,1,1,1,1,1
+86,Greater Dhaka,SAVAR,Alhaj Nesar Ahmad (4),53,By Birth,HSC,BUSINESS,169000,7,1,0,1,1,1,1,0,1,1,1,1,0,0,1,0,1,1,0
+87,Greater Dhaka,SAVAR,M Arifuzzaman (5),58,2008,MBA,SERVICE,72200,4,0,0,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
+88,Greater Dhaka,SAVAR,Raza Rizwan Ahmad (6),52,By Birth,BSC,Farmer,230000,6,1,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,1,0
+89,Greater Dhaka,SAVAR,SM Nosrullah (7),75,By Birth,BA,Service,16000,4,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,0
+90,Greater Dhaka,SAVAR,DR. Rejaul Karim (8),58,By Birth,HSC,Farmer,19500,8,1,1,1,1,1,1,1,1,1,1,0,1,0,1,1,0,1,1
+91,Greater Dhaka,SAVAR,Maolana Bashirur Rahman (9),59,2007,BA,Labour,31600,5,1,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1
+92,Greater Dhaka,SONARGAON,Khondokar Mahbubul Islam,60,By Birth,BA,Retired,47100,4,0,0,1,1,1,1,1,1,1,0,0,1,0,1,1,1,0,1
+93,Greater Dhaka,SONARGAON,Dr. Mahfuzar Rahman (2),56,1996,SSC,Retired,47500,4,1,0,1,1,1,1,1,0,1,1,1,1,1,0,1,1,0,0
+94,Greater Dhaka,SONARGAON,Md. Abdur Razzaq (3),69,By Birth,SSC,Service,116000,3,1,1,1,1,1,1,0,1,1,1,1,1,0,1,0,1,0,1
+95,Greater Dhaka,SONARGAON,Md. Ahsan Jamil (4),58,By Birth,8th,Retired,142700,5,1,1,1,1,0,0,0,1,0,0,0,1,0,1,1,1,1,1
+96,Greater Dhaka,UTTAR BAHERCHAR,Ahmad Mollah,53,1993,8th,Business,33000,8,0,0,1,1,1,0,0,0,1,1,1,1,0,0,1,1,1,0
+97,Greater Dhaka,UTTAR BAHERCHAR,Mojibar Rahman (2),74,1975,HSC,Retired,8600,3,1,1,1,1,0,0,0,1,1,1,1,1,0,1,1,1,1,1
+98,Greater Dhaka,UTTAR BAHERCHAR,Md. Mamun Or Rasshid (3),54,By Birth,BA,Service,31700,6,1,1,1,1,1,0,0,0,0,1,1,1,0,1,1,1,1,1
+99,Greater Dhaka,UTTAR BAHERCHAR,Md. Haydar Ali (4),51,By Birth,SSC,Retired,8200,4,1,1,1,1,1,0,0,1,0,1,0,1,0,1,0,1,1,0
+100,Greater Dhaka,UTTAR BAHERCHAR,Mawlana Abu Bakar Siddik (5),73,By Birth,Kamil,Business,11100,4,0,0,1,1,0,0,0,1,0,1,1,1,0,1,1,1,0,1
+101,Greater Dhaka,UTTAR BAHERCHAR,Md. Lutfar Rahman Master (6),63,By Birth,MA,Service,26800,4,1,1,1,0,0,0,0,1,1,1,1,1,0,0,1,1,1,1
+102,Greater Dhaka,UTTAR BAHERCHAR,Md. Nazrul Islam (7),79,By Birth,SSC,Business,13700,2,1,0,1,1,1,0,0,1,0,1,1,1,0,1,1,1,1,1
+103,Greater Dhaka,CHARSINDUR,Muhammad Ismail,49,1982,LLB,Advocate,228300,4,1,1,1,1,1,0,0,1,1,1,0,1,0,1,1,1,1,0
+104,Greater Dhaka,CHARSINDUR,Hafizur Rahman (2),40,1984,HSC,Business,15400,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0
+105,Greater Dhaka,CHARSINDUR,Tofazzol Hoassain (3),65,By Birth,Degree,Retired,29900,5,1,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,1,1
+106,Greater Dhaka,CHARSINDUR,Anwar Ahmad Choudhury (4),55,By Birth,BA,Service,18600,6,1,0,0,1,1,0,0,1,0,1,1,1,0,1,1,1,1,1
+107,Mymensing Region,MYMENSING,Md. Iqbal Choudhury,60,1968,BSC,Service,54500,4,1,1,1,1,1,0,0,1,1,1,1,1,0,1,1,1,0,0
+108,Mymensing Region,MYMENSING,Md. Samsur Rahman (2),51,By Birth,BCOM,Labour,88100,5,1,0,1,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1
+109,Mymensing Region,MYMENSING,Abdullah Ahamed (3),56,By Birth,Degree,Retired,90000,4,1,1,0,1,1,1,0,1,0,0,0,1,1,1,1,1,1,0
+110,Mymensing Region,MYMENSING,Ishak Ali Mollah (4),67,2009,SSC,Service,9900,11,1,1,1,1,1,0,0,1,0,0,0,1,0,1,1,1,0,1
+111,Mymensing Region,DHANIKHOLA,Dr. Abdullah Shams Bin Tariq,55,2009,PhD,Service,156100,4,1,0,1,1,0,0,0,1,0,1,0,1,1,0,1,1,1,1
+112,Mymensing Region,DHANIKHOLA,Dr. Kamrullah Bin Tariq (2),45,By Birth,PhD,Service,93700,3,1,0,0,1,0,0,0,1,0,1,1,1,1,1,0,1,1,0
+113,Mymensing Region,DHANIKHOLA,GM Siraj Uddin (3),60,By Birth,BCOM,Retired,163900,6,1,0,1,1,1,0,0,1,0,0,0,1,0,1,1,1,1,1
+114,Mymensing Region,DHANIKHOLA,Alhaj Md. Unus Ali (4),90,By Birth,BA,Labour,15100,4,1,0,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1
+115,Mymensing Region,DHANIKHOLA,Md. Abdus Sattar (5),67,By Birth,SSC,Service,5600,5,1,1,1,1,1,0,0,1,1,1,0,1,0,1,1,1,1,1
+116,Mymensing Region,NETROKONA,A K M Ataur Rahman,71,1973,HSC,Service,23700,4,0,0,0,1,1,1,0,1,1,0,0,1,1,1,1,1,1,1
+117,Mymensing Region,NETROKONA,Abdullah Youshuf Mohd (2),68,1965,Masters,Business,8600,4,1,0,1,1,0,0,0,1,0,1,1,1,0,1,1,1,1,1
+118,Mymensing Region,NETROKONA,Alaiuddin Ahmed (3),56,1994,BA,Business,1400,5,1,1,1,1,1,0,0,1,0,0,0,1,0,1,1,1,1,1
+119,Mymensing Region,NETROKONA,Abdur Rob Choudhury (4),79,By Birth,Masters,Retired,3300,5,0,0,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1
+120,Mymensing Region,NETROKONA,Abdur Rouf Khan (5),66,1973,HSC,Retired,17400,5,0,0,1,1,1,0,0,1,1,0,0,1,1,1,1,1,1,0
+121,Mymensing Region,NETROKONA,Bashir Uddin Ahmed (6),69,1984,Engineer,Labour,38900,4,1,0,1,1,1,1,0,0,0,1,1,1,0,1,1,1,1,1
+122,Mymensing Region,NETROKONA,Dr Sabir Ahmad (7),62,1968,SSC,Farmer,69700,4,1,1,1,1,1,0,0,0,0,1,0,1,1,1,1,0,0,1
+123,Mymensing Region,NETROKONA,Dr Salim Mohammad Shahjahan (8),68,By Birth,Masters,Business,331200,1,1,0,1,0,0,0,0,0,1,1,0,1,1,1,0,1,1,1
+124,Mymensing Region,NETROKONA,Maksud Ahmad Roman (9),48,By Birth,Masters,Service,207000,3,1,0,1,1,0,0,0,1,0,1,1,1,0,1,1,1,1,1
+125,Mymensing Region,SHELBOROSH,Md Abdul Karim,60,1999,Degree,Pensioner,22100,5,1,1,1,1,0,0,0,1,0,1,1,1,0,1,1,1,1,0
+126,Mymensing Region,SHELBOROSH,Mohammad Fazlur Rahman (2),75,By Birth,Degree,Retired,21200,4,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1
+127,Mymensing Region,SHELBOROSH,Syed Reyaz Ahmed (3),71,By Birth,8th,Labour,44200,4,1,0,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,0
+128,Mymensing Region,SHELBOROSH,Md. Mohiuddin Ahmed (4),62,2003,Masters,Retired,1800,7,1,0,1,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1
+129,Mymensing Region,SHELBOROSH,Enamul Haque Rasel (5),48,1989,Masters,Service,46600,4,1,0,1,1,1,0,0,1,0,1,1,1,0,1,1,0,1,0
+130,Mymensing Region,SHELBOROSH,Mohammad Yeamin Natai (6),47,By Birth,Masters,Service,281100,6,1,1,1,1,1,1,1,0,1,1,0,0,0,1,1,1,1,0
+131,Mymensing Region,SHELBOROSH,Maolana Ahmed Sadek Mahmud (7),73,By Birth,Maolana,Retired,13800,3,1,1,1,1,0,0,0,1,1,1,1,1,0,1,1,0,1,1
+132,Mymensing Region,SHELBOROSH,Md Lutfor Rahman Dhali (8),48,By Birth,HSC,Business,20800,6,1,0,1,1,0,0,0,1,0,1,1,1,0,1,1,1,1,1
+133,Mymensing Region,SOHAGI,Dr. Abdur Rashid,95,By Birth,BA,Retired,1000,1,0,0,1,1,1,1,1,1,1,1,1,1,0,1,1,0,1,1
+134,Mymensing Region,SOHAGI,Muhammad Muhibur Rahman (2),74,By Birth,SSC,Retired,15300,3,1,1,1,1,0,0,0,0,0,0,0,1,0,1,1,1,1,1
+135,Mymensing Region,SOHAGI,Dr. Mojahid Uddin Ahmad (3),75,By Birth,PhD,Professor,20600,3,1,1,0,1,1,1,0,0,1,1,1,1,0,1,1,1,1,1
+136,Mymensing Region,SOHAGI,Engr. Hafizur rahman (4),69,1984,Doctor,Doctor,27700,3,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1
+137,Mymensing Region,SOHAGI,Mozammel Haque (5),56,1994,Kamil,Moallem,26000,2,1,0,1,1,1,1,1,1,0,1,1,1,1,1,0,1,1,1
+138,Mymensing Region,SOHAGI,Abdul Ajiz (6),70,By Birth,5th,Business,1600,4,1,1,1,0,0,0,0,1,1,0,0,1,1,1,1,1,1,1
+139,Mymensing Region,SOHAGI,Abdul Awal Master (7),74,By Birth,8th,Retired,16900,2,1,1,1,1,0,0,0,1,1,0,0,1,1,1,0,1,1,1
+140,Mymensing Region,FULBARIA,Ehsanur Rahman,59,By Birth,HSC,Service,17500,5,1,1,1,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1
+141,Mymensing Region,FULBARIA,Mahbubur Rahman (2),56,By Birth,L.L.B,Law,7500,6,1,0,0,1,1,0,0,1,0,0,0,1,0,1,1,1,1,1
+142,Mymensing Region,FULBARIA,DR. Amin Ahmad (3),52,By Birth,I.COM,Labour,38800,7,1,1,1,1,1,1,0,0,0,1,1,1,0,1,1,0,1,1
+143,Mymensing Region,FULBARIA,Yaqub Laskar (4),60,By Birth,SSC,SERVICE,13500,2,1,1,1,1,0,0,0,1,1,1,1,1,0,1,1,1,1,1
+144,Mymensing Region,FULBARIA,Alhaj Nesar Ahmad (5),56,By Birth,Degree,Business,178200,5,1,0,1,1,1,1,0,1,1,0,0,1,0,1,1,0,1,1
+145,Mymensing Region,FULBARIA,M Arifuzzaman (6),57,By Birth,MBA,SERVICE,36800,4,1,0,1,1,0,0,0,1,1,0,0,1,0,1,1,1,1,1
+146,Mymensing Region,FULBARIA,Raza Rizwan Ahmad (7),51,By Birth,BSC,SERVICE,204000,4,1,1,1,1,1,0,0,1,1,0,0,1,1,0,1,1,1,0
+147,Mymensing Region,FULBARIA,SM Nosrullah (8),78,By Birth,SSC,Business,23300,4,0,0,1,1,0,0,0,1,0,1,0,1,1,1,1,1,1,1
+148,Mymensing Region,FULBARIA,DR. Rejaul Karim (9),56,By Birth,HSC,Business,19500,6,1,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,0,1
+149,Mymensing Region,CHAANTARA,Maolana Bashirur Rahman,58,By Birth,Sahed P,Murubbi,20200,2,0,0,1,0,0,0,0,0,1,1,1,1,1,0,1,1,1,1
+150,Mymensing Region,CHAANTARA,Khondokar Mahbubul Islam (2),69,By Birth,Degree,Farmer,44700,6,1,1,1,1,1,0,0,1,0,0,0,1,1,1,1,1,1,1
+151,Mymensing Region,CHAANTARA,Dr. Mahfuzar Rahman (3),63,By Birth,MBBS,Retired,37300,3,1,1,1,1,0,0,0,1,0,1,1,1,1,1,1,1,1,1
+152,Mymensing Region,CHAANTARA,Md. Abdur Razzaq (4),69,By Birth,SSC,Farmer,95000,6,0,0,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1
+153,Mymensing Region,CHAANTARA,Md. Ahsan Jamil (5),60,By Birth,Masters,Service,119800,6,1,0,1,1,0,0,0,1,1,0,0,1,1,1,1,1,1,1
+154,Mymensing Region,CHAANTARA,Ahmad Mollah (6),51,By Birth,BA,Business,44600,7,1,1,1,1,1,0,0,1,0,1,1,1,0,1,1,0,1,0
+155,Mymensing Region,CHAANTARA,Mojibar Rahman (7),72,By Birth,8th,Business,18800,4,1,1,1,1,1,0,0,1,1,0,0,1,0,1,1,1,0,1
+156,Mymensing Region,CHAANTARA,Md. Mamun Or Rasshid (8),54,By Birth,HSC,Service,48300,5,1,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1
+157,Mymensing Region,CHAANTARA,Md. Haydar Ali (9),50,By Birth,SSC,Business,7100,4,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1
+158,B.Baria Region,B.BARIA,Mawlana Abu Bakar Siddik,79,1999,Kamil,Business,14000,3,1,1,0,0,0,0,0,1,0,0,0,1,1,1,1,1,0,1
+159,B.Baria Region,B.BARIA,Md. Lutfar Rahman Master (2),55,By Birth,MA,Service,42600,4,1,1,1,1,1,0,0,1,1,1,1,1,0,1,0,1,1,1
+160,B.Baria Region,B.BARIA,Md. Nazrul Islam (3),75,1985,SSC,Business,13400,2,1,1,1,1,1,0,0,0,1,1,1,1,0,1,1,1,1,0
+161,B.Baria Region,B.BARIA,Muhammad Ismail (4),58,By Birth,Degree,Advocate,225900,6,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1
+162,B.Baria Region,B.BARIA,Hafizur Rahman (5),46,By Birth,HSC,Business,9100,5,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,0
+163,B.Baria Region,B.BARIA,Tofazzol Hoassain (6),67,1981,BA,Business,23400,4,1,0,1,1,1,1,0,1,1,1,1,1,0,1,0,1,0,0
+164,B.Baria Region,B.BARIA,Anwar Ahmad Choudhury (7),53,By Birth,HSC,Service,18500,6,1,1,0,1,1,1,1,1,1,1,0,1,0,1,1,0,1,1
+165,B.Baria Region,B.BARIA,Md. Iqbal Choudhury (8),63,2012,HSC,Service,56700,6,1,1,1,1,1,1,1,1,1,1,0,1,0,0,1,1,1,0
+166,B.Baria Region,TARUA,Md. Samsur Rahman,47,By Birth,Degree,Business,85600,4,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,0
+167,B.Baria Region,TARUA,Abdullah Ahamed (2),50,By Birth,SSC,Service,85400,7,1,1,1,1,1,1,1,0,0,1,1,1,0,1,1,1,1,1
+168,B.Baria Region,TARUA,Ishak Ali Mollah (3),71,By Birth,SSC,Labour,6600,11,1,0,1,1,1,0,0,0,0,1,0,1,0,1,1,1,1,1
+169,B.Baria Region,TARUA,Dr. Abdullah Shams Bin Tariq (4),47,By Birth,PhD,Labour,142300,6,0,0,1,0,0,0,0,1,0,1,1,1,1,1,1,1,1,1
+170,B.Baria Region,TARUA,Dr. Kamrullah Bin Tariq (5),42,By Birth,PhD,Service,88700,3,1,0,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1
+171,B.Baria Region,TARUA,GM Siraj Uddin (6),63,1979,BCOM,Service,168400,3,1,1,1,1,1,1,0,1,1,1,0,1,0,1,1,1,1,1
+172,B.Baria Region,TARUA,Alhaj Md. Unus Ali (7),86,By Birth,BA,Retired,14700,4,1,1,1,1,0,0,0,0,1,0,0,1,1,1,1,1,1,1
+173,B.Baria Region,TARUA,Md. Abdus Sattar (8),76,By Birth,Degree,Retired,11300,5,1,1,1,1,0,0,0,1,0,1,1,1,0,1,1,1,1,0
+174,B.Baria Region,TARUA,A K M Ataur Rahman (9),63,By Birth,HSC,Service,33100,6,1,1,1,1,1,1,1,1,0,1,1,1,0,1,1,1,1,1
+175,B.Baria Region,KODDA,Abdullah Youshuf Mohd,67,1965,Masters,Retired,12100,3,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1
+176,B.Baria Region,KODDA,Alaiuddin Ahmed (2),59,By Birth,SSC,Business,1700,7,0,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1
+177,B.Baria Region,KODDA,Abdur Rob Choudhury (3),81,1970,Masters,Retired,5600,3,1,1,1,1,1,0,0,1,1,1,0,1,0,0,1,1,1,0
+178,B.Baria Region,KODDA,Abdur Rouf Khan (4),75,1975,Masters,Pensioner,12500,5,1,1,1,1,1,0,0,0,1,1,1,0,1,1,1,1,0,0
+179,B.Baria Region,KODDA,Bashir Uddin Ahmed (5),60,By Birth,Engineer,Service,52900,6,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1
+180,B.Baria Region,KODDA,Dr Sabir Ahmad (6),63,By Birth,SSC,Service,75500,6,1,1,1,1,1,1,0,1,1,0,0,1,0,1,1,1,1,1
+181,B.Baria Region,KODDA,Dr Salim Mohammad Shahjahan (7),73,By Birth,Doctor,Business,243200,2,0,0,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1
+182,B.Baria Region,GHATURA,Maksud Ahmad Roman,45,By Birth,HSC,Service,194600,1,0,0,0,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1
+183,B.Baria Region,GHATURA,Md Abdul Karim (2),66,By Birth,8th,Labour,30900,5,1,0,1,1,1,1,0,1,0,0,0,1,0,1,1,1,1,1
+184,B.Baria Region,GHATURA,Mohammad Fazlur Rahman (3),84,By Birth,Degree,Retired,15300,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0
+185,B.Baria Region,GHATURA,Syed Reyaz Ahmed (4),80,By Birth,Masters,Retired,55200,4,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1
+186,B.Baria Region,GHATURA,Md. Mohiuddin Ahmed (5),65,1986,Masters,Retired,1500,5,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1
+187,B.Baria Region,NATAI,Enamul Haque Rasel,48,By Birth,Masters,Farmer,65000,7,1,1,1,1,1,1,0,0,0,1,1,1,1,0,1,0,0,1
+188,B.Baria Region,NATAI,Mohammad Yeamin Natai (2),40,By Birth,Masters,Service,300300,3,1,0,1,1,1,0,0,0,1,0,0,1,0,1,1,1,1,1
+189,B.Baria Region,NATAI,Maolana Ahmed Sadek Mahmud (3),76,By Birth,Maolana,Labour,7700,6,1,1,1,1,1,0,0,1,1,1,1,1,0,1,0,1,1,1
+190,B.Baria Region,NATAI,Md Lutfor Rahman Dhali (4),48,2013,HSC,Business,30100,5,0,0,1,1,0,0,0,0,0,1,1,1,0,1,1,1,1,1
+191,B.Baria Region,NATAI,Dr. Abdur Rashid (5),95,1974,Doctor,Retired,1000,2,1,1,1,1,1,1,0,1,0,0,0,0,0,1,1,1,1,1
+192,B.Baria Region,SHALGAO,Muhammad Muhibur Rahman,73,By Birth,Masters,Retired,17300,5,1,1,1,1,1,0,0,1,0,1,0,1,1,1,1,1,1,1
+193,B.Baria Region,SHALGAO,Dr. Mojahid Uddin Ahmad (2),74,1982,Degree,Professor,24400,2,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,0,1,1
+194,B.Baria Region,SHALGAO,Engr. Hafizur rahman (3),68,By Birth,HSC,Business,46800,4,1,0,1,1,1,1,0,1,1,0,0,1,0,1,1,1,1,1
+195,B.Baria Region,SHALGAO,Mozammel Haque (4),54,1983,Kamil,Moallem,16500,5,1,0,1,1,1,0,0,1,0,0,0,1,1,1,1,1,1,0
+196,B.Baria Region,SAHBAZPUR,Abdul Ajiz,78,By Birth,5th,Labour,1800,2,1,1,1,1,1,0,0,1,1,0,0,1,1,1,1,1,1,0
+197,B.Baria Region,SAHBAZPUR,Abdul Awal Master (2),68,By Birth,B.COM,Business,16700,4,1,0,1,1,1,1,1,0,0,1,0,1,1,1,1,1,1,1
+198,B.Baria Region,SAHBAZPUR,Ehsanur Rahman (3),61,By Birth,HSC,Service,12900,5,1,1,1,0,0,0,0,0,1,0,0,1,0,1,1,1,1,1
+199,B.Baria Region,SAHBAZPUR,Mahbubur Rahman (4),47,By Birth,L.L.B,Law,10200,8,1,0,1,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1
+200,B.Baria Region,SAHBAZPUR,DR. Amin Ahmad (5),50,By Birth,I.COM,Business,41800,6,1,1,1,1,1,1,1,1,0,1,0,1,0,1,1,1,1,1
+201,B.Baria Region,SAHBAZPUR,Yaqub Laskar (6),57,By Birth,Masters,SERVICE,9900,4,1,0,1,1,1,1,0,0,0,1,1,1,1,1,0,1,0,1
+202,B.Baria Region,BISNUPUR,Alhaj Nesar Ahmad,54,By Birth,HSC,BUSINESS,167900,4,1,0,1,1,0,0,0,1,0,1,0,1,0,1,1,0,1,1
+203,B.Baria Region,BISNUPUR,M Arifuzzaman (2),61,1982,MBA,Retired,49900,7,0,0,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1
+204,B.Baria Region,BISNUPUR,Raza Rizwan Ahmad (3),52,By Birth,BSC,SERVICE,114100,6,1,1,1,1,0,0,0,1,1,1,1,1,0,0,1,1,1,1
+205,B.Baria Region,BISNUPUR,SM Nosrullah (4),69,2002,BA,Labour,33500,3,0,0,1,0,0,0,0,1,0,1,1,1,0,1,1,1,0,1
+206,B.Baria Region,DURGARAMPUR,DR. Rejaul Karim,63,1985,HSC,Service,19700,7,0,0,1,0,0,0,0,1,0,1,1,1,0,1,1,1,1,1
+207,B.Baria Region,DURGARAMPUR,Maolana Bashirur Rahman (2),62,By Birth,Sahed P,Murubbi,18700,5,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1
+208,B.Baria Region,DURGARAMPUR,Khondokar Mahbubul Islam (3),68,By Birth,BA,Farmer,79000,4,0,0,1,1,1,1,0,0,0,1,1,1,0,1,1,1,1,1
+209,B.Baria Region,DURGARAMPUR,Dr. Mahfuzar Rahman (4),62,By Birth,MBBS,Retired,79600,3,1,1,1,0,0,0,0,1,1,0,0,1,0,0,1,1,1,1
+210,B.Baria Region,DURGARAMPUR,Md. Abdur Razzaq (5),73,By Birth,SSC,Service,57500,4,0,0,1,1,1,1,1,0,0,0,0,1,0,1,1,1,1,1
+211,B.Baria Region,DURGARAMPUR,Md. Ahsan Jamil (6),59,By Birth,SSC,Service,171800,5,1,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1
+212,B.Baria Region,DURGARAMPUR,Ahmad Mollah (7),52,By Birth,BA,Business,37600,5,1,1,1,0,0,0,0,1,1,1,1,1,0,1,0,1,1,1
+213,B.Baria Region,DURGARAMPUR,Mojibar Rahman (8),73,By Birth,BA,Retired,9000,2,1,1,0,1,0,0,0,1,1,1,1,1,0,1,1,1,1,0
+214,B.Baria Region,DURGARAMPUR,Md. Mamun Or Rasshid (9),58,1974,HSC,Service,56300,4,0,0,1,1,0,0,0,1,1,1,1,1,1,0,1,1,1,1
+215,B.Baria Region,KHUDRA B.BARIA,Md. Haydar Ali,48,By Birth,SSC,Business,7200,5,1,0,1,1,0,0,0,1,0,1,1,1,1,1,1,1,1,1
+216,B.Baria Region,KHUDRA B.BARIA,Mawlana Abu Bakar Siddik (2),72,By Birth,8th,Labour,15000,2,0,0,1,1,0,0,0,1,1,1,1,1,0,1,1,1,1,1
+217,B.Baria Region,KHUDRA B.BARIA,Md. Lutfar Rahman Master (3),63,By Birth,Masters,Service,34600,3,0,0,1,1,1,0,0,1,1,1,0,1,0,1,1,1,1,0
+218,B.Baria Region,KHUDRA B.BARIA,Md. Nazrul Islam (4),82,By Birth,SSC,Labour,16100,3,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,0,1,1
+219,B.Baria Region,KHUDRA B.BARIA,Muhammad Ismail (5),52,By Birth,LLB,Advocate,186200,5,1,1,1,1,1,0,0,0,0,1,1,1,0,1,1,1,1,0
+220,B.Baria Region,SORAIL,Hafizur Rahman,45,1966,HSC,Business,16700,6,1,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0
+221,B.Baria Region,SORAIL,Tofazzol Hoassain (2),69,By Birth,BA,Service,40700,7,1,0,1,1,1,1,0,0,1,1,1,1,0,1,1,0,1,0
+222,B.Baria Region,SORAIL,Anwar Ahmad Choudhury (3),52,By Birth,BA,Farmer,26700,5,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,0,1,0
+223,B.Baria Region,SORAIL,Md. Iqbal Choudhury (4),63,By Birth,BSC,Farmer,88800,4,1,0,1,1,1,0,0,0,0,0,0,1,0,1,1,1,0,1
+224,B.Baria Region,SORAIL,Md. Samsur Rahman (5),45,By Birth,BA,Business,104500,6,0,0,0,1,0,0,0,1,0,1,1,1,1,1,1,1,1,0
+225,B.Baria Region,SORAIL,Abdullah Ahamed (6),57,1995,Masters,Service,67400,7,0,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,0
+226,B.Baria Region,SORAIL,Ishak Ali Mollah (7),71,By Birth,SSC,Farmer,10800,10,1,1,1,0,0,0,0,1,0,1,1,1,0,1,1,1,0,0
+227,B.Baria Region,SORAIL,Dr. Abdullah Shams Bin Tariq (8),51,By Birth,PhD,Service,147500,5,1,1,1,1,1,0,0,1,0,0,0,1,0,1,1,1,1,1
+228,B.Baria Region,SORAIL,Dr. Kamrullah Bin Tariq (9),50,By Birth,PhD,Service,130900,2,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1
+229,B.Baria Region,AKHAURA,GM Siraj Uddin,63,By Birth,BCOM,Service,97400,3,0,0,1,1,0,0,0,0,0,1,1,1,1,1,1,1,1,0
+230,B.Baria Region,AKHAURA,Alhaj Md. Unus Ali (2),85,1992,BA,Service,10600,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1
+231,B.Baria Region,AKHAURA,Md. Abdus Sattar (3),75,1995,Masters,Retired,7100,7,1,1,1,1,1,1,0,1,1,0,0,1,1,1,1,1,0,1
+232,B.Baria Region,AKHAURA,A K M Ataur Rahman (4),71,By Birth,HSC,Service,16500,5,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1
+233,B.Baria Region,AKHAURA,Abdullah Youshuf Mohd (5),68,By Birth,Masters,Retired,10500,3,1,1,1,0,0,0,0,1,1,1,0,1,1,0,1,1,1,0
+234,B.Baria Region,AKHAURA,Alaiuddin Ahmed (6),55,1975,Degree,Service,2400,5,1,0,1,1,0,0,0,1,1,1,0,1,1,1,1,1,1,1
+235,B.Baria Region,AKHAURA,Abdur Rob Choudhury (7),82,By Birth,Masters,Retired,5900,3,1,1,1,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1
+236,B.Baria Region,AKHAURA,Abdur Rouf Khan (8),71,2003,SSC,Labour,12400,4,1,1,1,1,1,0,0,1,1,1,0,1,0,1,1,1,1,0
+237,B.Baria Region,TAALSAHOR,Bashir Uddin Ahmed,62,By Birth,Engineer,Service,69900,3,0,0,1,1,1,1,1,0,0,0,0,1,1,0,1,1,1,1
+238,B.Baria Region,TAALSAHOR,Dr Sabir Ahmad (2),60,1969,SSC,Business,50100,6,1,0,1,1,0,0,0,1,0,1,1,1,0,1,1,0,1,1
+239,B.Baria Region,TAALSAHOR,Dr Salim Mohammad Shahjahan (3),74,2009,Doctor,Business,184500,3,0,0,1,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1
+240,B.Baria Region,TAALSAHOR,Maksud Ahmad Roman (4),49,By Birth,8th,Service,195100,3,1,1,1,0,0,0,0,1,1,0,0,1,1,1,1,0,1,0
+241,B.Baria Region,TAALSAHOR,Md Abdul Karim (5),61,By Birth,Degree,Pensioner,16600,5,1,0,1,1,1,1,0,1,0,1,1,1,1,0,0,1,0,0
+242,B.Baria Region,TAALSAHOR,Mohammad Fazlur Rahman (6),85,1971,Degree,Retired,25900,2,1,0,0,1,1,0,0,1,1,1,1,0,1,1,1,0,1,1
+243,B.Baria Region,TAALSAHOR,Syed Reyaz Ahmed (7),71,By Birth,Masters,Retired,34900,3,1,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1
+244,B.Baria Region,TAALSAHOR,Md. Mohiuddin Ahmed (8),69,By Birth,SSC,Retired,2200,7,1,0,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1
+245,B.Baria Region,TAALSAHOR,Enamul Haque Rasel (9),45,2015,Masters,Service,70400,4,1,1,1,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1
+246,B.Baria Region,NABINAGOR,Mohammad Yeamin Natai,50,By Birth,Masters,Service,214500,4,1,0,1,1,1,0,0,1,1,0,0,1,1,1,1,1,0,1
+247,B.Baria Region,NABINAGOR,Maolana Ahmed Sadek Mahmud (2),81,By Birth,Maolana,Retired,12500,5,1,0,1,1,1,0,0,1,0,1,0,1,0,1,1,1,1,0
+248,B.Baria Region,NABINAGOR,Md Lutfor Rahman Dhali (3),52,1995,HSC,Labour,16100,4,0,0,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1
+249,B.Baria Region,NABINAGOR,Dr. Abdur Rashid (4),95,By Birth,Degree,Retired,1200,1,1,1,1,1,0,0,0,1,0,1,0,1,1,0,1,1,1,1
+250,B.Baria Region,NABINAGOR,Muhammad Muhibur Rahman (5),69,By Birth,SSC,Retired,12900,4,0,0,1,1,0,0,0,1,0,1,1,1,0,1,1,1,1,1
+251,B.Baria Region,VADUGOR,Dr. Mojahid Uddin Ahmad,84,2000,Degree,Farmer,24500,3,1,0,1,1,1,1,0,1,1,0,0,1,1,1,1,1,1,1
+252,B.Baria Region,VADUGOR,Engr. Hafizur rahman (2),60,By Birth,Doctor,Doctor,31200,3,1,0,1,1,1,1,0,1,0,1,1,1,0,0,1,1,1,0
+253,B.Baria Region,VADUGOR,Mozammel Haque (3),59,By Birth,Kamil,Moallem,21100,4,1,1,1,1,0,0,0,1,1,0,0,1,0,1,1,1,1,1
+254,B.Baria Region,VADUGOR,Abdul Ajiz (4),78,By Birth,5th,Retired,2700,2,1,1,1,0,0,0,0,0,0,1,1,1,0,1,1,1,1,1
+255,B.Baria Region,VADUGOR,Abdul Awal Master (5),76,1980,B.COM,Retired,15500,3,1,0,1,1,1,0,0,1,1,0,0,1,1,1,1,1,1,1
+256,B.Baria Region,VADUGOR,Ehsanur Rahman (6),56,By Birth,BA,Service,19000,5,1,1,0,1,1,0,0,1,0,1,1,1,0,1,1,1,0,1
+257,B.Baria Region,VADUGOR,Mahbubur Rahman (7),51,By Birth,L.L.B,Farmer,12300,6,1,1,1,1,0,0,0,1,0,1,0,0,1,1,1,1,1,0
+258,B.Baria Region,NASIRPUR,DR. Amin Ahmad,50,By Birth,8th,Business,39900,4,1,1,1,1,1,0,0,1,0,1,1,1,0,1,1,1,1,0
+259,B.Baria Region,NASIRPUR,Yaqub Laskar (2),61,By Birth,SSC,Retired,16500,5,0,0,1,0,0,0,0,0,1,1,1,0,1,1,0,1,1,1
+260,B.Baria Region,NASIRPUR,Alhaj Nesar Ahmad (3),58,1972,HSC,Service,227800,6,1,0,1,1,1,1,0,0,0,1,1,1,0,1,1,1,1,1
+261,B.Baria Region,NASIRPUR,M Arifuzzaman (4),56,By Birth,MBA,SERVICE,64700,6,1,1,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1
+262,B.Baria Region,NASIRPUR,Raza Rizwan Ahmad (5),51,By Birth,BA,SERVICE,229300,4,1,0,0,1,1,1,1,1,0,1,1,1,1,1,0,1,1,1
+263,B.Baria Region,NASIRPUR,SM Nosrullah (6),70,1973,HSC,Service,31600,1,1,1,1,1,0,0,0,1,1,0,0,1,1,1,1,1,1,1
+264,B.Baria Region,MOURAIL,DR. Rejaul Karim,57,1971,HSC,Business,12200,5,1,1,1,0,0,0,0,1,1,0,0,0,1,1,1,1,0,1
+265,B.Baria Region,MOURAIL,Maolana Bashirur Rahman (2),56,By Birth,Sahed P,Service,18600,4,0,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,0
+266,B.Baria Region,MOURAIL,Khondokar Mahbubul Islam (3),60,By Birth,BA,Service,80100,6,1,1,1,1,0,0,0,1,0,1,0,1,1,1,1,1,1,1
+267,B.Baria Region,MOURAIL,Dr. Mahfuzar Rahman (4),54,1990,Masters,Farmer,57900,4,1,1,1,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1
+268,B.Baria Region,MOURAIL,Md. Abdur Razzaq (5),69,By Birth,SSC,Service,100200,4,0,0,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1
+269,B.Baria Region,MOURAIL,Md. Ahsan Jamil (6),64,By Birth,BA,Retired,85800,5,1,0,1,0,0,0,0,1,1,1,0,1,1,1,1,1,1,1
+270,B.Baria Region,MOURAIL,Ahmad Mollah (7),53,By Birth,BA,Retired,34700,7,1,1,1,0,0,0,0,1,1,1,0,1,1,1,0,1,1,1
+271,B.Baria Region,MOURAIL,Mojibar Rahman (8),68,By Birth,HSC,Retired,13800,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,0,1,0,1
+272,B.Baria Region,MOURAIL,Md. Mamun Or Rasshid (9),57,By Birth,Degree,Service,32500,6,1,1,0,1,0,0,0,1,0,1,1,1,0,1,0,1,1,1
+273,Cumilla CTG Region,CUMILLA,Md. Haydar Ali,55,1981,SSC,Business,5400,5,1,0,1,1,0,0,0,1,1,1,0,1,1,1,1,1,0,1
+274,Cumilla CTG Region,CUMILLA,Mawlana Abu Bakar Siddik (2),72,By Birth,8th,Business,9300,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1
+275,Cumilla CTG Region,CUMILLA,Md. Lutfar Rahman Master (3),55,By Birth,MA,Service,29200,6,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
+276,Cumilla CTG Region,CUMILLA,Md. Nazrul Islam (4),73,By Birth,SSC,Business,9700,3,1,0,1,1,0,0,0,0,0,1,1,1,0,1,0,1,0,1
+277,Cumilla CTG Region,CHORDUKHIA,Muhammad Ismail,57,By Birth,SSC,Advocate,197700,3,0,0,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,0
+278,Cumilla CTG Region,CHORDUKHIA,Hafizur Rahman (2),47,By Birth,HSC,Business,12000,3,1,0,1,1,1,0,0,1,0,1,0,1,1,1,1,1,1,1
+279,Cumilla CTG Region,CHORDUKHIA,Tofazzol Hoassain (3),69,By Birth,BA,Service,25500,6,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1
+280,Cumilla CTG Region,CHORDUKHIA,Anwar Ahmad Choudhury (4),55,By Birth,HSC,Service,18200,6,1,1,1,1,1,0,0,1,0,1,1,1,1,1,1,0,1,1
+281,Cumilla CTG Region,CHORDUKHIA,Md. Iqbal Choudhury (5),58,By Birth,BSC,Service,100400,4,1,1,1,1,1,1,0,0,0,1,1,1,0,1,1,1,0,0
+282,Cumilla CTG Region,CHORDUKHIA,Md. Samsur Rahman (6),52,1970,BCOM,Business,137800,5,1,1,1,1,1,0,0,0,0,1,1,1,1,1,0,0,1,1
+283,Cumilla CTG Region,CHORDUKHIA,Abdullah Ahamed (7),56,By Birth,Degree,Service,63900,7,1,0,1,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1
+284,Cumilla CTG Region,CHORDUKHIA,Ishak Ali Mollah (8),70,1989,SSC,Service,13900,11,1,0,1,1,0,0,0,1,0,1,0,1,1,0,1,1,1,1
+285,Cumilla CTG Region,CHORDUKHIA,Dr. Abdullah Shams Bin Tariq (9),51,By Birth,PhD,Business,125400,4,1,0,1,1,1,1,1,1,0,1,1,1,0,1,1,1,1,1
+286,Cumilla CTG Region,CHOTTOGRAM,Dr. Kamrullah Bin Tariq,47,2007,BA,Service,94600,4,0,0,0,1,1,1,1,1,0,1,1,1,0,1,1,1,1,1
+287,Cumilla CTG Region,CHOTTOGRAM,GM Siraj Uddin (2),67,1997,BCOM,Service,96500,4,0,0,1,1,1,1,1,0,0,1,1,1,1,1,1,0,1,0
+288,Cumilla CTG Region,CHOTTOGRAM,Alhaj Md. Unus Ali (3),84,2010,BA,Retired,11500,1,1,1,1,0,0,0,0,1,1,1,0,1,1,1,1,1,1,0
+289,Cumilla CTG Region,CHOTTOGRAM,Md. Abdus Sattar (4),76,2014,BSC,Retired,7300,5,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1
+290,Cumilla CTG Region,CHOTTOGRAM,A K M Ataur Rahman (5),67,By Birth,HSC,Retired,20600,4,0,0,1,1,1,0,0,1,0,1,1,1,0,1,1,1,1,1
+291,Cumilla CTG Region,CHOTTOGRAM,Abdullah Youshuf Mohd (6),73,By Birth,Degree,Retired,6300,3,1,1,1,1,1,1,1,0,1,0,0,1,0,1,1,1,1,1
+292,Cumilla CTG Region,MAHILLA,Alaiuddin Ahmed,54,By Birth,SSC,Business,2000,8,0,0,1,1,1,0,0,0,1,0,0,1,0,1,1,0,1,1
+293,Cumilla CTG Region,MAHILLA,Abdur Rob Choudhury (2),82,By Birth,Masters,Retired,6200,4,1,1,1,1,1,1,1,0,1,0,0,1,0,1,1,1,1,1
+294,Cumilla CTG Region,MAHILLA,Abdur Rouf Khan (3),75,By Birth,HSC,Pensioner,15700,6,1,0,1,1,1,1,0,0,1,0,0,1,1,1,1,0,1,0
+295,Cumilla CTG Region,MAHILLA,Bashir Uddin Ahmed (4),60,By Birth,HSC,Service,57300,6,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1
+296,Cumilla CTG Region,MAHILLA,Dr Sabir Ahmad (5),64,1979,MA,Service,71600,5,1,1,1,1,0,0,0,1,1,1,1,1,0,1,0,1,1,1
+297,Cumilla CTG Region,MAHILLA,Dr Salim Mohammad Shahjahan (6),74,1991,Doctor,Business,324500,3,0,0,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
+298,Cumilla CTG Region,MAHILLA,Maksud Ahmad Roman (7),49,2009,Masters,Business,307800,3,1,1,1,1,1,0,0,0,1,1,0,1,0,1,1,0,1,1
+299,Cumilla CTG Region,MAHILLA,Md Abdul Karim (8),68,By Birth,Degree,Business,33500,5,1,1,1,1,1,1,1,0,1,1,0,1,0,1,1,1,1,1
+300,Cumilla CTG Region,FAZILPUR,Mohammad Fazlur Rahman,85,By Birth,Degree,Retired,13900,2,1,1,1,1,1,0,0,1,0,1,1,1,1,1,1,1,1,1
+301,Cumilla CTG Region,FAZILPUR,Syed Reyaz Ahmed (2),76,By Birth,Masters,Retired,45500,4,1,1,1,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1
+302,Cumilla CTG Region,FAZILPUR,Md. Mohiuddin Ahmed (3),68,1999,Masters,Retired,2600,6,1,1,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1
+303,Cumilla CTG Region,FAZILPUR,Enamul Haque Rasel (4),48,2013,Masters,Service,78200,6,1,1,1,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1
+304,Cumilla CTG Region,FAZILPUR,Mohammad Yeamin Natai (5),50,By Birth,Masters,Service,227400,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+305,Cumilla CTG Region,KUTHIRHUT,Maolana Ahmed Sadek Mahmud,79,By Birth,Degree,Retired,9700,3,0,0,1,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1
+306,Cumilla CTG Region,KUTHIRHUT,Md Lutfor Rahman Dhali (2),50,By Birth,HSC,Business,24100,3,1,1,0,1,1,1,0,1,0,1,1,1,0,1,1,1,0,0
+307,Cumilla CTG Region,KUTHIRHUT,Dr. Abdur Rashid (3),95,By Birth,BA,Retired,1000,3,0,0,1,0,0,0,0,0,1,1,1,1,0,1,1,1,0,1
+308,Cumilla CTG Region,KUTHIRHUT,Muhammad Muhibur Rahman (4),76,2004,SSC,Retired,12000,6,1,1,1,0,0,0,0,1,1,1,0,1,0,1,1,1,1,1
+309,Cumilla CTG Region,KUTHIRHUT,Dr. Mojahid Uddin Ahmad (5),82,1966,PhD,Labour,24400,4,1,0,1,1,1,0,0,0,1,1,1,1,0,1,1,1,1,1
+310,Cumilla CTG Region,KUTHIRHUT,Engr. Hafizur rahman (6),67,2003,Doctor,Business,60800,2,1,0,1,1,1,1,0,1,0,1,1,1,0,1,1,1,1,0
+311,Cumilla CTG Region,Aumbornagar,Mozammel Haque,52,By Birth,Kamil,Moallem,19900,2,1,1,1,0,0,0,0,0,1,1,0,1,1,1,1,1,0,1
+312,Cumilla CTG Region,Aumbornagar,Abdul Ajiz (2),80,By Birth,5th,Business,1400,2,1,1,1,1,1,0,0,1,1,1,1,0,1,1,1,1,1,1
+313,Cumilla CTG Region,Aumbornagar,Abdul Awal Master (3),77,By Birth,B.COM,Service,26200,1,1,1,1,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1
+314,Cumilla CTG Region,Aumbornagar,Ehsanur Rahman (4),62,By Birth,HSC,Service,26600,4,1,0,1,1,1,0,0,1,1,1,1,1,1,0,0,1,1,1
+315,Cumilla CTG Region,Aumbornagar,Mahbubur Rahman (5),52,1996,L.L.B,Law,6600,5,0,0,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1
+316,Cumilla CTG Region,Aumbornagar,DR. Amin Ahmad (6),56,By Birth,HSC,Business,38800,4,1,1,1,1,1,1,1,1,0,0,0,0,0,1,1,1,1,0
+317,Cumilla CTG Region,Aumbornagar,Yaqub Laskar (7),65,By Birth,SSC,Labour,18200,2,1,1,1,0,0,0,0,1,1,1,1,1,0,1,1,1,1,1
+318,Cumilla CTG Region,Aumbornagar,Alhaj Nesar Ahmad (8),56,By Birth,HSC,BUSINESS,156100,4,1,0,1,1,1,0,0,1,0,1,0,1,0,1,1,1,1,1
+319,Cumilla CTG Region,PATENGA,M Arifuzzaman,57,By Birth,MBA,Business,73200,7,1,1,1,0,0,0,0,0,0,1,1,0,0,1,1,1,1,0
+320,Cumilla CTG Region,PATENGA,Raza Rizwan Ahmad (2),54,By Birth,Masters,SERVICE,185900,6,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0
+321,Cumilla CTG Region,PATENGA,SM Nosrullah (3),69,By Birth,BA,Service,33000,2,1,0,1,1,1,0,0,1,0,1,1,1,1,1,1,1,0,1
+322,Cumilla CTG Region,PATENGA,DR. Rejaul Karim (4),60,By Birth,HSC,Business,18000,6,0,0,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1
+323,Dinajpur Region,DINAJPUR,Maolana Bashirur Rahman,59,1993,Sahed P,Retired,32500,2,1,1,1,1,1,0,0,1,1,1,1,1,0,1,0,0,1,1
+324,Dinajpur Region,DINAJPUR,Khondokar Mahbubul Islam (2),63,By Birth,BA,Retired,53200,3,1,0,1,1,0,0,0,1,0,0,0,1,0,1,1,1,1,1
+325,Dinajpur Region,DINAJPUR,Dr. Mahfuzar Rahman (3),57,2015,MBBS,Farmer,67700,5,1,0,1,1,1,0,0,1,0,1,1,1,0,1,1,1,1,1
+326,Dinajpur Region,DINAJPUR,Md. Abdur Razzaq (4),67,By Birth,SSC,Service,115400,6,1,0,1,1,0,0,0,1,1,1,1,1,0,1,1,1,1,1
+327,Dinajpur Region,DINAJPUR,Md. Ahsan Jamil (5),63,By Birth,BA,Service,139900,4,1,0,1,1,1,1,1,1,0,1,0,1,0,1,1,1,1,1
+328,Dinajpur Region,DINAJPUR,Ahmad Mollah (6),52,By Birth,BA,Business,28600,5,1,0,1,1,0,0,0,1,1,1,1,1,0,0,0,1,1,1
+329,Dinajpur Region,DINAJPUR,Mojibar Rahman (7),76,By Birth,HSC,Labour,19500,3,0,0,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1
+330,Dinajpur Region,DINAJPUR,Md. Mamun Or Rasshid (8),56,By Birth,HSC,Service,46500,4,1,0,1,1,0,0,0,1,1,1,1,1,1,0,1,1,1,1
+331,Dinajpur Region,AHMADNAGAR,Md. Haydar Ali,56,By Birth,8th,Business,8000,3,1,1,1,1,1,1,0,1,1,0,0,1,0,1,1,1,1,0
+332,Dinajpur Region,AHMADNAGAR,Mawlana Abu Bakar Siddik (2),74,By Birth,Degree,Business,7400,2,0,0,1,1,0,0,0,1,0,0,0,1,0,1,1,1,0,1
+333,Dinajpur Region,AHMADNAGAR,Md. Lutfar Rahman Master (3),56,By Birth,MA,Service,29800,4,1,1,1,1,1,0,0,0,1,1,0,1,0,1,1,1,1,1
+334,Dinajpur Region,AHMADNAGAR,Md. Nazrul Islam (4),79,By Birth,SSC,Business,9900,4,1,1,1,1,1,1,0,0,1,1,1,1,1,0,1,0,1,0
+335,Dinajpur Region,AHMADNAGAR,Muhammad Ismail (5),57,By Birth,SSC,Advocate,235500,4,1,1,1,1,1,1,1,1,1,0,0,1,0,0,1,1,1,1
+336,Dinajpur Region,AHMADNAGAR,Hafizur Rahman (6),41,By Birth,HSC,Business,17500,4,1,1,1,0,0,0,0,1,0,1,0,1,1,1,0,0,1,1
+337,Dinajpur Region,AHMADNAGAR,Tofazzol Hoassain (7),65,1980,BA,Farmer,23100,6,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,0,1,0
+338,Dinajpur Region,SHALSIRI,Anwar Ahmad Choudhury,46,By Birth,SSC,Service,17300,4,1,0,1,0,0,0,0,1,1,1,0,1,1,1,1,1,1,1
+339,Dinajpur Region,SHALSIRI,Md. Iqbal Choudhury (2),56,By Birth,BA,Service,48900,5,0,0,1,1,1,0,0,1,0,1,1,1,0,1,1,1,1,1
+340,Dinajpur Region,SHALSIRI,Md. Samsur Rahman (3),43,By Birth,BCOM,Business,138800,4,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1
+341,Dinajpur Region,SHALSIRI,Abdullah Ahamed (4),52,1999,MA,Farmer,99800,5,1,0,0,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1
+342,Dinajpur Region,SHALSIRI,Ishak Ali Mollah (5),64,1970,SSC,Service,7900,10,1,1,1,1,0,0,0,1,0,0,0,1,0,1,0,1,1,1
+343,Dinajpur Region,KAMLAPUKURI,Dr. Abdullah Shams Bin Tariq,52,By Birth,PhD,Service,95500,5,1,1,1,1,0,0,0,1,1,1,1,1,0,1,1,1,1,1
+344,Dinajpur Region,KAMLAPUKURI,Dr. Kamrullah Bin Tariq (2),46,By Birth,PhD,Farmer,107600,3,1,0,1,1,1,1,0,1,1,0,0,1,0,1,1,1,1,1
+345,Dinajpur Region,KAMLAPUKURI,GM Siraj Uddin (3),62,1967,BCOM,Service,208500,3,1,0,1,1,1,0,0,1,0,1,1,1,0,1,1,1,1,1
+346,Dinajpur Region,KAMLAPUKURI,Alhaj Md. Unus Ali (4),85,By Birth,BA,Retired,17300,2,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1
+347,Dinajpur Region,KAMLAPUKURI,Md. Abdus Sattar (5),70,By Birth,BSC,Retired,11700,7,1,1,1,1,0,0,0,1,1,1,1,1,1,1,0,1,1,0
+348,Dinajpur Region,KAMLAPUKURI,A K M Ataur Rahman (6),67,By Birth,HSC,Service,29600,4,1,0,1,1,1,0,0,1,0,1,1,1,0,1,1,1,1,0
+349,Dinajpur Region,KAMLAPUKURI,Abdullah Youshuf Mohd (7),65,By Birth,Masters,Business,8700,2,1,1,1,0,0,0,0,1,0,1,1,1,0,0,1,1,1,1
+350,Dinajpur Region,VAATGAONE,Alaiuddin Ahmed,62,By Birth,SSC,Business,2600,7,1,1,1,1,0,0,0,1,0,0,0,1,1,1,1,1,1,1
+351,Dinajpur Region,VAATGAONE,Abdur Rob Choudhury (2),78,By Birth,Masters,Retired,5600,5,1,1,0,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1
+352,Dinajpur Region,VAATGAONE,Abdur Rouf Khan (3),73,2013,HSC,Pensioner,18000,6,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,0
+353,Dinajpur Region,VAATGAONE,Bashir Uddin Ahmed (4),69,By Birth,Engineer,Business,43600,5,1,1,1,1,1,1,0,0,1,1,0,1,1,1,1,1,1,1
+354,Dinajpur Region,VAATGAONE,Dr Sabir Ahmad (5),61,By Birth,MA,Service,75900,7,1,0,1,0,0,0,0,0,1,1,1,1,0,1,1,1,0,0
+355,Dinajpur Region,VAATGAONE,Dr Salim Mohammad Shahjahan (6),71,By Birth,Doctor,Business,267600,1,1,1,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1
+356,Dinajpur Region,HELENCHKURI,Maksud Ahmad Roman,46,By Birth,Masters,Service,216100,2,1,1,1,1,1,1,0,1,1,1,0,1,0,1,1,1,1,1
+357,Dinajpur Region,HELENCHKURI,Md Abdul Karim (2),68,2009,Degree,Pensioner,24400,4,1,1,1,1,1,0,0,1,0,0,0,1,1,1,1,1,1,0
+358,Dinajpur Region,HELENCHKURI,Mohammad Fazlur Rahman (3),82,By Birth,HSC,Service,23700,1,1,1,1,1,1,0,0,1,1,0,0,0,0,1,1,0,1,1
+359,Dinajpur Region,HELENCHKURI,Syed Reyaz Ahmed (4),72,By Birth,Masters,Retired,28200,3,1,1,1,1,1,1,1,1,0,1,1,1,1,1,0,0,0,1
+360,Dinajpur Region,DOHANDA,Md. Mohiuddin Ahmed,60,By Birth,Masters,Retired,1900,4,1,0,1,1,1,1,0,0,1,1,0,1,0,1,1,1,1,1
+361,Dinajpur Region,DOHANDA,Enamul Haque Rasel (2),53,By Birth,HSC,Service,79000,5,1,1,0,1,1,0,0,1,1,0,0,1,1,0,1,1,1,0
+362,Dinajpur Region,DOHANDA,Mohammad Yeamin Natai (3),50,1987,BA,Labour,284500,5,1,1,1,1,1,1,0,1,0,0,0,1,0,1,1,1,1,1
+363,Dinajpur Region,DOHANDA,Maolana Ahmed Sadek Mahmud (4),76,By Birth,8th,Retired,10900,5,1,1,1,0,0,0,0,0,1,1,1,0,1,1,1,1,1,1
+364,Dinajpur Region,DOHANDA,Md Lutfor Rahman Dhali (5),57,By Birth,HSC,Business,30700,6,0,0,1,0,0,0,0,0,0,1,0,1,0,1,1,1,1,0
+365,Dinajpur Region,BIRGONJ,Dr. Abdur Rashid,95,By Birth,Doctor,Retired,1000,2,1,1,0,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1
+366,Dinajpur Region,BIRGONJ,Muhammad Muhibur Rahman (2),72,By Birth,SSC,Business,16000,4,1,0,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1
+367,Dinajpur Region,BIRGONJ,Dr. Mojahid Uddin Ahmad (3),77,1996,PhD,Professor,32500,4,1,1,1,0,0,0,0,0,0,1,0,1,1,1,0,1,1,1
+368,Dinajpur Region,BIRGONJ,Engr. Hafizur rahman (4),67,By Birth,Doctor,Doctor,45100,1,1,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1
+369,Dinajpur Region,BIRGONJ,Mozammel Haque (5),52,By Birth,BA,Moallem,22200,2,1,1,1,0,0,0,0,1,0,1,1,1,0,1,1,1,1,0
+370,Dinajpur Region,KHUDRAPARA,Abdul Ajiz,78,By Birth,5th,Retired,2600,4,0,0,0,1,1,0,0,1,1,1,0,1,0,1,1,1,1,0
+371,Dinajpur Region,KHUDRAPARA,Abdul Awal Master (2),72,By Birth,Masters,Retired,19600,2,1,0,1,1,1,0,0,1,0,1,1,1,0,1,1,1,0,1
+372,Dinajpur Region,KHUDRAPARA,Ehsanur Rahman (3),65,By Birth,HSC,Retired,20800,4,1,1,1,1,1,1,0,0,0,0,0,1,0,1,1,1,1,1
+373,Dinajpur Region,KHUDRAPARA,Mahbubur Rahman (4),52,By Birth,L.L.B,Business,10800,6,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1
+374,Dinajpur Region,KHUDRAPARA,DR. Amin Ahmad (5),49,By Birth,HSC,Business,28600,5,1,1,1,0,0,0,0,0,1,1,1,1,0,1,1,1,1,1
+375,Dinajpur Region,KHUDRAPARA,Yaqub Laskar (6),60,By Birth,SSC,Business,10400,2,0,0,1,1,1,1,0,0,1,1,1,1,0,1,1,1,1,1
+376,Dinajpur Region,KHUDRAPARA,Alhaj Nesar Ahmad (7),57,By Birth,HSC,Farmer,138200,7,0,0,1,1,1,0,0,1,1,1,0,1,0,1,1,1,1,1
+377,Dinajpur Region,KHUDRAPARA,M Arifuzzaman (8),54,By Birth,HSC,SERVICE,70100,6,1,1,1,1,0,0,0,1,1,1,0,1,1,1,0,1,1,1
+378,Dinajpur Region,KHUDRAPARA,Raza Rizwan Ahmad (9),52,By Birth,BSC,SERVICE,171800,3,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0
+379,Dinajpur Region,RAMPUR,SM Nosrullah,69,2004,SSC,Service,20800,2,1,0,1,1,0,0,0,1,1,1,0,1,1,1,1,1,1,1
+380,Dinajpur Region,RAMPUR,DR. Rejaul Karim (2),59,By Birth,HSC,Business,20100,6,1,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0
+381,Dinajpur Region,RAMPUR,Maolana Bashirur Rahman (3),60,By Birth,8th,Murubbi,32100,5,1,0,1,1,1,0,0,0,0,1,0,1,1,1,0,1,1,1
+382,Dinajpur Region,RAMPUR,Khondokar Mahbubul Islam (4),61,2012,Masters,Retired,40800,4,1,1,1,1,0,0,0,1,1,1,0,1,0,1,1,0,1,1
+383,Dinajpur Region,RAMPUR,Dr. Mahfuzar Rahman (5),59,By Birth,MBBS,Service,59000,5,1,1,1,1,1,0,0,1,0,0,0,1,0,1,1,0,1,0
+384,Dinajpur Region,RAMPUR,Md. Abdur Razzaq (6),68,By Birth,SSC,Retired,96500,3,1,1,1,1,1,0,0,1,0,1,0,0,0,1,1,1,1,1
+385,Dinajpur Region,RAMPUR,Md. Ahsan Jamil (7),66,By Birth,BA,Service,85300,6,1,1,1,1,0,0,0,0,1,0,0,1,0,1,1,1,1,0
+386,Dinajpur Region,RAMPUR,Ahmad Mollah (8),50,By Birth,BA,Business,26000,8,1,1,1,1,1,1,0,1,1,1,1,1,0,1,1,0,1,1
+387,Rangpur Region,RANGPUR,Mojibar Rahman,69,2012,HSC,Business,10600,1,1,1,1,0,0,0,0,1,0,1,1,1,0,1,1,1,1,0
+388,Rangpur Region,RANGPUR,Md. Mamun Or Rasshid (2),50,By Birth,Degree,Service,43200,4,1,1,0,0,0,0,0,1,1,1,0,1,0,1,0,1,1,1
+389,Rangpur Region,RANGPUR,Md. Haydar Ali (3),50,By Birth,SSC,Business,5000,5,1,1,1,0,0,0,0,0,0,1,1,1,0,1,1,1,1,1
+390,Rangpur Region,RANGPUR,Mawlana Abu Bakar Siddik (4),81,1988,Kamil,Business,11200,2,1,0,1,1,1,0,0,0,0,1,1,1,0,1,1,1,1,1
+391,Rangpur Region,RANGPUR,Md. Lutfar Rahman Master (5),65,1985,MA,Business,25800,5,0,0,1,1,0,0,0,1,1,1,1,1,0,1,1,1,1,1
+392,Rangpur Region,RANGPUR,Md. Nazrul Islam (6),73,2008,SSC,Farmer,14400,4,1,1,1,1,0,0,0,1,0,1,1,1,1,0,1,1,1,0
+393,Rangpur Region,RANGPUR,Muhammad Ismail (7),56,1974,Degree,Service,261500,4,1,0,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
+394,Rangpur Region,RANGPUR,Hafizur Rahman (8),47,By Birth,HSC,Business,18600,4,1,1,1,1,1,1,0,0,0,0,0,1,0,0,1,1,1,1
+395,Rangpur Region,RANGPUR,Tofazzol Hoassain (9),71,By Birth,BA,Business,44000,7,0,0,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1
+396,Rangpur Region,SHYAMPUR,Anwar Ahmad Choudhury,53,2012,SSC,Service,21100,3,1,1,1,1,1,1,1,0,0,0,0,1,0,1,1,0,1,1
+397,Rangpur Region,SHYAMPUR,Md. Iqbal Choudhury (2),60,By Birth,Masters,Service,108700,4,1,1,0,1,1,1,0,1,1,0,0,1,1,1,1,1,0,0
+398,Rangpur Region,SHYAMPUR,Md. Samsur Rahman (3),46,By Birth,BCOM,Business,112200,4,1,0,1,0,0,0,0,1,0,1,0,1,0,1,1,1,1,1
+399,Rangpur Region,SHYAMPUR,Abdullah Ahamed (4),55,1993,MA,Service,131500,5,0,0,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1
+400,Rangpur Region,SHYAMPUR,Ishak Ali Mollah (5),66,By Birth,SSC,Service,10600,9,1,1,1,1,0,0,0,1,0,1,1,1,0,1,0,1,1,1
+401,Rangpur Region,MAHIGONJ,Dr. Abdullah Shams Bin Tariq,52,By Birth,PhD,Service,151500,7,1,1,1,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1
+402,Rangpur Region,MAHIGONJ,Dr. Kamrullah Bin Tariq (2),41,By Birth,SSC,Service,92900,5,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1
+403,Rangpur Region,MAHIGONJ,GM Siraj Uddin (3),63,By Birth,BA,Service,150900,5,1,0,1,1,1,0,0,1,1,0,0,1,0,1,1,1,1,1
+404,Rangpur Region,MAHIGONJ,Alhaj Md. Unus Ali (4),83,By Birth,BA,Retired,16300,4,1,1,1,1,1,1,0,1,1,1,0,1,0,1,1,1,1,1
+405,Rangpur Region,MAHIGONJ,Md. Abdus Sattar (5),71,2014,SSC,Business,9900,6,0,0,1,1,0,0,0,1,1,0,0,1,1,1,1,1,1,1
+406,Rangpur Region,MAHIGONJ,A K M Ataur Rahman (6),67,By Birth,HSC,Service,20400,4,1,1,1,0,0,0,0,1,1,0,0,1,1,0,1,1,1,1
+407,Rangpur Region,MAHIGONJ,Abdullah Youshuf Mohd (7),64,By Birth,Masters,Retired,11000,2,1,1,1,1,1,0,0,0,0,1,1,0,1,1,1,1,1,0
+408,Rangpur Region,MAHIGONJ,Alaiuddin Ahmed (8),54,By Birth,SSC,Business,2000,6,1,1,1,0,0,0,0,0,0,1,0,1,0,0,1,1,1,1
+409,Rangpur Region,MAHIGONJ,Abdur Rob Choudhury (9),81,By Birth,Masters,Service,5700,4,1,0,1,1,0,0,0,0,1,1,1,1,0,1,1,1,1,1
+410,Rangpur Region,SYEDPUR NIL.,Abdur Rouf Khan,73,By Birth,SSC,Pensioner,10900,6,1,1,1,1,1,0,0,0,0,1,1,0,1,1,1,1,1,0
+411,Rangpur Region,SYEDPUR NIL.,Bashir Uddin Ahmed (2),66,By Birth,Engineer,Service,47100,3,1,1,1,0,0,0,0,0,1,1,1,0,1,1,1,1,1,0
+412,Rangpur Region,SYEDPUR NIL.,Dr Sabir Ahmad (3),62,1995,BA,Service,38600,5,1,1,1,0,0,0,0,0,1,1,0,1,0,1,0,1,1,1
+413,Rangpur Region,SYEDPUR NIL.,Dr Salim Mohammad Shahjahan (4),66,By Birth,Doctor,Business,252200,2,1,1,1,1,1,0,0,1,1,1,1,1,0,1,0,0,0,0
+414,Rangpur Region,GAIBANDHA,Maksud Ahmad Roman,48,By Birth,SSC,Farmer,275600,1,1,1,1,1,0,0,0,1,0,1,1,1,0,1,1,1,0,1
+415,Rangpur Region,GAIBANDHA,Md Abdul Karim (2),66,1965,Degree,Pensioner,25400,3,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,0,1
+416,Rangpur Region,GAIBANDHA,Mohammad Fazlur Rahman (3),85,1971,Masters,Business,17400,3,1,1,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1
+417,Rangpur Region,GAIBANDHA,Syed Reyaz Ahmed (4),71,By Birth,Masters,Business,44100,5,1,0,1,1,0,0,0,1,1,1,1,1,0,1,1,1,1,0
+418,Rangpur Region,GAIBANDHA,Md. Mohiuddin Ahmed (5),69,By Birth,Masters,Retired,2200,5,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,1,1
+419,Rangpur Region,GAIBANDHA,Enamul Haque Rasel (6),46,By Birth,HSC,Service,49800,6,1,0,1,1,1,0,0,1,0,1,0,1,1,1,0,1,1,0
+420,Rangpur Region,GAIBANDHA,Mohammad Yeamin Natai (7),41,By Birth,SSC,Service,295700,3,1,0,1,1,1,1,1,1,0,0,0,1,0,1,1,1,1,1
+421,Rangpur Region,GAIBANDHA,Maolana Ahmed Sadek Mahmud (8),77,By Birth,Maolana,Retired,8800,5,1,1,1,1,1,0,0,1,1,0,0,1,1,1,1,1,1,1
+422,Rangpur Region,GAIBANDHA,Md Lutfor Rahman Dhali (9),53,By Birth,SSC,Retired,27700,5,1,1,1,1,1,1,0,1,1,1,1,1,0,0,1,1,1,1
+423,Rangpur Region,CHORAIKHOLA,Dr. Abdur Rashid,95,1973,SSC,Retired,1100,3,1,1,1,1,0,0,0,1,0,1,1,1,1,1,1,0,1,1
+424,Rangpur Region,CHORAIKHOLA,Muhammad Muhibur Rahman (2),71,By Birth,SSC,Retired,14000,4,1,1,1,1,1,1,0,0,1,1,1,1,0,1,1,1,1,0
+425,Rangpur Region,CHORAIKHOLA,Dr. Mojahid Uddin Ahmad (3),79,By Birth,PhD,Service,19200,4,1,1,0,1,1,1,0,1,1,0,0,1,0,1,1,1,1,1
+426,Rangpur Region,CHORAIKHOLA,Engr. Hafizur rahman (4),59,2006,Doctor,Retired,29500,2,1,1,1,1,0,0,0,1,1,1,1,1,0,0,1,1,1,0
+427,Rangpur Region,CHORAIKHOLA,Mozammel Haque (5),50,By Birth,Kamil,Farmer,23100,4,1,0,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1
+428,Rangpur Region,CHORAIKHOLA,Abdul Ajiz (6),73,By Birth,SSC,Business,2000,2,1,1,1,1,0,0,0,0,1,1,1,1,0,1,1,1,1,1
+429,Rangpur Region,TARAGONJ,Abdul Awal Master,70,By Birth,B.COM,Retired,16200,2,1,0,1,1,1,1,0,1,0,1,1,0,0,1,0,1,1,1
+430,Rangpur Region,TARAGONJ,Ehsanur Rahman (2),55,By Birth,HSC,Service,14200,6,1,1,1,1,1,0,0,1,0,0,0,1,0,1,1,1,1,1
+431,Rangpur Region,TARAGONJ,Mahbubur Rahman (3),50,By Birth,L.L.B,Retired,8100,8,1,0,1,1,1,0,0,1,1,1,1,1,0,0,1,1,1,1
+432,Rangpur Region,TARAGONJ,DR. Amin Ahmad (4),52,By Birth,I.COM,Business,43600,5,0,0,1,1,1,1,1,0,0,0,0,1,0,1,1,0,1,0
+433,Rangpur Region,TARAGONJ,Yaqub Laskar (5),57,By Birth,SSC,SERVICE,10600,4,1,1,1,1,1,1,1,0,0,1,0,0,0,0,1,1,1,1
+434,Khulna Saatkhira,KHULNA,Alhaj Nesar Ahmad,59,By Birth,HSC,Service,190100,7,1,1,1,1,1,0,0,1,1,1,0,1,0,1,0,1,0,1
+435,Khulna Saatkhira,KHULNA,M Arifuzzaman (2),56,By Birth,MBA,SERVICE,77800,5,1,0,1,1,1,1,0,0,1,0,0,1,1,1,0,1,1,1
+436,Khulna Saatkhira,KHULNA,Raza Rizwan Ahmad (3),48,By Birth,Degree,SERVICE,204900,3,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,0,0,1
+437,Khulna Saatkhira,KHULNA,SM Nosrullah (4),74,By Birth,BA,Service,32500,2,0,0,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1
+438,Khulna Saatkhira,KHULNA,DR. Rejaul Karim (5),60,By Birth,HSC,Business,21300,6,1,1,1,1,1,1,1,1,0,1,1,0,0,1,0,1,1,0
+439,Khulna Saatkhira,KHULNA,Maolana Bashirur Rahman (6),64,By Birth,Sahed P,Murubbi,28100,2,1,1,1,1,1,1,0,1,1,1,1,1,0,1,1,1,0,1
+440,Khulna Saatkhira,KHULNA,Khondokar Mahbubul Islam (7),69,By Birth,BA,Service,76300,4,1,1,1,1,1,0,0,0,1,1,1,0,1,1,1,1,1,0
+441,Khulna Saatkhira,KHULNA,Dr. Mahfuzar Rahman (8),60,By Birth,MBBS,Retired,54400,2,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,0,1
+442,Khulna Saatkhira,KHULNA,Md. Abdur Razzaq (9),69,By Birth,SSC,Service,100900,3,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1
+443,Khulna Saatkhira,JESSORE,Md. Ahsan Jamil,61,By Birth,BA,Service,136500,5,1,0,1,1,0,0,0,1,1,1,1,1,0,0,0,1,1,1
+444,Khulna Saatkhira,JESSORE,Ahmad Mollah (2),55,By Birth,BA,Labour,36400,5,1,0,1,1,1,0,0,0,1,1,0,1,0,1,1,1,1,0
+445,Khulna Saatkhira,JESSORE,Mojibar Rahman (3),70,By Birth,HSC,Farmer,14400,1,1,1,0,1,1,0,0,1,0,1,1,1,1,1,1,1,1,1
+446,Khulna Saatkhira,JESSORE,Md. Mamun Or Rasshid (4),55,By Birth,HSC,Business,34900,4,1,0,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0
+447,Khulna Saatkhira,JESSORE,Md. Haydar Ali (5),58,By Birth,SSC,Business,8300,5,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1
+448,Khulna Saatkhira,JESSORE,Mawlana Abu Bakar Siddik (6),78,By Birth,Kamil,Business,12000,3,1,1,1,1,1,1,0,1,1,1,1,1,0,1,1,0,1,1
+449,Khulna Saatkhira,JESSORE,Md. Lutfar Rahman Master (7),65,By Birth,MA,Service,50700,3,1,1,1,1,1,0,0,1,1,0,0,1,0,1,1,1,1,0
+450,Khulna Saatkhira,JESSORE,Md. Nazrul Islam (8),75,By Birth,SSC,Farmer,12800,1,1,0,1,1,1,0,0,1,1,1,1,1,0,1,1,1,0,1
+451,Khulna Saatkhira,ROGHUNATHPUR BUG,Muhammad Ismail,59,By Birth,LLB,Advocate,190100,5,1,0,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
+452,Khulna Saatkhira,ROGHUNATHPUR BUG,Hafizur Rahman (2),47,By Birth,HSC,Business,10900,5,1,1,1,1,1,1,1,1,1,0,0,1,1,1,0,1,1,1
+453,Khulna Saatkhira,ROGHUNATHPUR BUG,Tofazzol Hoassain (3),64,2015,BA,Service,28600,6,1,1,1,1,1,0,0,0,1,1,1,1,0,1,1,1,0,1
+454,Khulna Saatkhira,ROGHUNATHPUR BUG,Anwar Ahmad Choudhury (4),48,By Birth,BA,Service,20100,5,1,1,1,0,0,0,0,1,1,0,0,1,1,1,1,1,1,1
+455,Khulna Saatkhira,ROGHUNATHPUR BUG,Md. Iqbal Choudhury (5),63,By Birth,HSC,Service,103800,4,1,0,1,1,1,0,0,0,1,1,1,1,0,0,1,1,1,1
+456,Khulna Saatkhira,ROGHUNATHPUR BUG,Md. Samsur Rahman (6),48,By Birth,BCOM,Farmer,118400,4,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0
+457,Khulna Saatkhira,SHORPORAZPUR,Abdullah Ahamed,50,1996,MA,Service,70200,7,1,1,1,1,0,0,0,0,0,1,1,1,0,1,1,1,1,1
+458,Khulna Saatkhira,SHORPORAZPUR,Ishak Ali Mollah (2),67,By Birth,SSC,Service,8400,12,1,1,1,1,0,0,0,1,1,0,0,1,1,0,1,1,1,1
+459,Khulna Saatkhira,SHORPORAZPUR,Dr. Abdullah Shams Bin Tariq (3),46,By Birth,PhD,Service,106700,5,1,1,1,1,1,0,0,1,1,1,0,0,1,1,1,1,1,0
+460,Khulna Saatkhira,SHORPORAZPUR,Dr. Kamrullah Bin Tariq (4),40,By Birth,Degree,Farmer,119900,5,1,0,1,1,0,0,0,0,1,1,1,0,1,1,1,1,1,0
+461,Khulna Saatkhira,SHORPORAZPUR,GM Siraj Uddin (5),61,By Birth,BCOM,Service,179200,5,1,0,1,1,1,0,0,0,1,1,1,1,0,1,0,1,1,1
+462,Khulna Saatkhira,SHORPORAZPUR,Alhaj Md. Unus Ali (6),81,By Birth,BA,Retired,9200,2,1,1,1,1,0,0,0,1,0,1,0,1,1,0,1,1,1,1
+463,Khulna Saatkhira,SHORPORAZPUR,Md. Abdus Sattar (7),66,By Birth,BSC,Farmer,10700,6,0,0,1,1,1,0,0,0,1,1,1,1,0,1,1,1,1,1
+464,Khulna Saatkhira,SHORPORAZPUR,A K M Ataur Rahman (8),67,By Birth,HSC,Service,30100,4,1,0,1,1,0,0,0,1,1,1,1,1,1,1,0,0,1,1
+465,Khulna Saatkhira,SHORPORAZPUR,Abdullah Youshuf Mohd (9),68,1969,Masters,Retired,8900,2,0,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1
+466,Khulna Saatkhira,SUNDARBAN,Alaiuddin Ahmed,57,By Birth,SSC,Business,2000,7,0,0,1,1,0,0,0,1,1,1,0,1,0,1,1,1,1,1
+467,Khulna Saatkhira,SUNDARBAN,Abdur Rob Choudhury (2),83,1979,Masters,Retired,3300,3,0,0,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,0
+468,Khulna Saatkhira,SUNDARBAN,Abdur Rouf Khan (3),69,By Birth,8th,Service,13300,3,1,1,0,1,1,1,0,1,0,1,1,1,0,1,1,1,1,1
+469,Khulna Saatkhira,SUNDARBAN,Bashir Uddin Ahmed (4),69,By Birth,Engineer,Service,76300,6,1,1,1,1,1,0,0,0,0,1,1,1,0,1,1,1,1,0
+470,Khulna Saatkhira,VETKHALI,Dr Sabir Ahmad,58,By Birth,MA,Service,33400,6,1,1,1,1,0,0,0,0,1,1,1,1,1,1,0,1,0,1
+471,Khulna Saatkhira,VETKHALI,Dr Salim Mohammad Shahjahan (2),74,By Birth,Doctor,Business,293600,1,0,0,0,1,0,0,0,1,1,0,0,1,1,0,1,0,0,1
+472,Khulna Saatkhira,VETKHALI,Maksud Ahmad Roman (3),45,By Birth,Masters,Service,190500,3,1,0,1,1,1,0,0,1,1,1,0,1,1,1,1,1,0,1
+473,Khulna Saatkhira,VETKHALI,Md Abdul Karim (4),66,By Birth,Degree,Pensioner,33800,4,1,1,1,1,1,1,0,0,0,1,0,1,1,1,1,1,1,0
+474,Khulna Saatkhira,GHORILAL,Mohammad Fazlur Rahman,79,By Birth,Degree,Retired,26400,2,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,0,1,1
+475,Khulna Saatkhira,GHORILAL,Syed Reyaz Ahmed (2),78,By Birth,Masters,Retired,56900,2,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,0
+476,Khulna Saatkhira,GHORILAL,Md. Mohiuddin Ahmed (3),61,1966,Masters,Retired,1900,7,1,1,1,1,0,0,0,1,1,1,0,1,0,1,1,1,1,1
+477,Khulna Saatkhira,GHORILAL,Enamul Haque Rasel (4),50,1984,Masters,Service,63600,7,1,1,1,1,1,1,0,0,1,1,1,1,0,1,1,1,1,0
+478,Khulna Saatkhira,GHORILAL,Mohammad Yeamin Natai (5),49,1980,Masters,Service,163100,4,0,0,1,1,1,0,0,1,1,1,0,0,0,1,1,0,1,0
+479,Khulna Saatkhira,SAATKHIRA,Maolana Ahmed Sadek Mahmud,82,By Birth,Maolana,Retired,6300,4,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1
+480,Khulna Saatkhira,SAATKHIRA,Md Lutfor Rahman Dhali (2),54,By Birth,HSC,Business,28300,3,1,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1
+481,Khulna Saatkhira,SAATKHIRA,Dr. Abdur Rashid (3),95,By Birth,Masters,Retired,1100,1,1,0,1,0,0,0,0,1,1,0,0,1,1,1,1,1,1,1
+482,Khulna Saatkhira,SAATKHIRA,Muhammad Muhibur Rahman (4),70,By Birth,SSC,Retired,9600,6,1,1,1,1,1,0,0,0,1,1,1,1,0,1,1,1,1,1
+483,Khulna Saatkhira,SAATKHIRA,Dr. Mojahid Uddin Ahmad (5),80,1971,BA,Retired,23200,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,0,1,0
+484,Khulna Saatkhira,MIRGANG,Engr. Hafizur rahman,61,By Birth,Doctor,Doctor,36000,4,1,0,1,1,1,1,0,0,0,0,0,1,1,1,1,1,0,1
+485,Khulna Saatkhira,MIRGANG,Mozammel Haque (2),55,By Birth,Kamil,Farmer,25900,2,1,1,1,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1
+486,Khulna Saatkhira,MIRGANG,Abdul Ajiz (3),79,By Birth,5th,Farmer,1600,4,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,1,1,1
+487,Khulna Saatkhira,MIRGANG,Abdul Awal Master (4),76,By Birth,BA,Retired,27600,2,1,1,1,1,1,0,0,0,1,1,1,1,0,1,1,1,1,1
+488,Khulna Saatkhira,MIRGANG,Ehsanur Rahman (5),55,By Birth,8th,Farmer,21000,6,1,0,1,1,1,0,0,1,0,1,1,1,0,1,1,1,1,1
+489,Kustia Chuadanga,NASERABAAD,Mahbubur Rahman,54,By Birth,L.L.B,Law,8400,7,1,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1
+490,Kustia Chuadanga,NASERABAAD,DR. Amin Ahmad (2),54,By Birth,I.COM,Business,23700,7,1,1,1,1,0,0,0,1,1,1,1,1,0,1,1,1,0,1
+491,Kustia Chuadanga,NASERABAAD,Yaqub Laskar (3),65,By Birth,SSC,SERVICE,10500,3,1,1,1,1,1,0,0,0,0,0,0,1,0,1,1,1,1,1
+492,Kustia Chuadanga,NASERABAAD,Alhaj Nesar Ahmad (4),58,By Birth,HSC,BUSINESS,238800,5,1,1,0,0,0,0,0,1,1,1,1,0,0,1,1,1,1,1
+493,Kustia Chuadanga,NASERABAAD,M Arifuzzaman (5),52,By Birth,MBA,SERVICE,38800,7,1,1,0,1,1,1,0,1,0,1,1,1,1,1,1,1,0,0
+494,Kustia Chuadanga,NASERABAAD,Raza Rizwan Ahmad (6),50,By Birth,Degree,SERVICE,164300,6,1,1,1,1,1,1,0,0,0,0,0,1,0,1,1,1,1,1
+495,Kustia Chuadanga,NASERABAAD,SM Nosrullah (7),72,1997,BA,Service,20800,2,0,0,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1
+496,Kustia Chuadanga,UTTAR VOBANIPUR,DR. Rejaul Karim,63,2012,HSC,Business,15800,6,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1
+497,Kustia Chuadanga,UTTAR VOBANIPUR,Maolana Bashirur Rahman (2),63,By Birth,Sahed P,Murubbi,22200,2,1,0,1,0,0,0,0,1,1,1,1,1,0,1,1,1,1,1
+498,Kustia Chuadanga,UTTAR VOBANIPUR,Khondokar Mahbubul Islam (3),63,By Birth,Degree,Retired,37900,5,1,0,1,1,0,0,0,1,1,0,0,1,1,1,1,1,1,1
+499,Kustia Chuadanga,UTTAR VOBANIPUR,Dr. Mahfuzar Rahman (4),57,1997,MBBS,Retired,58800,2,1,0,1,1,1,1,0,1,1,0,0,1,1,1,0,1,1,1
+500,Kustia Chuadanga,UTTAR VOBANIPUR,Md. Abdur Razzaq (5),70,By Birth,SSC,Service,70500,4,1,1,1,1,0,0,0,1,0,0,0,1,0,1,1,1,1,0
+501,Kustia Chuadanga,UTTAR VOBANIPUR,Md. Ahsan Jamil (6),62,By Birth,BA,Service,93200,3,1,0,1,1,1,0,0,1,1,1,0,1,1,1,1,1,1,1
+502,Kustia Chuadanga,KUSTIA,Ahmad Mollah,55,By Birth,BA,Business,28500,7,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1
+503,Kustia Chuadanga,KUSTIA,Mojibar Rahman (2),66,By Birth,HSC,Farmer,11700,3,0,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1
+504,Kustia Chuadanga,KUSTIA,Md. Mamun Or Rasshid (3),55,By Birth,8th,Service,31000,4,1,0,1,1,0,0,0,0,1,1,1,1,0,1,1,1,0,0
+505,Kustia Chuadanga,KUSTIA,Md. Haydar Ali (4),58,1972,8th,Business,6900,3,1,0,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,1
+506,Kustia Chuadanga,KUSTIA,Mawlana Abu Bakar Siddik (5),82,By Birth,Kamil,Business,11800,1,1,0,1,1,1,1,1,1,0,1,1,1,0,0,0,1,0,0
+507,Kustia Chuadanga,KUSTIA,Md. Lutfar Rahman Master (6),56,By Birth,MA,Service,43600,4,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,0
+508,Kustia Chuadanga,KUSTIA,Md. Nazrul Islam (7),72,1973,BA,Business,9600,2,1,1,1,1,0,0,0,1,1,1,1,1,0,1,1,0,1,1
+509,Kustia Chuadanga,KUSTIA,Muhammad Ismail (8),57,2014,LLB,Farmer,268500,4,1,0,1,1,1,1,0,1,1,0,0,1,0,1,1,1,0,1
+510,Kustia Chuadanga,KUSTIA,Hafizur Rahman (9),44,By Birth,HSC,Service,15000,3,1,0,1,1,1,1,0,0,0,1,1,1,1,0,1,1,1,0
+511,Kustia Chuadanga,UTHULI,Tofazzol Hoassain,65,By Birth,BA,Service,26800,4,1,1,1,0,0,0,0,1,1,1,0,1,0,0,1,1,1,0
+512,Kustia Chuadanga,UTHULI,Anwar Ahmad Choudhury (2),48,1966,BA,Service,17900,6,1,1,1,1,0,0,0,1,1,1,1,1,0,1,1,1,1,1
+513,Kustia Chuadanga,UTHULI,Md. Iqbal Choudhury (3),58,1995,Masters,Service,106400,3,1,1,1,1,0,0,0,1,0,1,0,1,0,1,1,1,1,1
+514,Kustia Chuadanga,UTHULI,Md. Samsur Rahman (4),49,By Birth,BCOM,Farmer,135000,5,1,1,0,1,1,1,0,1,1,0,0,1,1,1,1,1,1,1
+515,Kustia Chuadanga,UTHULI,Abdullah Ahamed (5),53,By Birth,MA,Service,113400,6,1,0,1,1,1,1,0,1,0,0,0,1,0,1,0,1,1,1
+516,Kustia Chuadanga,UTHULI,Ishak Ali Mollah (6),71,By Birth,SSC,Labour,9200,10,1,0,1,1,1,1,0,1,0,1,1,1,0,0,1,1,1,1
+517,Kustia Chuadanga,CHUANDANGA,Dr. Abdullah Shams Bin Tariq,53,By Birth,HSC,Service,151600,4,1,0,1,1,1,1,0,1,1,1,1,1,0,1,1,0,1,1
+518,Kustia Chuadanga,CHUANDANGA,Dr. Kamrullah Bin Tariq (2),42,By Birth,PhD,Service,63700,4,1,1,1,1,0,0,0,1,1,1,0,1,1,1,1,1,1,0
+519,Kustia Chuadanga,CHUANDANGA,GM Siraj Uddin (3),63,By Birth,8th,Service,197200,6,1,1,1,0,0,0,0,1,1,1,1,1,0,1,1,1,1,1
+520,Kustia Chuadanga,CHUANDANGA,Alhaj Md. Unus Ali (4),83,By Birth,BA,Retired,13600,2,1,1,1,1,0,0,0,1,1,1,1,1,0,1,1,1,1,1
+521,Kustia Chuadanga,SHOILOMARI,Md. Abdus Sattar,73,By Birth,Masters,Business,9200,8,1,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,1,0
+522,Kustia Chuadanga,SHOILOMARI,A K M Ataur Rahman (2),70,By Birth,HSC,Retired,31700,6,1,1,1,1,1,0,0,0,1,1,1,1,0,1,1,1,1,1
+523,Kustia Chuadanga,SHOILOMARI,Abdullah Youshuf Mohd (3),65,By Birth,Masters,Retired,9900,4,1,1,1,0,0,0,0,0,1,1,0,1,1,1,1,1,1,1
+524,Kustia Chuadanga,SHOILOMARI,Alaiuddin Ahmed (4),53,By Birth,SSC,Business,2500,5,1,1,1,1,1,0,0,1,0,1,0,1,1,1,1,1,1,1
+525,Kustia Chuadanga,SHOILOMARI,Abdur Rob Choudhury (5),78,1990,SSC,Retired,5700,4,1,0,1,1,1,1,1,1,0,1,0,1,0,1,1,1,1,1
+526,Kustia Chuadanga,SHOILOMARI,Abdur Rouf Khan (6),71,2003,HSC,Pensioner,16400,4,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0
+527,Kustia Chuadanga,SHOILOMARI,Bashir Uddin Ahmed (7),69,1979,Engineer,Farmer,61500,6,0,0,1,1,1,1,1,1,1,1,0,1,0,1,1,0,1,1
+528,Kustia Chuadanga,SHOILOMARI,Dr Sabir Ahmad (8),62,By Birth,MA,Business,46300,4,1,1,1,1,1,0,0,0,1,1,1,1,0,1,1,1,1,1
+529,Kustia Chuadanga,BOTIAPARA,Dr Salim Mohammad Shahjahan,70,By Birth,Doctor,Service,257100,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1
+530,Kustia Chuadanga,BOTIAPARA,Maksud Ahmad Roman (2),51,1993,Masters,Service,162100,4,1,0,1,1,0,0,0,1,0,1,1,1,1,1,1,1,1,1
+531,Kustia Chuadanga,BOTIAPARA,Md Abdul Karim (3),64,By Birth,Degree,Pensioner,21600,5,0,0,1,1,1,0,0,1,1,1,0,1,1,1,1,1,1,1
+532,Kustia Chuadanga,BOTIAPARA,Mohammad Fazlur Rahman (4),77,By Birth,Degree,Retired,23600,3,0,0,1,1,1,0,0,1,1,0,0,1,0,1,1,1,1,0
+533,Kustia Chuadanga,BOTIAPARA,Syed Reyaz Ahmed (5),73,2004,Masters,Retired,29900,5,1,1,0,1,1,0,0,1,0,1,1,0,0,0,1,1,1,1
+534,Kustia Chuadanga,SHONTOSPUR,Md. Mohiuddin Ahmed,62,By Birth,Masters,Retired,1300,5,1,1,1,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1
+535,Kustia Chuadanga,SHONTOSPUR,Enamul Haque Rasel (2),45,By Birth,Masters,Business,59800,5,1,1,1,1,1,0,0,1,0,1,1,1,0,1,1,1,1,1
+536,Kustia Chuadanga,SHONTOSPUR,Mohammad Yeamin Natai (3),50,By Birth,Masters,Service,145900,3,1,1,1,1,1,0,0,1,0,1,1,1,1,1,1,0,0,0
+537,Kustia Chuadanga,SHONTOSPUR,Maolana Ahmed Sadek Mahmud (4),81,By Birth,Maolana,Retired,12900,5,1,1,1,0,0,0,0,1,0,1,1,1,1,1,1,0,1,0
+538,Kustia Chuadanga,SHONTOSPUR,Md Lutfor Rahman Dhali (5),48,By Birth,HSC,Business,23600,4,1,1,0,1,1,0,0,0,0,1,1,1,1,0,1,1,0,1
+539,Kustia Chuadanga,SHONTOSPUR,Dr. Abdur Rashid (6),95,By Birth,Doctor,Retired,1300,3,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1
+540,Kustia Chuadanga,SHONTOSPUR,Muhammad Muhibur Rahman (7),66,By Birth,SSC,Retired,11500,4,1,1,1,1,1,1,0,1,0,1,0,1,0,1,1,1,1,1
+541,Kustia Chuadanga,BAHADURPUR,Dr. Mojahid Uddin Ahmad,78,By Birth,PhD,Labour,19400,1,1,1,1,0,0,0,0,1,0,1,0,1,0,0,1,0,1,0
+542,Kustia Chuadanga,BAHADURPUR,Engr. Hafizur rahman (2),64,By Birth,Doctor,Labour,53400,2,1,1,0,0,0,0,0,0,1,1,0,1,1,0,1,1,1,0
+543,Kustia Chuadanga,BAHADURPUR,Mozammel Haque (3),54,1968,Kamil,Moallem,28500,2,1,1,1,1,1,0,0,0,0,1,0,1,1,1,0,1,1,0
+544,Kustia Chuadanga,BAHADURPUR,Abdul Ajiz (4),76,By Birth,5th,Service,2400,1,1,0,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1
+545,Kustia Chuadanga,BAHADURPUR,Abdul Awal Master (5),70,By Birth,Degree,Retired,30700,2,1,0,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1
+546,Kustia Chuadanga,BAHADURPUR,Ehsanur Rahman (6),61,By Birth,8th,Service,23400,4,1,1,1,1,1,1,1,1,0,1,1,1,0,1,1,1,1,0
+547,Kustia Chuadanga,BAHADURPUR,Mahbubur Rahman (7),48,By Birth,L.L.B,Law,8500,8,0,0,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1
+548,Borishal Patuakhali,BORISHAL,DR. Amin Ahmad,56,By Birth,I.COM,Business,21900,4,1,0,0,1,0,0,0,1,0,1,0,1,0,1,1,1,1,1
+549,Borishal Patuakhali,BORISHAL,Yaqub Laskar (2),57,By Birth,SSC,SERVICE,10100,3,1,0,1,1,1,1,1,0,1,1,0,1,1,0,0,1,1,1
+550,Borishal Patuakhali,BORISHAL,Alhaj Nesar Ahmad (3),58,By Birth,HSC,BUSINESS,242000,5,1,0,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,0
+551,Borishal Patuakhali,BORISHAL,M Arifuzzaman (4),56,By Birth,MBA,SERVICE,39900,7,0,0,1,1,0,0,0,1,0,1,1,1,0,1,0,1,1,1
+552,Borishal Patuakhali,BORISHAL,Raza Rizwan Ahmad (5),46,By Birth,Degree,SERVICE,112900,3,0,0,1,1,1,0,0,1,1,1,0,1,1,1,1,1,1,1
+553,Borishal Patuakhali,BORISHAL,SM Nosrullah (6),73,2011,BA,Service,24700,3,0,0,1,1,1,1,1,1,0,0,0,1,0,1,0,1,1,0
+554,Borishal Patuakhali,BORISHAL,DR. Rejaul Karim (7),55,1970,HSC,Business,21200,5,1,1,1,1,1,1,0,0,1,0,0,1,0,0,1,0,1,0
+555,Borishal Patuakhali,BORISHAL,Maolana Bashirur Rahman (8),61,1985,Sahed P,Murubbi,24500,3,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,0,1
+556,Borishal Patuakhali,PATUAKHALI,Khondokar Mahbubul Islam,62,By Birth,BA,Retired,50200,6,1,0,1,1,1,1,1,1,0,1,0,0,0,1,1,1,0,1
+557,Borishal Patuakhali,PATUAKHALI,Dr. Mahfuzar Rahman (2),54,By Birth,MBBS,Retired,51200,4,1,1,1,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1
+558,Borishal Patuakhali,PATUAKHALI,Md. Abdur Razzaq (3),68,1995,SSC,Service,115700,6,1,1,1,1,1,1,1,1,0,1,0,1,0,1,1,1,1,0
+559,Borishal Patuakhali,PATUAKHALI,Md. Ahsan Jamil (4),59,1984,HSC,Retired,90800,5,1,1,1,1,1,0,0,1,0,1,0,1,0,1,1,1,1,1
+560,Borishal Patuakhali,PATUAKHALI,Ahmad Mollah (5),56,By Birth,Degree,Business,38300,5,1,1,1,1,1,0,0,1,1,0,0,1,0,1,1,1,1,1
+561,Borishal Patuakhali,KHAKDAN,Mojibar Rahman,70,By Birth,HSC,Retired,12100,2,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1
+562,Borishal Patuakhali,KHAKDAN,Md. Mamun Or Rasshid (2),52,2003,Masters,Service,59100,6,1,1,1,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1
+563,Borishal Patuakhali,KHAKDAN,Md. Haydar Ali (3),57,By Birth,Degree,Service,6100,4,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1
+564,Borishal Patuakhali,KHAKDAN,Mawlana Abu Bakar Siddik (4),76,By Birth,Kamil,Labour,11500,2,1,1,0,0,0,0,0,1,1,0,0,1,0,0,1,1,1,1
+565,Borishal Patuakhali,KHAKDAN,Md. Lutfar Rahman Master (5),65,By Birth,8th,Service,24600,3,1,1,1,1,0,0,0,0,0,1,0,1,0,0,1,0,1,0
+566,Borishal Patuakhali,KHAKDAN,Md. Nazrul Islam (6),78,By Birth,SSC,Business,8000,2,1,0,1,1,0,0,0,1,1,0,0,1,0,0,1,1,1,1
+567,Borishal Patuakhali,KHAKDAN,Muhammad Ismail (7),54,By Birth,LLB,Advocate,183300,5,1,1,1,1,0,0,0,1,0,1,0,1,1,1,1,1,1,1
+568,Borishal Patuakhali,KUKUA,Hafizur Rahman,47,By Birth,8th,Business,13600,4,1,0,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1
+569,Borishal Patuakhali,KUKUA,Tofazzol Hoassain (2),68,By Birth,BA,Service,41800,6,1,0,1,1,1,0,0,1,0,1,0,1,0,1,1,1,1,1
+570,Borishal Patuakhali,KUKUA,Anwar Ahmad Choudhury (3),52,2014,BA,Service,13200,3,1,1,1,1,1,1,0,1,1,0,0,0,0,1,1,1,0,1
+571,Borishal Patuakhali,KUKUA,Md. Iqbal Choudhury (4),53,1990,BSC,Service,64800,4,0,0,1,1,1,1,1,0,0,1,1,1,1,1,0,1,0,1
+572,Borishal Patuakhali,KUKUA,Md. Samsur Rahman (5),52,By Birth,BCOM,Retired,151700,6,1,0,1,1,1,1,1,1,0,1,1,1,0,1,1,1,0,1
+573,Borishal Patuakhali,KUKUA,Abdullah Ahamed (6),57,By Birth,MA,Service,78500,4,1,0,1,1,1,0,0,1,1,1,1,1,0,1,1,1,1,0
+574,Borishal Patuakhali,KUKUA,Ishak Ali Mollah (7),71,By Birth,SSC,Service,13600,9,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,0
+575,Borishal Patuakhali,KUKUA,Dr. Abdullah Shams Bin Tariq (8),48,By Birth,PhD,Service,151000,4,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0
+576,Borishal Patuakhali,KUKUA,Dr. Kamrullah Bin Tariq (9),46,By Birth,PhD,Service,78000,5,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,0
+577,Borishal Patuakhali,KAUNIA,GM Siraj Uddin,59,By Birth,BCOM,Service,98000,6,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,0,1,0
+578,Borishal Patuakhali,KAUNIA,Alhaj Md. Unus Ali (2),86,By Birth,BA,Retired,14000,3,1,1,1,1,1,1,0,0,0,1,1,1,0,1,1,1,1,1
+579,Borishal Patuakhali,KAUNIA,Md. Abdus Sattar (3),73,By Birth,Masters,Service,9600,5,1,1,1,1,1,0,0,1,1,0,0,1,1,1,1,1,1,1
+580,Borishal Patuakhali,KAUNIA,A K M Ataur Rahman (4),62,By Birth,HSC,Service,16500,6,1,0,1,1,1,1,0,0,0,1,1,1,0,1,1,0,0,1
+581,Borishal Patuakhali,KAUNIA,Abdullah Youshuf Mohd (5),73,1966,Masters,Retired,11500,1,1,1,1,1,1,0,0,1,1,0,0,1,1,1,1,1,1,1
+582,Borishal Patuakhali,KRISHNANAGOR,Alaiuddin Ahmed,54,By Birth,SSC,Business,1900,7,1,1,1,1,1,0,0,0,0,1,1,1,0,1,0,1,1,1
+583,Borishal Patuakhali,KRISHNANAGOR,Abdur Rob Choudhury (2),77,By Birth,Masters,Retired,6200,3,1,1,1,1,1,1,1,0,1,1,0,1,0,1,0,1,1,1
+584,Borishal Patuakhali,KRISHNANAGOR,Abdur Rouf Khan (3),69,By Birth,HSC,Pensioner,16300,3,1,1,0,1,1,0,0,1,1,1,0,1,1,1,1,1,1,1
+585,Borishal Patuakhali,KRISHNANAGOR,Bashir Uddin Ahmed (4),60,By Birth,Engineer,Business,62900,4,1,0,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1
+586,Borishal Patuakhali,KRISHNANAGOR,Dr Sabir Ahmad (5),64,By Birth,BA,Retired,76300,4,1,0,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1
+587,Borishal Patuakhali,BOROBAISHDIA,Dr Salim Mohammad Shahjahan,69,By Birth,Degree,Business,310200,2,1,1,1,0,0,0,0,1,0,1,1,1,0,1,1,1,1,1
+588,Borishal Patuakhali,BOROBAISHDIA,Maksud Ahmad Roman (2),49,By Birth,Masters,Labour,144600,1,1,1,1,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1
+589,Borishal Patuakhali,BOROBAISHDIA,Md Abdul Karim (3),69,By Birth,Masters,Pensioner,17300,3,0,0,1,1,0,0,0,0,0,1,0,1,1,1,0,1,0,0
+590,Borishal Patuakhali,BOROBAISHDIA,Mohammad Fazlur Rahman (4),79,By Birth,HSC,Labour,21600,3,1,1,1,0,0,0,0,1,1,0,0,1,0,1,0,1,1,1
+591,Borishal Patuakhali,BOROBAISHDIA,Syed Reyaz Ahmed (5),77,By Birth,HSC,Retired,34900,5,1,1,1,1,0,0,0,1,1,1,1,1,0,1,1,1,1,1
+592,Kishorgonj Region,TEROGATI,Md. Mohiuddin Ahmed,60,By Birth,Masters,Retired,1800,6,1,1,1,1,1,0,0,1,1,1,1,1,0,1,1,1,1,0
+593,Kishorgonj Region,TEROGATI,Enamul Haque Rasel (2),50,By Birth,Masters,Service,63000,4,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1
+594,Kishorgonj Region,TEROGATI,Mohammad Yeamin Natai (3),40,By Birth,Masters,Service,259800,3,1,0,1,1,1,1,0,0,0,1,1,1,0,1,0,1,1,1
+595,Kishorgonj Region,TEROGATI,Maolana Ahmed Sadek Mahmud (4),74,By Birth,Masters,Retired,13800,4,0,0,1,1,0,0,0,1,0,1,1,1,1,1,1,1,1,1
+596,Kishorgonj Region,TEROGATI,Md Lutfor Rahman Dhali (5),50,1983,HSC,Business,15400,3,1,0,1,1,0,0,0,1,0,1,1,1,1,1,1,1,0,1
+597,Kishorgonj Region,TEROGATI,Dr. Abdur Rashid (6),95,By Birth,Doctor,Retired,1200,3,1,1,1,1,1,1,1,1,0,1,0,1,0,0,0,1,1,0
+598,Kishorgonj Region,TEROGATI,Muhammad Muhibur Rahman (7),72,1968,SSC,Retired,11900,4,1,0,1,1,1,1,1,0,1,1,0,1,1,1,1,1,1,0
+599,Kishorgonj Region,BIRPIEKSHA,Dr. Mojahid Uddin Ahmad,76,2012,PhD,Professor,20000,1,1,1,1,1,0,0,0,0,1,1,0,1,1,0,1,1,1,0
+600,Kishorgonj Region,BIRPIEKSHA,Engr. Hafizur rahman (2),67,1974,SSC,Doctor,48500,3,0,0,1,1,1,1,0,0,1,0,0,1,0,1,0,1,1,1
+601,Kishorgonj Region,BIRPIEKSHA,Mozammel Haque (3),55,By Birth,Kamil,Moallem,26000,4,0,0,1,1,1,0,0,0,0,0,0,1,0,1,1,1,1,1
+602,Kishorgonj Region,BIRPIEKSHA,Abdul Ajiz (4),73,By Birth,SSC,Business,1600,4,1,0,1,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1
+603,Kishorgonj Region,BIRPIEKSHA,Abdul Awal Master (5),73,1980,B.COM,Retired,27900,3,1,1,1,1,1,0,0,1,0,1,1,0,1,1,1,1,1,1
+604,Kishorgonj Region,KOTIADI,Ehsanur Rahman,57,By Birth,HSC,Service,20000,6,1,1,1,0,0,0,0,0,1,1,0,1,1,1,1,1,1,0
+605,Kishorgonj Region,KOTIADI,Mahbubur Rahman (2),47,By Birth,L.L.B,Law,12500,8,1,1,1,1,1,0,0,0,0,1,0,1,1,0,1,1,0,1
+606,Kishorgonj Region,KOTIADI,DR. Amin Ahmad (3),57,By Birth,SSC,Service,21900,6,1,1,1,1,1,1,0,1,0,0,0,1,1,1,1,1,1,1
+607,Kishorgonj Region,KOTIADI,Yaqub Laskar (4),56,By Birth,BA,SERVICE,14200,4,0,0,1,1,0,0,0,1,1,1,0,1,0,1,1,1,1,1
+608,Kishorgonj Region,KOTIADI,Alhaj Nesar Ahmad (5),59,By Birth,HSC,BUSINESS,224200,5,1,1,1,1,1,1,0,0,1,0,0,1,0,1,1,1,1,0
+609,Kishorgonj Region,KOTIADI,M Arifuzzaman (6),58,By Birth,Degree,SERVICE,68200,6,1,0,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1
+610,Kishorgonj Region,KOTIADI,Raza Rizwan Ahmad (7),51,1976,BSC,SERVICE,203300,6,1,1,1,1,0,0,0,1,0,1,0,1,0,0,1,1,1,1
+611,Kishorgonj Region,BHAIRAB BAZAR,SM Nosrullah,68,By Birth,BA,Service,29200,3,1,0,1,1,0,0,0,0,1,1,1,1,0,1,1,1,1,1
+612,Kishorgonj Region,BHAIRAB BAZAR,DR. Rejaul Karim (2),55,2002,HSC,Business,16600,8,0,0,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,0
+613,Kishorgonj Region,BHAIRAB BAZAR,Maolana Bashirur Rahman (3),59,By Birth,Sahed P,Service,15800,5,1,0,0,0,0,0,0,1,1,1,1,0,1,1,1,1,1,1
+614,Kishorgonj Region,BHAIRAB BAZAR,Khondokar Mahbubul Islam (4),69,By Birth,Degree,Retired,73400,4,1,1,1,1,1,0,0,1,0,1,1,1,1,1,1,1,1,0
+615,Kishorgonj Region,BHAIRAB BAZAR,Dr. Mahfuzar Rahman (5),56,By Birth,MBBS,Retired,49800,2,0,0,1,1,1,1,0,1,1,1,0,1,0,1,1,1,1,1
+616,Kishorgonj Region,BHAIRAB BAZAR,Md. Abdur Razzaq (6),64,By Birth,SSC,Service,76400,4,1,0,0,1,1,1,0,0,0,0,0,1,0,1,1,1,0,1
+617,Kishorgonj Region,BHAIRAB BAZAR,Md. Ahsan Jamil (7),63,1987,8th,Service,115200,4,1,1,1,1,0,0,0,1,0,1,1,1,1,1,1,1,0,1
+618,Kishorgonj Region,GALIMGAZI,Ahmad Mollah,56,By Birth,BA,Business,32600,5,1,1,0,1,1,1,0,0,1,1,1,1,1,0,1,1,1,1
+619,Kishorgonj Region,GALIMGAZI,Mojibar Rahman (2),67,1981,BA,Retired,19500,3,1,1,1,1,1,1,0,1,1,1,0,1,0,0,1,1,1,0
+620,Kishorgonj Region,GALIMGAZI,Md. Mamun Or Rasshid (3),53,By Birth,HSC,Labour,36900,4,1,0,1,1,1,1,1,1,1,1,1,1,0,1,1,0,1,1
+621,Kishorgonj Region,GALIMGAZI,Md. Haydar Ali (4),52,By Birth,SSC,Business,8100,2,0,0,1,1,1,1,0,1,1,1,0,1,1,1,1,1,0,0
+622,Kishorgonj Region,BETAL,Mawlana Abu Bakar Siddik,82,By Birth,Kamil,Business,7200,3,1,1,1,1,0,0,0,1,1,1,1,1,0,1,1,1,1,1
+623,Kishorgonj Region,BETAL,Md. Lutfar Rahman Master (2),61,1972,8th,Service,53900,6,1,1,1,1,1,1,1,0,1,1,0,0,0,1,1,1,0,0
+624,Kishorgonj Region,BETAL,Md. Nazrul Islam (3),72,By Birth,SSC,Business,11400,2,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1
+625,Kishorgonj Region,BETAL,Muhammad Ismail (4),55,By Birth,LLB,Business,239700,5,1,0,1,1,0,0,0,1,1,1,0,1,0,1,1,1,1,1
+626,Kishorgonj Region,BETAL,Hafizur Rahman (5),45,By Birth,HSC,Service,16700,6,1,1,1,1,0,0,0,1,1,1,1,1,1,1,0,1,1,0
+627,Kishorgonj Region,BOIRAGIRCHOR,Tofazzol Hoassain,74,By Birth,BA,Service,33900,5,1,1,0,1,1,1,1,1,0,0,0,1,0,1,1,1,1,1
+628,Kishorgonj Region,BOIRAGIRCHOR,Anwar Ahmad Choudhury (2),54,By Birth,BA,Service,18000,4,1,1,1,1,1,1,0,1,1,1,0,1,0,1,1,1,1,0
+629,Kishorgonj Region,BOIRAGIRCHOR,Md. Iqbal Choudhury (3),61,By Birth,BSC,Service,61900,3,0,0,0,1,0,0,0,0,1,1,0,1,0,1,1,1,1,1
+630,Kishorgonj Region,BOIRAGIRCHOR,Md. Samsur Rahman (4),42,By Birth,BCOM,Service,135100,3,1,1,1,1,1,0,0,1,0,1,0,1,1,1,1,1,1,1
+631,Kishorgonj Region,BOIRAGIRCHOR,Abdullah Ahamed (5),59,By Birth,HSC,Service,78700,4,1,0,1,1,1,1,0,0,0,1,0,1,1,1,1,1,0,1
+632,JAMALPUR-TANGAIL,SENGUA,Ishak Ali Mollah,66,By Birth,SSC,Service,11400,12,0,0,1,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1
+633,JAMALPUR-TANGAIL,SENGUA,Dr. Abdullah Shams Bin Tariq (2),52,By Birth,8th,Service,126400,7,1,1,1,1,1,0,0,1,1,0,0,1,0,1,1,1,0,1
+634,JAMALPUR-TANGAIL,SENGUA,Dr. Kamrullah Bin Tariq (3),43,1981,PhD,Service,128500,5,1,1,1,1,0,0,0,0,1,1,0,0,1,1,0,1,0,1
+635,JAMALPUR-TANGAIL,SENGUA,GM Siraj Uddin (4),62,By Birth,BCOM,Service,95200,6,1,0,1,1,1,1,1,0,1,1,1,1,0,1,1,0,1,1
+636,JAMALPUR-TANGAIL,KOYRA,Alhaj Md. Unus Ali,80,By Birth,BA,Retired,10000,2,1,1,1,0,0,0,0,0,1,0,0,1,0,1,1,1,1,1
+637,JAMALPUR-TANGAIL,KOYRA,Md. Abdus Sattar (2),71,1968,BSC,Labour,10000,7,1,0,1,1,1,1,0,1,0,0,0,1,0,1,1,1,1,1
+638,JAMALPUR-TANGAIL,KOYRA,A K M Ataur Rahman (3),61,By Birth,HSC,Service,22500,5,0,0,1,1,0,0,0,1,0,1,1,1,1,1,0,1,1,1
+639,JAMALPUR-TANGAIL,KOYRA,Abdullah Youshuf Mohd (4),72,By Birth,Masters,Retired,6400,2,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
+640,JAMALPUR-TANGAIL,KOYRA,Alaiuddin Ahmed (5),61,By Birth,SSC,Farmer,2700,6,1,1,1,1,0,0,0,1,0,1,1,1,1,1,1,1,1,1
+641,JAMALPUR-TANGAIL,KOYRA,Abdur Rob Choudhury (6),85,By Birth,Masters,Retired,3600,3,1,1,1,1,1,0,0,0,1,1,1,0,0,1,1,1,1,1
+642,JAMALPUR-TANGAIL,KOYRA,Abdur Rouf Khan (7),66,By Birth,HSC,Pensioner,12100,4,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1
+643,JAMALPUR-TANGAIL,KOYRA,Bashir Uddin Ahmed (8),67,By Birth,Engineer,Service,75800,5,1,1,1,1,0,0,0,1,0,1,0,1,0,1,1,1,1,1
+644,JAMALPUR-TANGAIL,KOYRA,Dr Sabir Ahmad (9),60,1969,MA,Service,68900,4,0,0,1,1,1,1,0,0,1,1,0,1,0,1,1,1,0,1
+645,JAMALPUR-TANGAIL,SHORISABARI,Dr Salim Mohammad Shahjahan,74,2009,Doctor,Business,410800,3,0,0,1,1,1,1,1,0,1,1,0,1,1,1,1,1,1,1
+646,JAMALPUR-TANGAIL,SHORISABARI,Maksud Ahmad Roman (2),48,By Birth,Masters,Service,219500,3,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,0
+647,JAMALPUR-TANGAIL,SHORISABARI,Md Abdul Karim (3),63,By Birth,Degree,Pensioner,31700,3,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1
+648,JAMALPUR-TANGAIL,SHORISABARI,Mohammad Fazlur Rahman (4),80,By Birth,Degree,Retired,17300,4,1,1,1,1,1,0,0,1,1,1,1,1,1,0,1,1,1,1
+649,JAMALPUR-TANGAIL,BAKSHIGONJ,Syed Reyaz Ahmed,76,By Birth,Masters,Service,30500,3,1,0,1,0,0,0,0,1,1,1,0,1,0,1,1,1,1,1
+650,JAMALPUR-TANGAIL,BAKSHIGONJ,Md. Mohiuddin Ahmed (2),60,By Birth,BA,Retired,1200,7,1,1,1,1,1,1,1,1,0,1,1,1,0,1,1,0,1,1
+651,JAMALPUR-TANGAIL,BAKSHIGONJ,Enamul Haque Rasel (3),52,By Birth,Masters,Service,49700,5,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1
+652,JAMALPUR-TANGAIL,BAKSHIGONJ,Mohammad Yeamin Natai (4),50,By Birth,Masters,Service,207400,5,0,0,1,1,1,1,0,1,0,1,1,1,1,1,1,1,0,1
+653,JAMALPUR-TANGAIL,JAMALPUR NOWAPARA,Maolana Ahmed Sadek Mahmud,76,By Birth,Maolana,Retired,9900,3,1,1,1,1,1,0,0,1,1,0,0,1,1,1,1,1,1,0
+654,JAMALPUR-TANGAIL,JAMALPUR NOWAPARA,Md Lutfor Rahman Dhali (2),57,By Birth,HSC,Business,32900,4,1,1,0,1,1,0,0,1,1,1,1,1,1,1,0,1,1,1
+655,JAMALPUR-TANGAIL,JAMALPUR NOWAPARA,Dr. Abdur Rashid (3),95,1977,Doctor,Retired,1000,3,1,1,1,1,0,0,0,1,1,0,0,1,1,1,1,1,1,1
+656,JAMALPUR-TANGAIL,JAMALPUR NOWAPARA,Muhammad Muhibur Rahman (4),70,1970,SSC,Labour,17300,5,1,0,1,1,1,0,0,1,0,1,1,1,1,1,1,0,1,1
+657,JAMALPUR-TANGAIL,JAMALPUR NOWAPARA,Dr. Mojahid Uddin Ahmad (5),84,By Birth,8th,Professor,33000,1,0,0,0,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1
+658,JAMALPUR-TANGAIL,HOSNABAAD,Engr. Hafizur rahman,64,2009,BA,Retired,41900,3,1,0,1,1,1,1,0,0,0,0,0,1,1,1,1,1,1,0
+659,JAMALPUR-TANGAIL,HOSNABAAD,Mozammel Haque (2),58,By Birth,BA,Labour,25000,4,0,0,1,1,0,0,0,1,1,1,1,1,0,1,1,1,0,0
+660,JAMALPUR-TANGAIL,HOSNABAAD,Abdul Ajiz (3),72,By Birth,5th,Service,1200,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,0
+661,JAMALPUR-TANGAIL,HOSNABAAD,Abdul Awal Master (4),68,By Birth,Masters,Business,30300,1,1,0,0,1,1,1,0,1,1,1,1,1,0,1,0,1,1,1
+662,JAMALPUR-TANGAIL,CHONOTIA,Ehsanur Rahman,63,By Birth,HSC,Service,16100,6,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,0,0
+663,JAMALPUR-TANGAIL,CHONOTIA,Mahbubur Rahman (2),46,1979,L.L.B,Law,9300,8,1,1,1,1,0,0,0,1,1,1,1,1,1,0,1,1,0,1
+664,JAMALPUR-TANGAIL,CHONOTIA,DR. Amin Ahmad (3),57,By Birth,I.COM,Business,23400,7,1,1,0,1,1,1,1,1,0,0,0,1,1,0,1,1,1,1
+665,JAMALPUR-TANGAIL,CHONOTIA,Yaqub Laskar (4),55,By Birth,SSC,SERVICE,16000,3,1,1,1,1,0,0,0,0,1,0,0,1,0,1,1,1,1,1
+666,JAMALPUR-TANGAIL,CHONOTIA,Alhaj Nesar Ahmad (5),53,By Birth,HSC,Service,150900,6,1,1,1,0,0,0,0,0,0,1,1,1,1,0,1,0,1,0
+667,JAMALPUR-TANGAIL,CHONOTIA,M Arifuzzaman (6),59,By Birth,MBA,Service,37200,7,1,1,1,0,0,0,0,1,1,1,1,1,0,1,1,1,1,0
+668,JAMALPUR-TANGAIL,CHONOTIA,Raza Rizwan Ahmad (7),51,1999,BSC,Business,209500,5,1,0,1,1,1,0,0,1,1,1,1,1,0,1,1,1,0,1
+669,JAMALPUR-TANGAIL,CHONOTIA,SM Nosrullah (8),70,1977,BA,Service,22400,3,1,1,1,1,0,0,0,1,1,0,0,1,1,1,1,1,1,1
+670,JAMALPUR-TANGAIL,RANGTIA,DR. Rejaul Karim,64,By Birth,HSC,Business,11700,5,1,1,1,1,1,1,0,1,0,1,0,1,0,1,1,1,1,0
+671,JAMALPUR-TANGAIL,RANGTIA,Maolana Bashirur Rahman (2),63,By Birth,Degree,Murubbi,22300,5,1,1,1,1,0,0,0,1,1,1,1,1,0,1,1,1,1,1
+672,JAMALPUR-TANGAIL,RANGTIA,Khondokar Mahbubul Islam (3),61,By Birth,BA,Retired,43900,4,1,1,1,1,0,0,0,1,0,1,1,1,0,1,1,1,1,1
+673,JAMALPUR-TANGAIL,RANGTIA,Dr. Mahfuzar Rahman (4),61,By Birth,MBBS,Retired,40600,5,1,1,0,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1
+674,JAMALPUR-TANGAIL,RANGTIA,Md. Abdur Razzaq (5),71,By Birth,Degree,Service,101300,3,1,0,1,1,1,0,0,0,0,1,1,1,0,0,1,1,1,1
+675,JAMALPUR-TANGAIL,RANGTIA,Md. Ahsan Jamil (6),64,1965,HSC,Farmer,126000,5,1,1,1,1,1,0,0,1,1,0,0,1,1,1,1,1,1,1
+676,JAMALPUR-TANGAIL,RANGTIA,Ahmad Mollah (7),46,By Birth,BA,Business,27400,6,0,0,1,1,1,1,0,1,0,1,1,1,0,1,1,1,1,1
+677,JAMALPUR-TANGAIL,RANGTIA,Mojibar Rahman (8),74,By Birth,HSC,Retired,14900,4,0,0,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1
+678,JAMALPUR-TANGAIL,BANIAJAAN,Md. Mamun Or Rasshid,56,By Birth,HSC,Service,59800,4,1,0,0,1,0,0,0,1,0,1,0,1,0,0,1,1,1,1
+679,JAMALPUR-TANGAIL,BANIAJAAN,Md. Haydar Ali (2),48,By Birth,SSC,Business,5500,2,1,0,1,1,1,0,0,1,1,1,0,1,1,0,1,0,1,1
+680,JAMALPUR-TANGAIL,BANIAJAAN,Mawlana Abu Bakar Siddik (3),78,2001,Kamil,Business,14200,4,0,0,1,1,1,1,0,1,0,1,1,1,1,1,1,1,0,0
+681,JAMALPUR-TANGAIL,BANIAJAAN,Md. Lutfar Rahman Master (4),64,By Birth,Masters,Service,53200,6,1,1,1,1,0,0,0,1,0,0,0,1,1,1,1,1,1,1
+682,Syl- S.gonj Region,CHADPUR CHABAGAN,Md. Nazrul Islam,73,1969,SSC,Business,14200,4,1,1,1,1,1,0,0,0,1,1,1,1,0,1,1,1,1,0
+683,Syl- S.gonj Region,CHADPUR CHABAGAN,Muhammad Ismail (2),51,1977,HSC,Advocate,215300,6,1,0,1,1,0,0,0,1,1,1,0,0,1,1,1,1,1,1
+684,Syl- S.gonj Region,CHADPUR CHABAGAN,Hafizur Rahman (3),40,By Birth,SSC,Labour,14800,6,1,1,1,1,0,0,0,1,1,1,1,1,1,1,0,1,1,1
+685,Syl- S.gonj Region,CHADPUR CHABAGAN,Tofazzol Hoassain (4),67,1984,BA,Retired,35700,6,0,0,0,1,0,0,0,0,1,1,1,0,0,1,1,1,1,1
+686,Syl- S.gonj Region,CHADPUR CHABAGAN,Anwar Ahmad Choudhury (5),48,By Birth,BA,Service,23700,4,0,0,1,1,1,1,0,1,1,1,0,1,1,1,1,1,1,1
+687,Syl- S.gonj Region,CHADPUR CHABAGAN,Md. Iqbal Choudhury (6),59,By Birth,BSC,Service,51400,3,0,0,1,0,0,0,0,1,0,1,0,1,0,1,1,1,1,1
+688,Syl- S.gonj Region,CHADPUR CHABAGAN,Md. Samsur Rahman (7),45,By Birth,8th,Retired,104300,3,1,1,1,1,1,0,0,1,0,0,0,1,1,1,1,1,1,0
+689,Syl- S.gonj Region,JAMALPUR HOBI,Abdullah Ahamed,51,By Birth,MA,Service,61300,5,1,1,1,1,1,0,0,1,1,1,0,1,1,1,1,1,0,0
+690,Syl- S.gonj Region,JAMALPUR HOBI,Ishak Ali Mollah (2),65,By Birth,HSC,Service,8800,11,1,1,1,1,1,0,0,0,1,0,0,1,0,0,1,1,1,1
+691,Syl- S.gonj Region,JAMALPUR HOBI,Dr. Abdullah Shams Bin Tariq (3),47,1988,PhD,Business,113300,4,1,0,1,1,1,0,0,1,1,0,0,1,1,0,1,1,0,0
+692,Syl- S.gonj Region,JAMALPUR HOBI,Dr. Kamrullah Bin Tariq (4),46,By Birth,PhD,Service,121400,5,1,1,1,0,0,0,0,1,1,1,1,1,0,1,1,0,1,1
+693,Syl- S.gonj Region,JAMALPUR HOBI,GM Siraj Uddin (5),58,1966,SSC,Service,185600,3,0,0,0,1,1,1,0,1,1,0,0,1,0,1,1,1,1,1
+694,Syl- S.gonj Region,BORO CHOR,Alhaj Md. Unus Ali,81,1966,BA,Retired,14500,2,1,1,1,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0
+695,Syl- S.gonj Region,BORO CHOR,Md. Abdus Sattar (2),75,By Birth,BSC,Retired,11500,7,1,1,1,1,0,0,0,1,0,1,1,1,1,1,1,1,1,1
+696,Syl- S.gonj Region,BORO CHOR,A K M Ataur Rahman (3),67,1981,HSC,Labour,16200,4,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,1,1
+697,Syl- S.gonj Region,BORO CHOR,Abdullah Youshuf Mohd (4),64,By Birth,Degree,Service,10300,1,1,1,1,1,1,1,0,1,1,1,0,1,1,0,1,1,1,1
+698,Syl- S.gonj Region,BORO CHOR,Alaiuddin Ahmed (5),62,By Birth,SSC,Business,1500,5,1,1,1,1,1,1,0,1,0,0,0,1,0,0,1,1,1,0
+699,Syl- S.gonj Region,BORO CHOR,Abdur Rob Choudhury (6),77,By Birth,Degree,Retired,5600,4,1,1,1,1,0,0,0,1,1,0,0,1,1,1,0,1,1,1
+700,Syl- S.gonj Region,BORO CHOR,Abdur Rouf Khan (7),68,By Birth,Masters,Service,15300,3,1,1,1,1,1,1,1,0,0,1,1,1,0,1,1,1,1,0
+701,Syl- S.gonj Region,BORO CHOR,Bashir Uddin Ahmed (8),59,By Birth,Engineer,Service,66000,5,1,1,1,1,1,1,1,1,0,1,1,1,0,1,1,1,1,1
+702,Syl- S.gonj Region,BORO CHOR,Dr Sabir Ahmad (9),55,2007,MA,Business,44600,4,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1
+703,Syl- S.gonj Region,PAGULIA,Dr Salim Mohammad Shahjahan,73,By Birth,Doctor,Retired,318800,3,1,0,0,1,1,0,0,1,1,1,1,0,1,1,1,1,1,1
+704,Syl- S.gonj Region,PAGULIA,Maksud Ahmad Roman (2),47,By Birth,Masters,Service,269100,4,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,0
+705,Syl- S.gonj Region,PAGULIA,Md Abdul Karim (3),64,1981,Masters,Labour,21700,5,0,0,1,1,1,1,0,1,0,1,1,1,0,1,1,1,1,1
+706,Syl- S.gonj Region,PAGULIA,Mohammad Fazlur Rahman (4),81,By Birth,Degree,Retired,24000,4,1,0,0,1,0,0,0,0,1,0,0,1,1,1,1,1,1,0
+707,Syl- S.gonj Region,PAGULIA,Syed Reyaz Ahmed (5),73,1972,Masters,Service,44100,5,1,1,1,0,0,0,0,0,1,0,0,1,1,0,1,1,1,1
+708,Syl- S.gonj Region,PAGULIA,Md. Mohiuddin Ahmed (6),69,By Birth,BA,Retired,2500,6,1,1,1,1,1,1,1,1,0,1,1,1,1,1,0,1,1,0
+709,Syl- S.gonj Region,PAGULIA,Enamul Haque Rasel (7),51,By Birth,BA,Farmer,55800,4,1,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1
+710,Syl- S.gonj Region,BIRGAONE,Mohammad Yeamin Natai,45,By Birth,Masters,Farmer,267200,3,0,0,1,1,1,0,0,1,1,1,1,1,1,1,0,0,1,0
+711,Syl- S.gonj Region,BIRGAONE,Maolana Ahmed Sadek Mahmud (2),80,By Birth,Maolana,Retired,9600,6,1,1,1,1,1,0,0,1,0,1,0,1,1,1,1,1,1,0
+712,Syl- S.gonj Region,BIRGAONE,Md Lutfor Rahman Dhali (3),54,By Birth,HSC,Business,20400,6,1,1,1,1,0,0,0,1,1,1,1,1,0,1,0,1,1,1
+713,Syl- S.gonj Region,BIRGAONE,Dr. Abdur Rashid (4),95,By Birth,Doctor,Retired,1000,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,0,1
+714,Syl- S.gonj Region,ISLAMGONJ,Muhammad Muhibur Rahman,67,2013,BA,Retired,13100,6,1,1,1,1,1,0,0,0,0,1,0,1,1,1,1,1,1,1
+715,Syl- S.gonj Region,ISLAMGONJ,Dr. Mojahid Uddin Ahmad (2),82,By Birth,Masters,Professor,33200,4,1,1,1,1,0,0,0,1,1,1,1,0,1,1,1,1,1,0
+716,Syl- S.gonj Region,ISLAMGONJ,Engr. Hafizur rahman (3),60,By Birth,SSC,Doctor,28200,3,1,1,1,1,1,1,0,1,0,1,1,1,0,1,1,1,0,1
+717,Syl- S.gonj Region,ISLAMGONJ,Mozammel Haque (4),57,By Birth,Kamil,Farmer,14000,5,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1
+718,Syl- S.gonj Region,ISLAMGONJ,Abdul Ajiz (5),71,By Birth,5th,Business,1800,2,1,0,1,1,1,0,0,1,1,1,0,0,0,1,1,0,1,1
+719,Syl- S.gonj Region,SYLHET,Abdul Awal Master,68,By Birth,Degree,Retired,13700,2,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,0,1,1
+720,Syl- S.gonj Region,SYLHET,Ehsanur Rahman (2),63,By Birth,HSC,Service,17500,4,1,0,1,1,1,0,0,1,1,1,1,1,1,1,1,0,1,1
+721,Syl- S.gonj Region,SYLHET,Mahbubur Rahman (3),56,1993,L.L.B,Law,6200,8,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+722,Syl- S.gonj Region,SYLHET,DR. Amin Ahmad (4),57,By Birth,Masters,Business,45100,7,1,0,1,1,1,0,0,1,1,1,1,1,0,1,1,0,1,0
+723,Syl- S.gonj Region,SYLHET,Yaqub Laskar (5),58,By Birth,SSC,SERVICE,14100,2,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,0,0
+724,Syl- S.gonj Region,Lakkhipur,Alhaj Nesar Ahmad,59,By Birth,HSC,BUSINESS,205400,7,0,0,1,1,0,0,0,1,0,0,0,1,1,1,1,1,1,1
+725,Syl- S.gonj Region,Lakkhipur,M Arifuzzaman (2),59,By Birth,8th,SERVICE,45300,6,1,1,1,1,0,0,0,0,1,1,1,1,1,0,1,1,1,1
+726,Syl- S.gonj Region,Lakkhipur,Raza Rizwan Ahmad (3),47,By Birth,BSC,SERVICE,108200,6,1,1,1,0,0,0,0,0,1,1,1,1,0,1,1,1,1,1
+727,Syl- S.gonj Region,Lakkhipur,SM Nosrullah (4),69,By Birth,BA,Service,33300,3,1,1,1,0,0,0,0,1,1,1,1,1,0,1,1,1,1,1
+728,Syl- S.gonj Region,Lakkhipur,DR. Rejaul Karim (5),63,1992,Masters,Business,16200,5,1,1,1,1,1,0,0,1,1,0,0,1,0,1,1,1,1,0
+729,Syl- S.gonj Region,Lakkhipur,Maolana Bashirur Rahman (6),60,By Birth,Sahed P,Murubbi,25400,3,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1
+730,Syl- S.gonj Region,Lakkhipur,Khondokar Mahbubul Islam (7),66,2000,BA,Retired,40600,4,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1
+731,Syl- S.gonj Region,Lakkhipur,Dr. Mahfuzar Rahman (8),59,By Birth,MBBS,Retired,76000,2,1,1,1,1,0,0,0,1,0,1,1,0,1,0,1,1,1,1
+732,Bogura-Nator Region,BAGURA,Md. Abdur Razzaq,65,By Birth,HSC,Retired,117000,4,1,1,1,1,1,0,0,1,1,1,1,1,0,1,0,1,0,1
+733,Bogura-Nator Region,BAGURA,Md. Ahsan Jamil (2),62,2001,SSC,Farmer,169200,3,0,0,1,1,1,1,1,0,1,0,0,1,0,1,1,1,1,1
+734,Bogura-Nator Region,BAGURA,Ahmad Mollah (3),48,By Birth,SSC,Business,43600,7,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0
+735,Bogura-Nator Region,BAGURA,Mojibar Rahman (4),71,By Birth,BA,Retired,16900,4,1,0,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1
+736,Bogura-Nator Region,BAGURA,Md. Mamun Or Rasshid (5),49,1984,HSC,Farmer,45600,5,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1
+737,Bogura-Nator Region,BAGURA,Md. Haydar Ali (6),50,By Birth,SSC,Farmer,5500,3,1,1,0,1,1,1,0,1,0,0,0,1,0,1,1,0,0,1
+738,Bogura-Nator Region,BAGURA,Mawlana Abu Bakar Siddik (7),77,2009,Masters,Business,10100,1,1,1,1,0,0,0,0,0,0,1,1,1,1,0,1,1,1,1
+739,Bogura-Nator Region,NEWSHONATOLA,Md. Lutfar Rahman Master,57,1985,MA,Service,42700,4,1,1,1,1,1,1,1,1,0,1,1,1,0,1,0,1,1,1
+740,Bogura-Nator Region,NEWSHONATOLA,Md. Nazrul Islam (2),73,By Birth,SSC,Business,16100,3,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1
+741,Bogura-Nator Region,NEWSHONATOLA,Muhammad Ismail (3),49,1999,LLB,Advocate,252600,3,0,0,1,1,1,1,1,0,1,1,0,1,1,1,1,1,1,1
+742,Bogura-Nator Region,NEWSHONATOLA,Hafizur Rahman (4),42,By Birth,HSC,Business,20400,5,1,1,1,1,1,1,1,1,0,0,0,1,0,1,1,1,0,0
+743,Bogura-Nator Region,NEWSHONATOLA,Tofazzol Hoassain (5),72,By Birth,8th,Service,30400,6,0,0,1,1,1,0,0,1,1,1,1,1,0,1,1,1,1,0
+744,Bogura-Nator Region,SIRAJGONJ,Anwar Ahmad Choudhury,47,By Birth,BA,Service,22100,3,0,0,1,1,1,1,0,0,1,0,0,0,0,1,1,1,1,1
+745,Bogura-Nator Region,SIRAJGONJ,Md. Iqbal Choudhury (2),54,By Birth,SSC,Service,89100,6,1,0,1,1,1,1,0,0,0,1,0,1,0,1,1,0,1,1
+746,Bogura-Nator Region,SIRAJGONJ,Md. Samsur Rahman (3),49,By Birth,BCOM,Business,126000,6,1,1,1,1,1,1,0,1,0,1,1,1,0,0,1,1,1,0
+747,Bogura-Nator Region,SIRAJGONJ,Abdullah Ahamed (4),56,By Birth,MA,Service,70000,7,0,0,1,1,0,0,0,1,0,0,0,1,0,1,1,1,0,1
+748,Bogura-Nator Region,SIRAJGONJ,Ishak Ali Mollah (5),65,By Birth,SSC,Service,11700,11,1,1,1,1,0,0,0,1,1,0,0,1,0,1,1,1,1,0
+749,Bogura-Nator Region,SIRAJGONJ,Dr. Abdullah Shams Bin Tariq (6),45,By Birth,PhD,Service,146200,5,1,1,1,1,0,0,0,1,1,0,0,1,0,1,1,1,1,1
+750,Bogura-Nator Region,SIRAJGONJ,Dr. Kamrullah Bin Tariq (7),48,1988,Degree,Service,73000,2,1,0,1,1,1,1,0,1,0,0,0,1,1,1,1,1,1,1
+751,Bogura-Nator Region,KORITOLA,GM Siraj Uddin,66,By Birth,BCOM,Service,170700,3,0,0,1,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1
+752,Bogura-Nator Region,KORITOLA,Alhaj Md. Unus Ali (2),86,By Birth,BA,Farmer,13700,1,1,1,1,1,0,0,0,1,1,1,1,1,0,1,0,0,1,1
+753,Bogura-Nator Region,KORITOLA,Md. Abdus Sattar (3),76,1996,BSC,Farmer,8100,5,1,0,1,1,0,0,0,1,0,1,1,1,0,1,1,1,1,0
+754,Bogura-Nator Region,KORITOLA,A K M Ataur Rahman (4),61,By Birth,HSC,Service,26100,5,1,1,1,1,1,1,0,0,0,0,0,1,1,1,0,1,1,1
+755,Bogura-Nator Region,KORITOLA,Abdullah Youshuf Mohd (5),64,By Birth,Masters,Retired,13800,3,1,0,1,1,0,0,0,1,0,1,0,1,0,1,1,1,0,0
+756,Bogura-Nator Region,KORITOLA,Alaiuddin Ahmed (6),55,By Birth,SSC,Business,2700,7,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0
+757,Bogura-Nator Region,KORITOLA,Abdur Rob Choudhury (7),85,By Birth,Masters,Labour,4300,3,1,1,1,1,1,1,1,1,0,1,0,1,1,0,1,0,1,1
+758,Bogura-Nator Region,KORITOLA,Abdur Rouf Khan (8),73,By Birth,HSC,Pensioner,16000,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+759,Bogura-Nator Region,PURULIA,Bashir Uddin Ahmed,65,By Birth,Engineer,Service,73200,6,1,0,1,1,0,0,0,1,0,1,1,1,1,1,1,1,0,1
+760,Bogura-Nator Region,PURULIA,Dr Sabir Ahmad (2),64,1975,BA,Service,50700,7,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1
+761,Bogura-Nator Region,PURULIA,Dr Salim Mohammad Shahjahan (3),71,2011,Doctor,Business,256000,2,1,1,1,1,1,1,0,1,1,0,0,1,1,1,1,1,1,1
+762,Bogura-Nator Region,PURULIA,Maksud Ahmad Roman (4),50,By Birth,Masters,Service,230000,3,1,1,1,1,1,0,0,1,1,1,1,1,1,0,1,1,1,1
+763,Bogura-Nator Region,PURULIA,Md Abdul Karim (5),60,By Birth,Degree,Pensioner,21800,3,1,1,1,1,1,0,0,0,1,0,0,1,1,0,1,1,1,1
+764,Bogura-Nator Region,PURULIA,Mohammad Fazlur Rahman (6),76,By Birth,BA,Retired,20300,1,0,0,1,1,1,1,0,0,1,1,0,1,1,1,1,1,1,0
+765,Bogura-Nator Region,MOHARAJPUR,Syed Reyaz Ahmed,71,By Birth,Masters,Business,34100,3,1,1,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1
+766,Bogura-Nator Region,MOHARAJPUR,Md. Mohiuddin Ahmed (2),62,By Birth,Degree,Retired,2500,5,1,0,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1
+767,Bogura-Nator Region,MOHARAJPUR,Enamul Haque Rasel (3),44,By Birth,Masters,Service,58000,5,1,1,1,1,1,1,0,0,0,0,0,1,0,1,1,1,1,1
+768,Bogura-Nator Region,MOHARAJPUR,Mohammad Yeamin Natai (4),42,1971,Masters,Service,213700,6,1,1,1,1,1,0,0,1,0,0,0,1,1,1,1,1,1,1
+769,Bogura-Nator Region,MOHARAJPUR,Maolana Ahmed Sadek Mahmud (5),81,By Birth,HSC,Retired,14600,4,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1
+770,Bogura-Nator Region,MOHARAJPUR,Md Lutfor Rahman Dhali (6),55,By Birth,HSC,Business,25600,5,1,1,1,1,0,0,0,1,0,1,1,1,1,1,1,0,1,0
+771,Bogura-Nator Region,MOHARAJPUR,Dr. Abdur Rashid (7),95,By Birth,Doctor,Retired,1000,3,1,1,1,1,1,0,0,0,0,0,0,1,0,0,1,1,0,1
+772,Bogura-Nator Region,MOHARAJPUR,Muhammad Muhibur Rahman (8),71,By Birth,SSC,Business,14800,6,1,0,1,1,1,0,0,1,0,0,0,1,0,1,0,1,1,0
+773,Bogura-Nator Region,MOHARAJPUR,Dr. Mojahid Uddin Ahmad (9),75,By Birth,SSC,Professor,25300,4,1,1,1,1,1,0,0,1,1,0,0,1,1,1,1,1,1,1
+774,Bogura-Nator Region,MERIGACHA,Engr. Hafizur rahman,66,By Birth,Doctor,Doctor,60300,4,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,0,1
+775,Bogura-Nator Region,MERIGACHA,Mozammel Haque (2),58,By Birth,Kamil,Business,15700,3,0,0,0,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1
+776,Bogura-Nator Region,MERIGACHA,Abdul Ajiz (3),76,By Birth,5th,Retired,2100,3,1,0,1,1,1,1,0,1,0,1,1,1,0,0,1,1,1,1
+777,Bogura-Nator Region,MERIGACHA,Abdul Awal Master (4),75,By Birth,Degree,Retired,19500,4,1,0,1,1,1,0,0,1,0,0,0,1,0,1,1,1,1,1
+778,Bogura-Nator Region,NAZIRPUR,Ehsanur Rahman,64,By Birth,HSC,Service,17500,5,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,1,0
+779,Bogura-Nator Region,NAZIRPUR,Mahbubur Rahman (2),50,By Birth,Masters,Labour,11700,8,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1
+780,Bogura-Nator Region,NAZIRPUR,DR. Amin Ahmad (3),51,By Birth,HSC,Business,48900,7,0,0,1,0,0,0,0,1,0,1,1,1,0,1,1,1,1,1
+781,Bogura-Nator Region,NAZIRPUR,Yaqub Laskar (4),57,By Birth,SSC,Farmer,14700,4,1,0,1,1,0,0,0,0,1,1,0,1,0,1,1,1,1,1
+782,Bogura-Nator Region,NAZIRPUR,Alhaj Nesar Ahmad (5),54,1991,HSC,BUSINESS,228800,4,1,1,1,1,1,1,0,1,0,1,1,1,0,1,1,1,1,1
+783,Bogura-Nator Region,NAZIRPUR,M Arifuzzaman (6),54,By Birth,MBA,SERVICE,37600,5,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,1
+784,Bogura-Nator Region,NAZIRPUR,Raza Rizwan Ahmad (7),56,1975,BSC,SERVICE,121100,5,1,1,0,1,1,1,1,1,0,1,0,0,0,1,1,1,1,1
+785,Bogura-Nator Region,NAZIRPUR,SM Nosrullah (8),76,1981,BA,Retired,21700,4,1,1,1,1,0,0,0,0,1,1,0,1,0,1,1,1,1,0
+786,Bogura-Nator Region,TEBARIA,DR. Rejaul Karim,62,By Birth,HSC,Business,11100,8,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1
+787,Bogura-Nator Region,TEBARIA,Maolana Bashirur Rahman (2),59,By Birth,Sahed P,Business,19300,3,0,0,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0
+788,Bogura-Nator Region,TEBARIA,Khondokar Mahbubul Islam (3),66,By Birth,BA,Labour,58200,3,1,1,1,1,1,0,0,1,1,1,0,1,0,1,1,1,1,1
+789,Bogura-Nator Region,TEBARIA,Dr. Mahfuzar Rahman (4),56,1970,MBBS,Retired,39000,3,1,0,1,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1
+790,Bogura-Nator Region,TEBARIA,Md. Abdur Razzaq (5),64,By Birth,SSC,Retired,115300,3,1,1,1,1,1,1,1,1,1,1,0,1,0,0,1,1,1,0
+791,Bogura-Nator Region,TEBARIA,Md. Ahsan Jamil (6),66,By Birth,BA,Farmer,148500,3,1,0,1,1,1,0,0,0,1,0,0,1,0,1,1,1,1,1
+792,Bogura-Nator Region,TEBARIA,Ahmad Mollah (7),56,By Birth,BA,Business,46400,5,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,0,1,1
+793,Bogura-Nator Region,KAFURIA,Mojibar Rahman,71,2003,BA,Retired,13900,2,1,1,1,1,1,0,0,0,0,1,1,1,0,1,1,1,1,1
+794,Bogura-Nator Region,KAFURIA,Md. Mamun Or Rasshid (2),50,By Birth,BA,Service,64400,5,1,0,1,1,1,0,0,0,1,1,1,1,0,1,1,1,1,0
+795,Bogura-Nator Region,KAFURIA,Md. Haydar Ali (3),52,1975,SSC,Business,3800,5,0,0,1,1,0,0,0,1,0,0,0,1,0,1,1,0,1,1
+796,Bogura-Nator Region,KAFURIA,Mawlana Abu Bakar Siddik (4),73,By Birth,Kamil,Service,8100,2,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,0
+797,Bogura-Nator Region,KAFURIA,Md. Lutfar Rahman Master (5),59,1983,MA,Service,44400,3,1,0,1,1,1,1,0,1,1,1,1,1,0,1,1,1,0,1
+798,Bogura-Nator Region,KAFURIA,Md. Nazrul Islam (6),82,2004,8th,Retired,14900,2,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1
+799,Bogura-Nator Region,KAFURIA,Muhammad Ismail (7),56,1986,Masters,Advocate,215000,5,1,1,1,1,0,0,0,1,0,1,1,1,1,1,1,0,1,0
+800,Bogura-Nator Region,KAFURIA,Hafizur Rahman (8),41,By Birth,HSC,Business,9000,3,1,0,1,1,0,0,0,1,1,1,0,1,1,1,1,1,0,1
+801,Bogura-Nator Region,KAFURIA,Tofazzol Hoassain (9),70,By Birth,Masters,Service,43000,5,1,1,1,1,1,1,1,1,0,1,1,1,0,1,1,1,1,1
+802,Bogura-Nator Region,DIGAPOTIA,Anwar Ahmad Choudhury,51,By Birth,BA,Labour,16800,3,0,0,0,1,1,0,0,1,1,0,0,1,1,1,1,1,1,1
+803,Bogura-Nator Region,DIGAPOTIA,Md. Iqbal Choudhury (2),61,1973,BSC,Service,96900,3,1,1,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0
+804,Bogura-Nator Region,DIGAPOTIA,Md. Samsur Rahman (3),49,By Birth,BCOM,Business,83200,3,1,1,1,1,0,0,0,1,0,1,1,0,1,1,1,1,1,1
+805,Bogura-Nator Region,DIGAPOTIA,Abdullah Ahamed (4),51,By Birth,MA,Service,126300,5,1,0,1,1,1,0,0,1,1,1,1,0,0,1,1,1,0,1
+806,Bogura-Nator Region,DIGAPOTIA,Ishak Ali Mollah (5),73,2003,SSC,Service,13900,9,1,1,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1
+807,Bogura-Nator Region,BHARATPUR,Dr. Abdullah Shams Bin Tariq,49,By Birth,Masters,Retired,121800,6,1,1,1,1,1,0,0,1,0,1,0,1,1,1,1,0,1,0
+808,Bogura-Nator Region,BHARATPUR,Dr. Kamrullah Bin Tariq (2),40,By Birth,HSC,Service,63100,5,1,1,0,1,0,0,0,1,0,1,1,0,1,1,1,1,0,1
+809,Bogura-Nator Region,BHARATPUR,GM Siraj Uddin (3),65,By Birth,BCOM,Service,178400,5,1,1,1,1,1,0,0,0,1,1,1,0,0,1,1,1,1,1
+810,Bogura-Nator Region,BHARATPUR,Alhaj Md. Unus Ali (4),89,2013,BA,Farmer,13600,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,0
+811,Bogura-Nator Region,BHARATPUR,Md. Abdus Sattar (5),69,By Birth,BSC,Retired,6200,6,1,0,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0
+812,Bogura-Nator Region,BHARATPUR,A K M Ataur Rahman (6),66,By Birth,HSC,Service,24500,5,1,1,1,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1
+813,Bogura-Nator Region,BHARATPUR,Abdullah Youshuf Mohd (7),69,1969,Masters,Retired,8600,1,1,1,1,1,1,0,0,0,0,1,0,1,1,1,0,1,0,0
+814,Bogura-Nator Region,BHARATPUR,Alaiuddin Ahmed (8),60,By Birth,Degree,Retired,1900,8,1,1,1,1,1,0,0,1,1,0,0,1,0,1,1,1,1,1
+815,Rajshahi Region,RAJSHAHI,Abdur Rob Choudhury,82,2002,Masters,Business,3200,2,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1
+816,Rajshahi Region,RAJSHAHI,Abdur Rouf Khan (2),70,1995,HSC,Pensioner,13100,5,1,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,1,1
+817,Rajshahi Region,RAJSHAHI,Bashir Uddin Ahmed (3),67,2001,Engineer,Labour,39200,4,1,1,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1
+818,Rajshahi Region,RAJSHAHI,Dr Sabir Ahmad (4),56,By Birth,MA,Service,41500,6,1,1,1,1,1,0,0,1,1,0,0,1,0,1,1,1,1,1
+819,Rajshahi Region,RAJSHAHI,Dr Salim Mohammad Shahjahan (5),70,By Birth,8th,Business,369600,1,0,0,1,1,1,1,1,0,1,1,0,1,0,1,1,1,1,1
+820,Rajshahi Region,RAJSHAHI,Maksud Ahmad Roman (6),50,By Birth,Masters,Labour,259400,3,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,1
+821,Rajshahi Region,TAHERABAD,Md Abdul Karim,70,By Birth,Degree,Pensioner,20900,3,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1
+822,Rajshahi Region,TAHERABAD,Mohammad Fazlur Rahman (2),83,By Birth,Degree,Retired,13600,2,1,1,1,1,1,1,0,0,0,1,1,1,0,1,1,1,0,1
+823,Rajshahi Region,TAHERABAD,Syed Reyaz Ahmed (3),79,2008,Masters,Business,43000,2,1,0,1,1,1,0,0,1,0,1,1,1,1,1,1,1,1,1
+824,Rajshahi Region,TAHERABAD,Md. Mohiuddin Ahmed (4),66,By Birth,Degree,Labour,1500,4,0,0,1,1,1,1,0,1,0,0,0,1,0,0,1,1,1,1
+825,Rajshahi Region,TAHERABAD,Enamul Haque Rasel (5),43,By Birth,SSC,Service,50300,7,1,0,1,1,1,1,0,1,1,0,0,1,0,1,1,1,1,1
+826,Rajshahi Region,TAHERABAD,Mohammad Yeamin Natai (6),50,By Birth,Masters,Service,279200,6,0,0,1,1,1,0,0,1,0,1,1,1,0,1,1,1,1,1
+827,Rajshahi Region,TAHERABAD,Maolana Ahmed Sadek Mahmud (7),82,By Birth,8th,Retired,10200,4,1,1,1,1,1,0,0,0,1,1,1,1,0,0,1,1,0,0
+828,Rajshahi Region,TAHERABAD,Md Lutfor Rahman Dhali (8),55,2005,HSC,Business,32800,5,1,1,1,1,1,1,1,0,1,1,0,1,0,1,1,1,1,1
+829,Rajshahi Region,TAHERABAD,Dr. Abdur Rashid (9),95,By Birth,Doctor,Retired,1000,1,1,1,1,1,1,0,0,1,0,1,1,1,1,1,0,1,1,1
+830,Rajshahi Region,NURNAGAR ISH,Muhammad Muhibur Rahman,74,By Birth,SSC,Farmer,16800,5,0,0,1,1,1,1,1,0,1,1,1,0,1,1,1,1,1,1
+831,Rajshahi Region,NURNAGAR ISH,Dr. Mojahid Uddin Ahmad (2),78,1965,PhD,Professor,15000,3,1,1,1,1,1,0,0,1,1,1,1,1,0,1,1,0,1,0
+832,Rajshahi Region,NURNAGAR ISH,Engr. Hafizur rahman (3),68,By Birth,Doctor,Doctor,38600,4,1,0,1,1,1,0,0,0,0,1,0,1,1,1,1,1,1,0
+833,Rajshahi Region,NURNAGAR ISH,Mozammel Haque (4),50,By Birth,Degree,Moallem,25300,4,0,0,1,1,1,0,0,1,0,1,1,1,1,1,1,1,1,0
+834,Rajshahi Region,NURNAGAR ISH,Abdul Ajiz (5),78,By Birth,5th,Business,2700,4,1,0,0,1,1,0,0,0,0,1,1,1,0,1,1,0,1,1
+835,Rajshahi Region,NURNAGAR ISH,Abdul Awal Master (6),74,By Birth,Masters,Labour,20200,2,0,0,1,1,0,0,0,1,1,1,1,1,0,1,1,1,0,1
+836,Rajshahi Region,NURNAGAR ISH,Ehsanur Rahman (7),60,By Birth,SSC,Service,14100,3,0,0,1,1,0,0,0,1,0,1,0,1,0,1,0,1,1,1
+837,Rajshahi Region,NURNAGAR ISH,Mahbubur Rahman (8),48,By Birth,BA,Law,12000,7,1,1,1,0,0,0,0,0,1,1,1,0,0,1,0,1,1,1
+838,Rajshahi Region,KODOM SOHOR,DR. Amin Ahmad,49,By Birth,I.COM,Retired,21400,6,1,1,1,0,0,0,0,1,1,1,0,1,1,1,1,1,1,0
+839,Rajshahi Region,KODOM SOHOR,Yaqub Laskar (2),61,By Birth,SSC,SERVICE,9400,3,1,0,1,1,1,0,0,1,0,1,1,1,0,1,0,0,1,0
+840,Rajshahi Region,KODOM SOHOR,Alhaj Nesar Ahmad (3),57,By Birth,HSC,BUSINESS,132500,7,1,1,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1
+841,Rajshahi Region,KODOM SOHOR,M Arifuzzaman (4),52,By Birth,MBA,Labour,82800,4,1,1,1,1,0,0,0,1,0,1,1,1,1,1,1,1,1,1
+842,Rajshahi Region,KODOM SOHOR,Raza Rizwan Ahmad (5),51,By Birth,BSC,Farmer,171300,5,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1
+843,Rajshahi Region,SAYEDPUR BAGMARA,SM Nosrullah,73,1965,BA,Service,30200,1,0,0,0,1,0,0,0,0,1,1,0,1,0,1,1,1,1,0
+844,Rajshahi Region,SAYEDPUR BAGMARA,DR. Rejaul Karim (2),55,By Birth,HSC,Business,10700,6,1,0,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
+845,Rajshahi Region,SAYEDPUR BAGMARA,Maolana Bashirur Rahman (3),63,By Birth,Sahed P,Murubbi,22700,2,0,0,1,1,1,1,1,0,0,0,0,1,1,0,0,1,1,1
+846,Rajshahi Region,SAYEDPUR BAGMARA,Khondokar Mahbubul Islam (4),65,By Birth,BA,Retired,42700,5,1,0,1,1,1,0,0,0,1,1,1,1,0,1,1,1,1,1
+847,Rajshahi Region,PABNA,Dr. Mahfuzar Rahman,56,By Birth,MBBS,Labour,42600,2,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,1
+848,Rajshahi Region,PABNA,Md. Abdur Razzaq (2),64,By Birth,SSC,Service,111200,6,1,1,1,1,1,1,0,1,0,1,0,1,1,1,1,1,1,1
+849,Rajshahi Region,PABNA,Md. Ahsan Jamil (3),67,By Birth,Degree,Service,109500,3,1,1,1,1,0,0,0,1,0,1,1,0,0,1,1,0,0,1
+850,Rajshahi Region,PABNA,Ahmad Mollah (4),49,By Birth,BA,Retired,22900,5,0,0,1,1,1,0,0,1,1,1,0,1,1,1,1,1,1,1
+851,Rajshahi Region,PABNA,Mojibar Rahman (5),68,2000,HSC,Retired,13000,2,1,0,1,0,0,0,0,1,0,0,0,1,1,1,1,1,1,0
+852,Rajshahi Region,PABNA,Md. Mamun Or Rasshid (6),54,By Birth,Masters,Service,35000,6,1,1,1,1,1,0,0,1,1,1,1,1,0,1,1,1,0,1
+853,Rajshahi Region,PABNA,Md. Haydar Ali (7),57,1985,SSC,Business,5500,5,1,1,1,1,1,0,0,0,0,1,0,1,1,1,1,1,1,1
+854,Rajshahi Region,DURGAPUR,Mawlana Abu Bakar Siddik,75,By Birth,Kamil,Business,11200,4,1,1,1,1,1,1,1,1,0,1,1,0,0,1,1,1,0,0
+855,Rajshahi Region,DURGAPUR,Md. Lutfar Rahman Master (2),64,By Birth,MA,Labour,25900,4,1,0,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1
+856,Rajshahi Region,DURGAPUR,Md. Nazrul Islam (3),72,1974,SSC,Business,16700,2,0,0,1,1,0,0,0,1,0,1,0,0,1,0,1,1,1,1
+857,Rajshahi Region,DURGAPUR,Muhammad Ismail (4),50,1971,LLB,Advocate,200800,3,1,0,0,1,0,0,0,1,1,1,1,0,0,1,1,1,1,1
+858,Rajshahi Region,DURGAPUR,Hafizur Rahman (5),45,By Birth,HSC,Business,14500,6,0,0,1,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1
+859,Rajshahi Region,DURGAPUR,Tofazzol Hoassain (6),69,1991,BA,Service,21100,7,1,1,1,0,0,0,0,1,0,1,1,1,1,1,1,1,0,0
