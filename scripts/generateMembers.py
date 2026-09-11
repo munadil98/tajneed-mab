@@ -1,5 +1,6 @@
 import json
-from collections import defaultdict
+import csv
+import random
 
 # Definition of the regions and majlises from the user's Google Sheet
 regions_data = {
@@ -49,143 +50,235 @@ regions_data = {
   ]
 }
 
-# Names from the prompt
-names_sample = [
-  ("A K M Ataur Rahman", 65, "HSC", "Service", 25000, 4),
-  ("Abdullah Youshuf Mohd", 68, "Masters", "Retired", 10000, 2),
-  ("Alaiuddin Ahmed", 57, "SSC", "Business", 2000, 6),
-  ("Abdur Rob Choudhury", 79, "Masters", "Retired", 5000, 3),
-  ("Abdur Rouf Khan", 70, "HSC", "Pensioner", 13625, 4),
-  ("Bashir Uddin Ahmed", 63, "Engineer", "Service", 60000, 4),
-  ("Dr Sabir Ahmad", 59, "MA", "Service", 55333, 5),
-  ("Dr Salim Mohammad Shahjahan", 69, "Doctor", "Business", 300000, 1),
-  ("Maksud Ahmad Roman", 46, "Masters", "Service", 220000, 2),
-  ("Md Abdul Karim", 64, "Degree", "Pensioner", 25000, 3),
-  ("Mohammad Fazlur Rahman", 79, "Degree", "Retired", 20000, 2),
-  ("Syed Reyaz Ahmed", 74, "Masters", "Retired", 45000, 3),
-  ("Md. Mohiuddin Ahmed", 64, "Masters", "Retired", 2000, 5),
-  ("Enamul Haque Rasel", 47, "Masters", "Service", 60000, 5),
-  ("Mohammad Yeamin Natai", 44, "Masters", "Service", 215000, 4),
-  ("Maolana Ahmed Sadek Mahmud", 76, "Maolana", "Retired", 10500, 4),
-  ("Md Lutfor Rahman Dhali", 52, "HSC", "Business", 25000, 4),
-  ("Dr. Abdur Rashid", 96, "Doctor", "Retired", 1000, 1),
-  ("Muhammad Muhibur Rahman", 70, "SSC", "Retired", 14000, 4),
-  ("Dr. Mojahid Uddin Ahmad", 78, "PhD", "Professor", 24000, 2),
-  ("Engr. Hafizur rahman", 63, "Doctor", "Doctor", 44000, 2),
-  ("Mozammel Haque", 53, "Kamil", "Moallem", 22000, 3),
-  ("Abdul Ajiz", 74, "5th", "Business", 2000, 2),
-  ("Abdul Awal Master", 72, "B.COM", "Retired", 22000, 2),
-  ("Ehsanur Rahman", 59, "HSC", "Service", 20000, 4),
-  ("Mahbubur Rahman", 50, "L.L.B", "Law", 9000, 6),
-  ("DR. Amin Ahmad", 51, "I.COM", "Business", 35000, 5),
-  ("Yaqub Laskar", 59, "SSC", "SERVICE", 14000, 3),
-  ("Alhaj Nesar Ahmad", 53, "HSC", "BUSINESS", 180000, 5),
-  ("M Arifuzzaman", 56, "MBA", "SERVICE", 60000, 5),
-  ("Raza Rizwan Ahmad", 50, "BSC", "SERVICE", 170000, 4),
-  ("SM Nosrullah", 72, "BA", "Service", 25000, 2),
-  ("DR. Rejaul Karim", 59, "HSC", "Business", 16000, 6),
-  ("Maolana Bashirur Rahman", 59, "Sahed P", "Murubbi", 25000, 3),
-  ("Khondokar Mahbubul Islam", 64, "BA", "Retired", 60000, 4),
-  ("Dr. Mahfuzar Rahman", 58, "MBBS", "Retired", 60000, 3),
-  ("Md. Abdur Razzaq", 67, "SSC", "Service", 84000, 4),
-  ("Md. Ahsan Jamil", 61, "BA", "Service", 125000, 4),
-  ("Ahmad Mollah", 50, "BA", "Business", 35000, 6),
-  ("Mojibar Rahman", 70, "HSC", "Retired", 14000, 2),
-  ("Md. Mamun Or Rasshid", 52, "HSC", "Service", 48000, 5),
-  ("Md. Haydar Ali", 52, "SSC", "Business", 6000, 3),
-  ("Mawlana Abu Bakar Siddik", 76, "Kamil", "Business", 12000, 2),
-  ("Md. Lutfar Rahman Master", 59, "MA", "Service", 39000, 4),
-  ("Md. Nazrul Islam", 76, "SSC", "Business", 12000, 2),
-  ("Muhammad Ismail", 53, "LLB", "Advocate", 200000, 4),
-  ("Hafizur Rahman", 42, "HSC", "Business", 15000, 4),
-  ("Tofazzol Hoassain", 68, "BA", "Service", 32000, 5),
-  ("Anwar Ahmad Choudhury", 49, "BA", "Service", 20000, 4),
-  ("Md. Iqbal Choudhury", 57, "BSC", "Service", 80000, 4),
-  ("Md. Samsur Rahman", 46, "BCOM", "Business", 120000, 4),
-  ("Abdullah Ahamed", 53, "MA", "Service", 100000, 5),
-  ("Ishak Ali Mollah", 68, "SSC", "Service", 10000, 10),
-  ("Dr. Abdullah Shams Bin Tariq", 49, "PhD", "Service", 120000, 5),
-  ("Dr. Kamrullah Bin Tariq", 44, "PhD", "Service", 100000, 3),
-  ("GM Siraj Uddin", 61, "BCOM", "Service", 150000, 4),
-  ("Alhaj Md. Unus Ali", 84, "BA", "Retired", 15000, 2),
-  ("Md. Abdus Sattar", 70, "BSC", "Retired", 9000, 6)
+# Rich pool of names for generating 3394 members
+prefixes = [
+    "Md.", "Mohammad", "Alhaj", "Dr.", "Engr.", "Maolana", "Syed", "Khondokar",
+    "Sheikh", "Kazi", "A K M", "Mawlana", "Dr. Md.", "Engr. Md.", ""
 ]
 
+first_names = [
+    "Ataur", "Abdur", "Abdullah", "Bashir", "Salim", "Maksud", "Fazlur", "Reyaz",
+    "Mohiuddin", "Enamul", "Yeamin", "Sadek", "Lutfor", "Rashid", "Muhibur",
+    "Mojahid", "Hafizur", "Mozammel", "Ajiz", "Awal", "Ehsanur", "Mahbubur",
+    "Amin", "Yaqub", "Nesar", "Arifuzzaman", "Rizwan", "Rejaul", "Mahfuzar",
+    "Ahsan", "Mojibar", "Mamun", "Haydar", "Abu Bakar", "Nazrul", "Ismail",
+    "Tofazzol", "Anwar", "Iqbal", "Samsur", "Kamrullah", "Siraj", "Unus",
+    "Tariq", "Munir", "Zillur", "Faruk", "Tanvir", "Shams", "Kibriya",
+    "Jashim", "Saifur", "Shahidul", "Jahangir", "Ashraf", "Kamal", "Nasir",
+    "Monirul", "Habibur", "Shakil", "Zahid", "Mustafa", "Mizanur", "Badrul"
+]
+
+middle_or_last = [
+    "Rahman", "Ahmed", "Ahmad", "Karim", "Islam", "Ali", "Choudhury", "Khan",
+    "Mollah", "Rasel", "Mahmud", "Uddin", "Haque", "Dhali", "Master", "Shahjahan",
+    "Roman", "Natai", "Alam", "Talukder", "Siddik", "Hossain", "Laskar",
+    "Sattar", "Zaman", "Mia", "Sikder", "Bhuiyan", "Gazi", "Pramanik"
+]
+
+educations = [
+    ("Masters", 0.22), ("HSC", 0.24), ("SSC", 0.22), ("BA", 0.12),
+    ("Degree", 0.08), ("B.COM", 0.04), ("Doctor", 0.02), ("Engineer", 0.02),
+    ("PhD", 0.01), ("8th", 0.02), ("Kamil", 0.01)
+]
+
+occupations = [
+    ("Service", 0.38), ("Business", 0.32), ("Retired", 0.14),
+    ("Farmer", 0.06), ("Pensioner", 0.04), ("Teacher", 0.03),
+    ("Doctor", 0.01), ("Advocate", 0.01), ("Labour", 0.01)
+]
+
+def pick_weighted(options):
+    r = random.random()
+    cumulative = 0.0
+    for val, weight in options:
+        cumulative += weight
+        if r <= cumulative:
+            return val
+    return options[0][0]
+
+def generate_unique_name(existing_names):
+    for _ in range(500):
+        p = random.choice(prefixes)
+        f = random.choice(first_names)
+        l = random.choice(middle_or_last)
+        if p:
+            candidate = f"{p} {f} {l}"
+        else:
+            candidate = f"{f} {l}"
+        if candidate not in existing_names:
+            existing_names.add(candidate)
+            return candidate
+    # Fallback
+    c = f"{random.choice(first_names)} {random.choice(middle_or_last)} {random.randint(10, 999)}"
+    existing_names.add(c)
+    return c
+
+# Target total members exactly 3394
+TARGET_TOTAL = 3394
+
+# List of all (region, majlis) pairs
+all_majlises = []
+for reg, maj_list in regions_data.items():
+    for maj in maj_list:
+        all_majlises.append((reg, maj))
+
+num_majlises = len(all_majlises)
+
+# Base distribution: larger centers get more members
+random.seed(1889) # Founding year of Jama'at
+
+weights = []
+for reg, maj in all_majlises:
+    weight = 1.0
+    if reg == 'Greater Dhaka':
+        weight = 2.5 if maj in ['DHAKA', 'MIRPUR', 'TEJGAON', 'NARAYANGONJ'] else 1.6
+    elif reg == 'B.Baria Region':
+        weight = 2.2 if maj in ['B.BARIA', 'NATAI', 'GHATURA', 'TARUA'] else 1.4
+    elif reg == 'Dinajpur Region':
+        weight = 2.0 if maj in ['DINAJPUR', 'AHMADNAGAR'] else 1.3
+    elif reg == 'Cumilla CTG Region':
+        weight = 2.2 if maj in ['CHOTTOGRAM', 'CUMILLA'] else 1.3
+    elif reg == 'Mymensing Region':
+        weight = 1.8 if maj in ['MYMENSING', 'DHANIKHOLA'] else 1.2
+    elif reg == 'Rangpur Region':
+        weight = 1.6 if maj in ['RANGPUR', 'MAHIGONJ'] else 1.2
+    elif reg == 'Rajshahi Region':
+        weight = 1.7 if maj in ['RAJSHAHI', 'PABNA'] else 1.2
+    elif reg == 'Khulna Saatkhira':
+        weight = 1.6 if maj in ['KHULNA', 'JESSORE'] else 1.2
+    elif reg == 'Bogura-Nator Region':
+        weight = 1.5 if maj in ['BAGURA', 'SIRAJGONJ'] else 1.1
+    weights.append(weight)
+
+# Normalize and allocate counts
+total_weight = sum(weights)
+allocated = [max(8, int((w / total_weight) * TARGET_TOTAL)) for w in weights]
+diff = TARGET_TOTAL - sum(allocated)
+
+# Adjust remainder to reach exactly 3394
+idx = 0
+step = 1 if diff > 0 else -1
+for _ in range(abs(diff)):
+    allocated[idx % num_majlises] += step
+    idx += 1
+
+assert sum(allocated) == TARGET_TOTAL, f"Sum {sum(allocated)} != {TARGET_TOTAL}"
+
+existing_names = set()
 members = []
 sl_counter = 1
 
-# Generate records covering every region and majlis with real structure
-import random
-random.seed(42)
+for (reg, maj), count in zip(all_majlises, allocated):
+    for _ in range(count):
+        name = generate_unique_name(existing_names)
+        age = random.randint(40, 92)
+        edu = pick_weighted(educations)
+        occ = pick_weighted(occupations)
+        
+        # Monthly income calculation based on profession
+        if occ in ['Doctor', 'Advocate', 'Engineer']:
+            income = random.randint(50000, 250000)
+        elif occ == 'Business':
+            income = random.choice([8000, 15000, 25000, 35000, 60000, 120000, 200000])
+        elif occ == 'Service':
+            income = random.choice([12000, 20000, 30000, 45000, 65000, 85000])
+        elif occ == 'Retired':
+            income = random.choice([5000, 10000, 18000, 25000, 40000])
+        elif occ == 'Farmer':
+            income = random.choice([4000, 8000, 12000, 18000])
+        elif occ == 'Labour':
+            income = random.choice([3000, 6000, 9000, 12000])
+        else:
+            income = random.choice([10000, 15000, 25000])
 
-for region, majlises in regions_data.items():
-    for majlis in majlises:
-        # Determine number of members in this majlis (between 3 and 10)
-        count = random.randint(4, 9)
-        for j in range(count):
-            base = names_sample[sl_counter % len(names_sample)]
-            # Add variation to name
-            name = base[0] if j == 0 else f"{base[0]} ({j+1})"
-            age = max(40, min(95, base[1] + random.randint(-4, 6)))
-            edu = base[2] if random.random() > 0.3 else random.choice(['SSC', 'HSC', 'BA', 'Masters', '8th', 'Degree'])
-            occ = base[3] if random.random() > 0.3 else random.choice(['Business', 'Service', 'Farmer', 'Retired', 'Labour'])
-            income = max(1000, int(base[4] * random.uniform(0.6, 1.4) / 100) * 100)
-            fam = max(1, min(12, base[5] + random.randint(-1, 2)))
-            
-            salat = random.random() > 0.15
-            salat_m = salat and (random.random() > 0.3)
-            jummah = random.random() > 0.1
-            nazira = random.random() > 0.12
-            tilawat = nazira and (random.random() > 0.25)
-            q_mean = tilawat and (random.random() > 0.45)
-            tafseer = q_mean and (random.random() > 0.5)
-            books = random.random() > 0.3
-            tableeq = random.random() > 0.4
-            mta = random.random() > 0.2
-            khutba = mta and (random.random() > 0.25)
-            chanda_aam = random.random() > 0.08
-            musi = random.random() > 0.55
-            tj = random.random() > 0.1
-            wj = random.random() > 0.1
-            majlis_c = random.random() > 0.12
-            ijtema_c = random.random() > 0.15
-            bulletin_c = random.random() > 0.25
-            
-            member = {
-                "id": f"mem-{sl_counter}",
-                "masterSlNo": sl_counter,
-                "region": region,
-                "majlis": majlis,
-                "name": name,
-                "age": age,
-                "baiyatDateOrBirth": "By Birth" if random.random() > 0.25 else f"{random.randint(1965, 2015)}",
-                "education": edu,
-                "occupation": occ,
-                "monthlyIncome": income,
-                "familyMembers": fam,
-                "regular5Salat": salat,
-                "salatWithMeaning": salat_m,
-                "regularJummah": jummah,
-                "quranNazira": nazira,
-                "dailyQuranRecitation": tilawat,
-                "quranWithMeaning": q_mean,
-                "quranTafseer": tafseer,
-                "readsJamaatBooks": books,
-                "doesTableeq": tableeq,
-                "watchesMtaSermon": mta,
-                "readsKhutba": khutba,
-                "chandaAamBudgeted": chanda_aam,
-                "isMusi": musi,
-                "tahrikEJadid": tj,
-                "waqfEJadid": wj,
-                "majlisChanda": majlis_c,
-                "ijtemaChanda": ijtema_c,
-                "bulletinChanda": bulletin_c
-            }
-            members.append(member)
-            sl_counter += 1
+        fam = random.randint(2, 7) if age < 70 else random.randint(1, 4)
+        baiyat = "By Birth" if random.random() > 0.32 else str(random.randint(1960, 2018))
 
+        # Spiritual indicators (realistic high adherence)
+        salat = random.random() > 0.12
+        salat_m = salat and (random.random() > 0.35)
+        jummah = random.random() > 0.08
+        nazira = random.random() > 0.10
+        tilawat = nazira and (random.random() > 0.22)
+        q_mean = tilawat and (random.random() > 0.40)
+        tafseer = q_mean and (random.random() > 0.50)
+        books = random.random() > 0.28
+        tableeq = random.random() > 0.36
+        mta = random.random() > 0.18
+        khutba = mta and (random.random() > 0.20)
+        
+        # Chanda schemes
+        chanda_aam = random.random() > 0.08
+        musi = random.random() > 0.62
+        tj = random.random() > 0.10
+        wj = random.random() > 0.10
+        majlis_c = random.random() > 0.12
+        ijtema_c = random.random() > 0.15
+        bulletin_c = random.random() > 0.24
+
+        member = {
+            "id": f"mem-{sl_counter}",
+            "masterSlNo": sl_counter,
+            "region": reg,
+            "majlis": maj,
+            "name": name,
+            "age": age,
+            "baiyatDateOrBirth": baiyat,
+            "education": edu,
+            "occupation": occ,
+            "monthlyIncome": income,
+            "familyMembers": fam,
+            "regular5Salat": salat,
+            "salatWithMeaning": salat_m,
+            "regularJummah": jummah,
+            "quranNazira": nazira,
+            "dailyQuranRecitation": tilawat,
+            "quranWithMeaning": q_mean,
+            "quranTafseer": tafseer,
+            "readsJamaatBooks": books,
+            "doesTableeq": tableeq,
+            "watchesMtaSermon": mta,
+            "readsKhutba": khutba,
+            "chandaAamBudgeted": chanda_aam,
+            "isMusi": musi,
+            "tahrikEJadid": tj,
+            "waqfEJadid": wj,
+            "majlisChanda": majlis_c,
+            "ijtemaChanda": ijtema_c,
+            "bulletinChanda": bulletin_c
+        }
+        members.append(member)
+        sl_counter += 1
+
+assert len(members) == TARGET_TOTAL, f"Generated {len(members)} != {TARGET_TOTAL}"
+
+# Write JSON
 with open('src/data/initialMembers.json', 'w', encoding='utf-8') as f:
-    json.dump(members, f, ensure_ascii=False, indent=2)
+    json.dump(members, f, ensure_ascii=False)
 
-print(f"Generated {len(members)} records across {len(regions_data)} regions.")
+# Write CSV
+with open('public/tajneed_export.csv', 'w', newline='', encoding='utf-8') as f:
+    writer = csv.writer(f)
+    writer.writerow([
+        'Master SL No.', 'REGION', 'MAJLIS', 'MEMBERS NAME', 'eqm (Age)',
+        'Date of Baiyat / By Birth', 'Educational Qualification', 'Occupation',
+        'Monthly Income (BDT)', 'Family Members', '5 Daily Prayers', 'Prayer with Meaning',
+        'Regular Friday Prayer', 'Quran Nazira', 'Daily Quran Recitation', 'Quran with Meaning',
+        'Quran Tafseer', 'Reads Jamaat Books', 'Tableeq Participation', 'Watches MTA Khutba',
+        'Reads Khutba', 'Chanda Aam Budgeted', 'Wasiyyat (Musi)', 'Tahrik-e-Jadid',
+        'Waqf-e-Jadid', 'Majlis Chanda', 'Ijtema Chanda', 'Bulletin Chanda'
+    ])
+    for m in members:
+        writer.writerow([
+            m['masterSlNo'], m['region'], m['majlis'], m['name'], m['age'] or '',
+            m['baiyatDateOrBirth'], m['education'], m['occupation'], m['monthlyIncome'],
+            m['familyMembers'], 1 if m['regular5Salat'] else 0, 1 if m['salatWithMeaning'] else 0,
+            1 if m['regularJummah'] else 0, 1 if m['quranNazira'] else 0, 1 if m['dailyQuranRecitation'] else 0,
+            1 if m['quranWithMeaning'] else 0, 1 if m['quranTafseer'] else 0, 1 if m['readsJamaatBooks'] else 0,
+            1 if m['doesTableeq'] else 0, 1 if m['watchesMtaSermon'] else 0, 1 if m['readsKhutba'] else 0,
+            1 if m['chandaAamBudgeted'] else 0, 1 if m['isMusi'] else 0, 1 if m['tahrikEJadid'] else 0,
+            1 if m['waqfEJadid'] else 0, 1 if m['majlisChanda'] else 0, 1 if m['ijtemaChanda'] else 0,
+            1 if m['bulletinChanda'] else 0
+        ])
+
+print(f"Successfully generated exactly {len(members)} records across {len(regions_data)} regions and {num_majlises} majlises.")

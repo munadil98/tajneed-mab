@@ -120,7 +120,7 @@ const defaultCustomWidgets: CustomDashboardWidget[] = [
   }
 ];
 
-const LOCAL_STORAGE_MEMBERS_KEY = 'tajneed_members_data_v2';
+const LOCAL_STORAGE_MEMBERS_KEY = 'tajneed_members_data_v3394';
 const LOCAL_STORAGE_WIDGETS_KEY = 'tajneed_custom_widgets_v2';
 
 const TajneedContext = createContext<TajneedContextType | undefined>(undefined);
@@ -128,10 +128,12 @@ const TajneedContext = createContext<TajneedContextType | undefined>(undefined);
 export const TajneedProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [members, setMembers] = useState<Member[]>(() => {
     try {
+      // Clear legacy 859 data if present
+      localStorage.removeItem('tajneed_members_data_v2');
       const saved = localStorage.getItem(LOCAL_STORAGE_MEMBERS_KEY);
       if (saved) {
         const parsed = JSON.parse(saved);
-        if (Array.isArray(parsed) && parsed.length > 0) {
+        if (Array.isArray(parsed) && parsed.length > 0 && parsed.length !== 859) {
           return parsed;
         }
       }

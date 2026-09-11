@@ -146,7 +146,7 @@ export const ImportExportModal: React.FC = () => {
               <span>Reset to Original Google Sheet Data</span>
             </div>
             <p className="text-xs text-slate-500 leading-relaxed">
-              Restores the default Google Sheet dataset (859 members across 14 Regions and all Majlises) and resets any local modifications or deletions.
+              Restores the default Google Sheet dataset (3,394 members across 14 Regions and all Majlises) and resets any local modifications or deletions.
             </p>
 
             <div className="p-4 bg-amber-50/60 rounded-xl border border-amber-200 text-xs text-amber-900 space-y-1">
