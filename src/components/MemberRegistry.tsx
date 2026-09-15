@@ -137,7 +137,7 @@ export const MemberRegistry: React.FC<MemberRegistryProps> = ({
         <div className="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-3">
           
           {/* Search Input */}
-          <div className="relative flex-1 min-w-[240px]">
+          <div className="relative flex-1 min-w-0 w-full">
             <Search className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
             <input
               id="input-search-members"
@@ -198,11 +198,11 @@ export const MemberRegistry: React.FC<MemberRegistryProps> = ({
             </select>
           </div>
 
-          {/* Action Buttons */}
-          <div className="flex items-center gap-2 flex-shrink-0">
+          {/* Action Buttons (Fully wrap on mobile) */}
+          <div className="flex flex-wrap items-center gap-2 w-full lg:w-auto">
             <button
               onClick={() => setShowAdvancedFilters(prev => !prev)}
-              className={`flex items-center gap-1.5 px-3 py-2 text-xs font-medium rounded-xl border transition ${
+              className={`flex-1 sm:flex-none justify-center flex items-center gap-1.5 px-3 py-2 text-xs font-medium rounded-xl border transition ${
                 showAdvancedFilters || isAnyFilterActive
                   ? 'bg-emerald-50 border-emerald-300 text-emerald-800'
                   : 'bg-white border-slate-300 text-slate-700 hover:bg-slate-50'
@@ -218,7 +218,7 @@ export const MemberRegistry: React.FC<MemberRegistryProps> = ({
             <button
               onClick={() => setIsPdfModalOpen(true)}
               title="Export Official Majlis PDF"
-              className="flex items-center gap-1.5 px-3 py-2 text-xs font-semibold bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-300 rounded-xl shadow-2xs transition"
+              className="flex-1 sm:flex-none justify-center flex items-center gap-1.5 px-3 py-2 text-xs font-semibold bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-300 rounded-xl shadow-2xs transition whitespace-nowrap"
             >
               <FileText className="w-3.5 h-3.5 text-emerald-700" />
               <span>Majlis PDF</span>
@@ -227,16 +227,16 @@ export const MemberRegistry: React.FC<MemberRegistryProps> = ({
             <button
               onClick={downloadCSV}
               title="Download CSV"
-              className="flex items-center gap-1.5 px-3 py-2 text-xs font-medium bg-white hover:bg-slate-50 border border-slate-300 rounded-xl text-slate-700 transition"
+              className="flex-1 sm:flex-none justify-center flex items-center gap-1.5 px-3 py-2 text-xs font-medium bg-white hover:bg-slate-50 border border-slate-300 rounded-xl text-slate-700 transition"
             >
               <Download className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline">CSV</span>
+              <span>CSV</span>
             </button>
 
             <button
               id="btn-add-member-table"
               onClick={onOpenAddModal}
-              className="flex items-center gap-1.5 px-3.5 py-2 text-xs font-semibold bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl shadow-sm transition whitespace-nowrap"
+              className="w-full sm:w-auto justify-center flex items-center gap-1.5 px-3.5 py-2 text-xs font-semibold bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl shadow-sm transition whitespace-nowrap"
             >
               <Plus className="w-4 h-4" />
               <span>Add Member</span>

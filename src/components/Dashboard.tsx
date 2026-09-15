@@ -155,7 +155,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
             id="dashboard-filter-region"
             value={filters.region}
             onChange={(e) => setFilters(prev => ({ ...prev, region: e.target.value, majlis: '' }))}
-            className="text-xs px-3 py-1.5 rounded-lg border border-slate-300 bg-white font-medium text-slate-700 shadow-sm focus:outline-none focus:ring-1 focus:ring-emerald-500"
+            className="text-xs px-3 py-1.5 rounded-lg border border-slate-300 bg-white font-medium text-slate-700 shadow-sm focus:outline-none focus:ring-1 focus:ring-emerald-500 w-full sm:w-auto max-w-full truncate"
           >
             <option value="">All Regions ({ALL_REGIONS.length})</option>
             {ALL_REGIONS.map(reg => (
@@ -168,7 +168,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
             id="dashboard-filter-majlis"
             value={filters.majlis}
             onChange={(e) => setFilters(prev => ({ ...prev, majlis: e.target.value }))}
-            className="text-xs px-3 py-1.5 rounded-lg border border-slate-300 bg-white font-medium text-slate-700 shadow-sm focus:outline-none focus:ring-1 focus:ring-emerald-500"
+            className="text-xs px-3 py-1.5 rounded-lg border border-slate-300 bg-white font-medium text-slate-700 shadow-sm focus:outline-none focus:ring-1 focus:ring-emerald-500 w-full sm:w-auto max-w-full truncate"
           >
             <option value="">
               {filters.region ? `All Majlises in ${filters.region}` : 'All Majlises'}
@@ -178,23 +178,25 @@ export const Dashboard: React.FC<DashboardProps> = ({
             ))}
           </select>
 
-          {isFiltered && (
-            <button
-              onClick={resetFilters}
-              className="text-xs text-slate-500 hover:text-red-600 px-2 py-1 font-medium transition"
-            >
-              Reset Filters
-            </button>
-          )}
+          <div className="flex items-center gap-2 w-full sm:w-auto">
+            {isFiltered && (
+              <button
+                onClick={resetFilters}
+                className="text-xs text-slate-500 hover:text-red-600 px-2 py-1 font-medium transition"
+              >
+                Reset Filters
+              </button>
+            )}
 
-          <button
-            onClick={() => setIsPdfModalOpen(true)}
-            className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold bg-emerald-700 hover:bg-emerald-600 text-white rounded-lg shadow-sm transition"
-            title="Export Majlis PDF"
-          >
-            <FileText className="w-3.5 h-3.5 text-emerald-200" />
-            <span>Majlis PDF</span>
-          </button>
+            <button
+              onClick={() => setIsPdfModalOpen(true)}
+              className="flex-1 sm:flex-none flex items-center justify-center gap-1.5 px-3 py-1.5 text-xs font-semibold bg-emerald-700 hover:bg-emerald-600 text-white rounded-lg shadow-sm transition whitespace-nowrap"
+              title="Export Majlis PDF"
+            >
+              <FileText className="w-3.5 h-3.5 text-emerald-200" />
+              <span>Majlis PDF</span>
+            </button>
+          </div>
         </div>
       </div>
 

@@ -37,7 +37,7 @@ const TajneedAppContent: React.FC = () => {
       />
 
       {/* Main Content Area */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-12">
+      <main className="flex-1 max-w-7xl w-full mx-auto px-3 sm:px-6 lg:px-8 pt-4 sm:pt-6 pb-24 md:pb-12">
         {activeTab === 'dashboard' && (
           <Dashboard
             onNavigateToBuilder={() => setActiveTab('customWidgets')}
@@ -73,7 +73,7 @@ const TajneedAppContent: React.FC = () => {
 
       {/* Toast Notification Alert */}
       {toastMessage && (
-        <div className="fixed bottom-5 right-5 z-50 animate-in fade-in slide-in-from-bottom-3 duration-200">
+        <div className="fixed bottom-20 md:bottom-5 right-3 md:right-5 z-50 animate-in fade-in slide-in-from-bottom-3 duration-200">
           <div className="bg-slate-900 text-white px-4 py-3 rounded-xl shadow-lg border border-slate-700 flex items-center gap-3 text-xs max-w-md">
             <CheckCircle className="w-4 h-4 text-emerald-400 flex-shrink-0" />
             <span className="leading-tight">{toastMessage}</span>
@@ -82,7 +82,7 @@ const TajneedAppContent: React.FC = () => {
       )}
 
       {/* Minimal Footer */}
-      <footer className="border-t border-slate-200 bg-white py-4 text-center text-xs text-slate-500">
+      <footer className="border-t border-slate-200 bg-white py-4 pb-20 md:pb-4 text-center text-xs text-slate-500">
         <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
           <span>Tajneed App • Ahmadiyya Muslim Jama'at Bangladesh Member Registry</span>
           <span className="text-slate-400">Integrated with Google Sheet Data Architecture</span>
