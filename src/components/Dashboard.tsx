@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import { 
   Users, 
   Banknote, 
@@ -8,11 +8,16 @@ import {
   BookOpen, 
   Tv, 
   Plus, 
-  Flame,
-  CheckCircle2,
-  Calendar,
-  Filter,
-  FileText
+  Flame, 
+  CheckCircle2, 
+  Calendar, 
+  Filter, 
+  FileText,
+  Image as ImageIcon,
+  Download,
+  Check,
+  Sparkles,
+  Camera
 } from 'lucide-react';
 import { 
   ResponsiveContainer, 
@@ -26,10 +31,12 @@ import {
   Pie, 
   Cell
 } from 'recharts';
+import { toPng } from 'html-to-image';
 import { useTajneed } from '../context/TajneedContext';
 import { ALL_REGIONS, getMajlisesForRegion } from '../data/regionsAndMajlis';
 import { CustomDashboardWidget, Member } from '../types/tajneed';
 import { MajlisPdfExportModal } from './MajlisPdfExportModal';
+import { RegionalGeographicalHeatmap } from './RegionalGeographicalHeatmap';
 
 const COLORS = ['#059669', '#2563eb', '#7c3aed', '#d97706', '#dc2626', '#0d9488', '#4b5563', '#ea580c'];
 
@@ -43,6 +50,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
   onNavigateToRegistry
 }) => {
   const { 
+    members,
     filteredMembers, 
     stats, 
     filters, 
@@ -51,9 +59,85 @@ export const Dashboard: React.FC<DashboardProps> = ({
     customWidgets 
   } = useTajneed();
 
-  const [isPdfModalOpen, setIsPdfModalOpen] = React.useState(false);
+  const [isPdfModalOpen, setIsPdfModalOpen] = useState(false);
+  const [isExportingImage, setIsExportingImage] = useState(false);
+  const [exportSuccessMessage, setExportSuccessMessage] = useState<string | null>(null);
+
+  // References to report DOM containers for image download
+  const reportRef = useRef<HTMLDivElement>(null);
+  const spiritualFinancialRef = useRef<HTMLDivElement>(null);
+  const [isExportingSpiritual, setIsExportingSpiritual] = useState(false);
 
   const isFiltered = filters.region || filters.majlis || filters.occupation || filters.education || filters.ageRange !== 'all';
+
+  // Onclick image download for entire dashboard statistic report
+  const handleDownloadReportImage = async () => {
+    if (!reportRef.current) return;
+    try {
+      setIsExportingImage(true);
+      const dataUrl = await toPng(reportRef.current, {
+        quality: 0.95,
+        pixelRatio: 2,
+        backgroundColor: '#f8fafc',
+        cacheBust: true,
+        filter: (node) => {
+          if (node instanceof HTMLElement && node.classList.contains('no-export')) {
+            return false;
+          }
+          return true;
+        }
+      });
+
+      const link = document.createElement('a');
+      const dateStr = new Date().toISOString().split('T')[0];
+      const regionSuffix = filters.region ? `_${filters.region.replace(/\s+/g, '_')}` : '_All_Regions';
+      const majlisSuffix = filters.majlis ? `_${filters.majlis.replace(/\s+/g, '_')}` : '';
+      link.download = `Majlis_Ansarullah_Dashboard_Statistic_Report${regionSuffix}${majlisSuffix}_${dateStr}.png`;
+      link.href = dataUrl;
+      link.click();
+
+      setExportSuccessMessage('Dashboard statistic report image saved successfully (HD PNG)!');
+      setTimeout(() => setExportSuccessMessage(null), 4000);
+    } catch (err) {
+      console.error('Failed to export dashboard report image:', err);
+      alert('Failed to generate image. Please try again.');
+    } finally {
+      setIsExportingImage(false);
+    }
+  };
+
+  // Section-specific image download for Spiritual & Financial report
+  const handleDownloadSpiritualFinancialImage = async () => {
+    if (!spiritualFinancialRef.current) return;
+    try {
+      setIsExportingSpiritual(true);
+      const dataUrl = await toPng(spiritualFinancialRef.current, {
+        quality: 0.95,
+        pixelRatio: 2,
+        backgroundColor: '#ffffff',
+        cacheBust: true,
+        filter: (node) => {
+          if (node instanceof HTMLElement && node.classList.contains('no-export')) {
+            return false;
+          }
+          return true;
+        }
+      });
+
+      const link = document.createElement('a');
+      const dateStr = new Date().toISOString().split('T')[0];
+      link.download = `Majlis_Ansarullah_Spiritual_Financial_Report_${dateStr}.png`;
+      link.href = dataUrl;
+      link.click();
+
+      setExportSuccessMessage('Spiritual & Financial report image saved!');
+      setTimeout(() => setExportSuccessMessage(null), 3000);
+    } catch (err) {
+      console.error('Failed to export spiritual & financial section:', err);
+    } finally {
+      setIsExportingSpiritual(false);
+    }
+  };
 
   // Compute a custom widget's value based on filtered data
   const computeCustomWidget = (widget: CustomDashboardWidget) => {
@@ -189,6 +273,27 @@ export const Dashboard: React.FC<DashboardProps> = ({
             )}
 
             <button
+              id="download-dashboard-report-image-btn"
+              type="button"
+              onClick={handleDownloadReportImage}
+              disabled={isExportingImage}
+              className="flex-1 sm:flex-none flex items-center justify-center gap-1.5 px-3 py-1.5 text-xs font-semibold bg-blue-700 hover:bg-blue-600 text-white rounded-lg shadow-sm transition whitespace-nowrap cursor-pointer disabled:opacity-60"
+              title="Download Entire Dashboard Statistic Report as High-Resolution PNG Image"
+            >
+              {isExportingImage ? (
+                <>
+                  <div className="w-3.5 h-3.5 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                  <span>Capturing...</span>
+                </>
+              ) : (
+                <>
+                  <ImageIcon className="w-3.5 h-3.5 text-blue-200" />
+                  <span>Download Report Image</span>
+                </>
+              )}
+            </button>
+
+            <button
               onClick={() => setIsPdfModalOpen(true)}
               className="flex-1 sm:flex-none flex items-center justify-center gap-1.5 px-3 py-1.5 text-xs font-semibold bg-emerald-700 hover:bg-emerald-600 text-white rounded-lg shadow-sm transition whitespace-nowrap"
               title="Export Majlis PDF"
@@ -200,8 +305,67 @@ export const Dashboard: React.FC<DashboardProps> = ({
         </div>
       </div>
 
-      {/* KPI Cards Row 1: High-Level Overview */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      {/* Success Toast Notification */}
+      {exportSuccessMessage && (
+        <div className="p-3 bg-emerald-800 text-white rounded-xl shadow-md flex items-center justify-between text-xs font-medium animate-fadeIn">
+          <div className="flex items-center gap-2">
+            <CheckCircle2 className="w-4 h-4 text-emerald-300 flex-shrink-0" />
+            <span>{exportSuccessMessage}</span>
+          </div>
+          <button 
+            onClick={() => setExportSuccessMessage(null)}
+            className="text-emerald-200 hover:text-white text-xs underline ml-4 cursor-pointer"
+          >
+            Dismiss
+          </button>
+        </div>
+      )}
+
+      {/* ========================================================================= */}
+      {/* MAIN DASHBOARD STATISTIC REPORT CONTAINER (EXPORTABLE TO IMAGE ON CLICK)   */}
+      {/* ========================================================================= */}
+      <div 
+        ref={reportRef} 
+        id="dashboard-statistic-report" 
+        className="space-y-6 pt-1 bg-transparent"
+      >
+        
+        {/* Executive Statistic Report Header Banner (Included in Image Export) */}
+        <div className="bg-gradient-to-r from-emerald-900 via-slate-900 to-emerald-950 text-white p-4 sm:p-5 rounded-2xl shadow-sm border border-emerald-800/40 flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
+          <div>
+            <div className="flex items-center gap-2 mb-1">
+              <span className="text-[10px] uppercase tracking-wider font-bold bg-emerald-700/80 text-emerald-100 px-2 py-0.5 rounded border border-emerald-500/30">
+                Official Census & Analytics Audit
+              </span>
+              <span className="text-xs text-emerald-300 font-mono">
+                • {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+              </span>
+            </div>
+            <h2 className="text-base sm:text-lg font-black tracking-tight text-white">
+              MAJLIS ANSARULLAH BANGLADESH • TAJNEED STATISTIC REPORT
+            </h2>
+            <p className="text-xs text-slate-300 mt-0.5">
+              {filters.region ? `Regional Scope: ${filters.region}` : 'National Scope: All 15 Regions'} 
+              {filters.majlis ? ` • Majlis: ${filters.majlis}` : ''} 
+              {` • ${stats.filteredCount.toLocaleString()} Registered Members (${stats.totalRegions} Regions, ${stats.totalMajlis} Majlises)`}
+            </p>
+          </div>
+
+          <div className="no-export flex items-center gap-2">
+            <button
+              type="button"
+              onClick={handleDownloadReportImage}
+              disabled={isExportingImage}
+              className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold bg-white/10 hover:bg-white/20 text-white rounded-lg border border-white/20 transition backdrop-blur-xs shadow-2xs cursor-pointer"
+            >
+              <Download className="w-3.5 h-3.5 text-emerald-300" />
+              <span>{isExportingImage ? 'Generating Image...' : 'Export Report PNG'}</span>
+            </button>
+          </div>
+        </div>
+
+        {/* KPI Cards Row 1: High-Level Overview */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         
         {/* Total Members */}
         <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex items-center justify-between">
@@ -352,163 +516,196 @@ export const Dashboard: React.FC<DashboardProps> = ({
       </div>
 
       {/* Row 2: Spiritual Practices & Financial Contribution Overview */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        
-        {/* Spiritual & Religious Practice Stats */}
-        <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold">
-                <Flame className="w-4 h-4" />
+      <div 
+        ref={spiritualFinancialRef} 
+        id="spiritual-financial-report-section" 
+        className="space-y-3"
+      >
+        <div className="no-export flex items-center justify-between px-1">
+          <span className="text-xs font-bold text-slate-600 uppercase tracking-wider">
+            Spiritual Observances & Financial Contributions
+          </span>
+          <button
+            type="button"
+            onClick={handleDownloadSpiritualFinancialImage}
+            disabled={isExportingSpiritual}
+            className="flex items-center gap-1.5 text-xs text-indigo-700 hover:text-indigo-900 font-semibold px-2.5 py-1 rounded-lg border border-indigo-200 bg-indigo-50/70 hover:bg-indigo-100 transition cursor-pointer"
+            title="Download Spiritual & Financial Observances Card as PNG Image"
+          >
+            <Camera className="w-3.5 h-3.5 text-indigo-600" />
+            <span>{isExportingSpiritual ? 'Exporting...' : 'Export Section Image'}</span>
+          </button>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          {/* Spiritual & Religious Practice Stats */}
+          <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-4">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold">
+                  <Flame className="w-4 h-4" />
+                </div>
+                <div>
+                  <h3 className="text-sm font-bold text-slate-900">
+                    Spiritual & Religious Observances
+                  </h3>
+                  <p className="text-xs text-slate-500">
+                    Adherence rates among current filtered population ({stats.filteredCount})
+                  </p>
+                </div>
               </div>
+              <button
+                onClick={onNavigateToRegistry}
+                className="no-export text-xs text-emerald-600 hover:text-emerald-700 font-medium"
+              >
+                View Registry →
+              </button>
+            </div>
+
+            <div className="space-y-3.5 pt-1">
+              {/* 5 Daily Prayers */}
               <div>
-                <h3 className="text-sm font-bold text-slate-900">
-                  Spiritual & Religious Observances
-                </h3>
-                <p className="text-xs text-slate-500">
-                  Adherence rates among current filtered population ({stats.filteredCount})
-                </p>
+                <div className="flex items-center justify-between text-xs font-medium text-slate-700 mb-1">
+                  <span>নিয়মিত ৫ ওয়াক্ত নামাজ (5 Daily Prayers)</span>
+                  <span className="font-bold text-slate-900">{stats.salatRate}%</span>
+                </div>
+                <div className="w-full bg-slate-100 h-2.5 rounded-full overflow-hidden">
+                  <div 
+                    className="bg-emerald-600 h-full rounded-full transition-all duration-500" 
+                    style={{ width: `${stats.salatRate}%` }} 
+                  />
+                </div>
+              </div>
+
+              {/* Friday Prayers */}
+              <div>
+                <div className="flex items-center justify-between text-xs font-medium text-slate-700 mb-1">
+                  <span>নিয়মিত জুমআর নামাজ (Regular Friday Prayer)</span>
+                  <span className="font-bold text-slate-900">{stats.jummahRate}%</span>
+                </div>
+                <div className="w-full bg-slate-100 h-2.5 rounded-full overflow-hidden">
+                  <div 
+                    className="bg-blue-600 h-full rounded-full transition-all duration-500" 
+                    style={{ width: `${stats.jummahRate}%` }} 
+                  />
+                </div>
+              </div>
+
+              {/* Quran Nazira */}
+              <div>
+                <div className="flex items-center justify-between text-xs font-medium text-slate-700 mb-1">
+                  <span>কুরআন শিক্ষা: নাজেরা (Quran Nazira Knowledge)</span>
+                  <span className="font-bold text-slate-900">{stats.naziraRate}%</span>
+                </div>
+                <div className="w-full bg-slate-100 h-2.5 rounded-full overflow-hidden">
+                  <div 
+                    className="bg-teal-600 h-full rounded-full transition-all duration-500" 
+                    style={{ width: `${stats.naziraRate}%` }} 
+                  />
+                </div>
+              </div>
+
+              {/* Daily Quran Recitation */}
+              <div>
+                <div className="flex items-center justify-between text-xs font-medium text-slate-700 mb-1">
+                  <span>প্রত্যহ কোরআন তেলওয়াত (Daily Quran Recitation)</span>
+                  <span className="font-bold text-slate-900">{stats.tilawatRate}%</span>
+                </div>
+                <div className="w-full bg-slate-100 h-2.5 rounded-full overflow-hidden">
+                  <div 
+                    className="bg-indigo-600 h-full rounded-full transition-all duration-500" 
+                    style={{ width: `${stats.tilawatRate}%` }} 
+                  />
+                </div>
+              </div>
+
+              {/* MTA Khutba Viewers */}
+              <div>
+                <div className="flex items-center justify-between text-xs font-medium text-slate-700 mb-1">
+                  <span>এমটিএ-তে হুযুর (আইঃ) এর খুৎবা দর্শন ও শ্রবণ (MTA Sermon)</span>
+                  <span className="font-bold text-slate-900">{stats.mtaRate}%</span>
+                </div>
+                <div className="w-full bg-slate-100 h-2.5 rounded-full overflow-hidden">
+                  <div 
+                    className="bg-amber-600 h-full rounded-full transition-all duration-500" 
+                    style={{ width: `${stats.mtaRate}%` }} 
+                  />
+                </div>
               </div>
             </div>
-            <button
-              onClick={onNavigateToRegistry}
-              className="text-xs text-emerald-600 hover:text-emerald-700 font-medium"
-            >
-              View Registry →
-            </button>
           </div>
 
-          <div className="space-y-3.5 pt-1">
-            {/* 5 Daily Prayers */}
-            <div>
-              <div className="flex items-center justify-between text-xs font-medium text-slate-700 mb-1">
-                <span>নিয়মিত ৫ ওয়াক্ত নামাজ (5 Daily Prayers)</span>
-                <span className="font-bold text-slate-900">{stats.salatRate}%</span>
-              </div>
-              <div className="w-full bg-slate-100 h-2.5 rounded-full overflow-hidden">
-                <div 
-                  className="bg-emerald-600 h-full rounded-full transition-all duration-500" 
-                  style={{ width: `${stats.salatRate}%` }} 
-                />
-              </div>
-            </div>
-
-            {/* Friday Prayers */}
-            <div>
-              <div className="flex items-center justify-between text-xs font-medium text-slate-700 mb-1">
-                <span>নিয়মিত জুমআর নামাজ (Regular Friday Prayer)</span>
-                <span className="font-bold text-slate-900">{stats.jummahRate}%</span>
-              </div>
-              <div className="w-full bg-slate-100 h-2.5 rounded-full overflow-hidden">
-                <div 
-                  className="bg-blue-600 h-full rounded-full transition-all duration-500" 
-                  style={{ width: `${stats.jummahRate}%` }} 
-                />
+          {/* Financial & Chanda Participation */}
+          <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-4">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 rounded-lg bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold">
+                  <Banknote className="w-4 h-4" />
+                </div>
+                <div>
+                  <h3 className="text-sm font-bold text-slate-900">
+                    Financial Sacrifice & Chanda Schemes
+                  </h3>
+                  <p className="text-xs text-slate-500">
+                    Active participation in obligatory & auxiliary contributions
+                  </p>
+                </div>
               </div>
             </div>
 
-            {/* Quran Nazira */}
-            <div>
-              <div className="flex items-center justify-between text-xs font-medium text-slate-700 mb-1">
-                <span>কুরআন শিক্ষা: নাজেরা (Quran Nazira Knowledge)</span>
-                <span className="font-bold text-slate-900">{stats.naziraRate}%</span>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-1">
+              <div className="p-3 bg-slate-50 rounded-lg border border-slate-100">
+                <span className="text-[11px] font-semibold text-slate-500 block">চাঁদায়ে আম (Chanda Aam)</span>
+                <span className="text-xl font-bold text-slate-900 mt-1 block">{stats.chandaAamRate}%</span>
+                <span className="text-[10px] text-slate-400">Budgeted members</span>
               </div>
-              <div className="w-full bg-slate-100 h-2.5 rounded-full overflow-hidden">
-                <div 
-                  className="bg-teal-600 h-full rounded-full transition-all duration-500" 
-                  style={{ width: `${stats.naziraRate}%` }} 
-                />
-              </div>
-            </div>
 
-            {/* Daily Quran Recitation */}
-            <div>
-              <div className="flex items-center justify-between text-xs font-medium text-slate-700 mb-1">
-                <span>প্রত্যহ কোরআন তেলওয়াত (Daily Quran Recitation)</span>
-                <span className="font-bold text-slate-900">{stats.tilawatRate}%</span>
+              <div className="p-3 bg-indigo-50 rounded-lg border border-indigo-100">
+                <span className="text-[11px] font-semibold text-indigo-600 block">ওসীয়ত (Wasiyyat)</span>
+                <span className="text-xl font-bold text-indigo-900 mt-1 block">{stats.musiRate}%</span>
+                <span className="text-[10px] text-indigo-600">Al-Wasiyyat dedicated</span>
               </div>
-              <div className="w-full bg-slate-100 h-2.5 rounded-full overflow-hidden">
-                <div 
-                  className="bg-indigo-600 h-full rounded-full transition-all duration-500" 
-                  style={{ width: `${stats.tilawatRate}%` }} 
-                />
-              </div>
-            </div>
 
-            {/* MTA Khutba Viewers */}
-            <div>
-              <div className="flex items-center justify-between text-xs font-medium text-slate-700 mb-1">
-                <span>এমটিএ-তে হুযুর (আইঃ) এর খুৎবা দর্শন ও শ্রবণ (MTA Sermon)</span>
-                <span className="font-bold text-slate-900">{stats.mtaRate}%</span>
+              <div className="p-3 bg-slate-50 rounded-lg border border-slate-100">
+                <span className="text-[11px] font-semibold text-slate-500 block">তাহরীকে জাদীদ (TJ)</span>
+                <span className="text-xl font-bold text-slate-900 mt-1 block">{stats.tahrikRate}%</span>
+                <span className="text-[10px] text-slate-400">Global mission fund</span>
               </div>
-              <div className="w-full bg-slate-100 h-2.5 rounded-full overflow-hidden">
-                <div 
-                  className="bg-amber-600 h-full rounded-full transition-all duration-500" 
-                  style={{ width: `${stats.mtaRate}%` }} 
-                />
+
+              <div className="p-3 bg-slate-50 rounded-lg border border-slate-100">
+                <span className="text-[11px] font-semibold text-slate-500 block">ওয়াকফে জাদীদ (WJ)</span>
+                <span className="text-xl font-bold text-slate-900 mt-1 block">{stats.waqRate}%</span>
+                <span className="text-[10px] text-slate-400">Rural development</span>
+              </div>
+
+              <div className="p-3 bg-slate-50 rounded-lg border border-slate-100">
+                <span className="text-[11px] font-semibold text-slate-500 block">মজলিস চাঁদা (Majlis)</span>
+                <span className="text-xl font-bold text-slate-900 mt-1 block">{stats.majlisRate}%</span>
+                <span className="text-[10px] text-slate-400">Local sub-organization</span>
+              </div>
+
+              <div className="p-3 bg-emerald-50 rounded-lg border border-emerald-100">
+                <span className="text-[11px] font-semibold text-emerald-700 block">Combined Total</span>
+                <span className="text-xl font-bold text-emerald-900 mt-1 block">৳{(stats.totalIncome / 1000).toFixed(0)}k</span>
+                <span className="text-[10px] text-emerald-700">Monthly base capacity</span>
               </div>
             </div>
           </div>
         </div>
-
-        {/* Financial & Chanda Participation */}
-        <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold">
-                <Banknote className="w-4 h-4" />
-              </div>
-              <div>
-                <h3 className="text-sm font-bold text-slate-900">
-                  Financial Sacrifice & Chanda Schemes
-                </h3>
-                <p className="text-xs text-slate-500">
-                  Active participation in obligatory & auxiliary contributions
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-1">
-            <div className="p-3 bg-slate-50 rounded-lg border border-slate-100">
-              <span className="text-[11px] font-semibold text-slate-500 block">চাঁদায়ে আম (Chanda Aam)</span>
-              <span className="text-xl font-bold text-slate-900 mt-1 block">{stats.chandaAamRate}%</span>
-              <span className="text-[10px] text-slate-400">Budgeted members</span>
-            </div>
-
-            <div className="p-3 bg-indigo-50 rounded-lg border border-indigo-100">
-              <span className="text-[11px] font-semibold text-indigo-600 block">ওসীয়ত (Wasiyyat)</span>
-              <span className="text-xl font-bold text-indigo-900 mt-1 block">{stats.musiRate}%</span>
-              <span className="text-[10px] text-indigo-600">Al-Wasiyyat dedicated</span>
-            </div>
-
-            <div className="p-3 bg-slate-50 rounded-lg border border-slate-100">
-              <span className="text-[11px] font-semibold text-slate-500 block">তাহরীকে জাদীদ (TJ)</span>
-              <span className="text-xl font-bold text-slate-900 mt-1 block">{stats.tahrikRate}%</span>
-              <span className="text-[10px] text-slate-400">Global mission fund</span>
-            </div>
-
-            <div className="p-3 bg-slate-50 rounded-lg border border-slate-100">
-              <span className="text-[11px] font-semibold text-slate-500 block">ওয়াকফে জাদীদ (WJ)</span>
-              <span className="text-xl font-bold text-slate-900 mt-1 block">{stats.waqRate}%</span>
-              <span className="text-[10px] text-slate-400">Rural development</span>
-            </div>
-
-            <div className="p-3 bg-slate-50 rounded-lg border border-slate-100">
-              <span className="text-[11px] font-semibold text-slate-500 block">মজলিস চাঁদা (Majlis)</span>
-              <span className="text-xl font-bold text-slate-900 mt-1 block">{stats.majlisRate}%</span>
-              <span className="text-[10px] text-slate-400">Local sub-organization</span>
-            </div>
-
-            <div className="p-3 bg-emerald-50 rounded-lg border border-emerald-100">
-              <span className="text-[11px] font-semibold text-emerald-700 block">Combined Total</span>
-              <span className="text-xl font-bold text-emerald-900 mt-1 block">৳{(stats.totalIncome / 1000).toFixed(0)}k</span>
-              <span className="text-[10px] text-emerald-700">Monthly base capacity</span>
-            </div>
-          </div>
-        </div>
-
       </div>
+
+      {/* Geographical Member Density & Coverage Gap Heatmap using Recharts */}
+      <RegionalGeographicalHeatmap
+        members={members}
+        selectedRegion={filters.region}
+        onSelectRegion={(reg) => {
+          setFilters(prev => ({
+            ...prev,
+            region: reg === prev.region ? '' : reg,
+            majlis: ''
+          }));
+        }}
+      />
 
       {/* Row 3: Charts (Regions and Top Majlis) */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -688,6 +885,8 @@ export const Dashboard: React.FC<DashboardProps> = ({
         </div>
 
       </div>
+
+      </div> {/* End of #dashboard-statistic-report exportable container */}
 
       {/* Majlis PDF Export Modal */}
       <MajlisPdfExportModal
