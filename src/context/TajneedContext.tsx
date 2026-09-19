@@ -120,7 +120,7 @@ const defaultCustomWidgets: CustomDashboardWidget[] = [
   }
 ];
 
-const LOCAL_STORAGE_MEMBERS_KEY = 'tajneed_members_data_v3394';
+const LOCAL_STORAGE_MEMBERS_KEY = 'tajneed_members_data_v3394_mirpur128';
 const LOCAL_STORAGE_WIDGETS_KEY = 'tajneed_custom_widgets_v2';
 
 const TajneedContext = createContext<TajneedContextType | undefined>(undefined);
@@ -128,12 +128,20 @@ const TajneedContext = createContext<TajneedContextType | undefined>(undefined);
 export const TajneedProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [members, setMembers] = useState<Member[]>(() => {
     try {
-      // Clear legacy 859 data if present
+      // Clear legacy data caches
       localStorage.removeItem('tajneed_members_data_v2');
+      localStorage.removeItem('tajneed_members_data_v3394');
+      localStorage.removeItem('tajneed_members_data_v3394_r385');
       const saved = localStorage.getItem(LOCAL_STORAGE_MEMBERS_KEY);
       if (saved) {
         const parsed = JSON.parse(saved);
         if (Array.isArray(parsed) && parsed.length > 0 && parsed.length !== 859) {
+          // If saved data has the outdated 49-member distribution for DHAKA or 43 for MIRPUR, refresh to INITIAL_MEMBERS
+          const dhakaCount = parsed.filter((m: any) => (m.majlis || '').trim().toUpperCase() === 'DHAKA').length;
+          const mirpurCount = parsed.filter((m: any) => (m.majlis || '').trim().toUpperCase() === 'MIRPUR').length;
+          if (dhakaCount === 49 || mirpurCount === 43) {
+            return INITIAL_MEMBERS;
+          }
           return parsed;
         }
       }
@@ -221,22 +229,22 @@ export const TajneedProvider: React.FC<{ children: React.ReactNode }> = ({ child
       }
 
       // Region
-      if (filters.region && m.region !== filters.region) {
+      if (filters.region && (m.region || '').trim().toLowerCase() !== filters.region.trim().toLowerCase()) {
         return false;
       }
 
       // Majlis
-      if (filters.majlis && m.majlis !== filters.majlis) {
+      if (filters.majlis && (m.majlis || '').trim().toLowerCase() !== filters.majlis.trim().toLowerCase()) {
         return false;
       }
 
       // Education
-      if (filters.education && m.education !== filters.education) {
+      if (filters.education && (m.education || '').trim().toLowerCase() !== filters.education.trim().toLowerCase()) {
         return false;
       }
 
       // Occupation
-      if (filters.occupation && m.occupation !== filters.occupation) {
+      if (filters.occupation && (m.occupation || '').trim().toLowerCase() !== filters.occupation.trim().toLowerCase()) {
         return false;
       }
 

@@ -11,8 +11,16 @@
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <link rel="alternate icon" href="./favicon.ico" />
-    <script type="module" crossorigin src="./assets/index-CJh27MDU.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DDcIZFey.css">
+    <script>
+      // Fallback redirect for GitHub Pages deployments configured to serve from root
+      if (window.location.hostname.endsWith('github.io') && !window.location.pathname.includes('/docs')) {
+        var path = window.location.pathname;
+        var target = path.endsWith('/') ? path + 'docs/' : path + '/docs/';
+        window.location.replace(target);
+      }
+    </script>
+    <script type="module" crossorigin src="./assets/index-KjqThsel.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BLPSurLN.css">
   </head>
   <body>
     <div id="root"></div>

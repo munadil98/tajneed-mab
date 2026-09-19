@@ -48,61 +48,183 @@ export function parseBool(val: string | undefined): boolean {
 }
 
 /**
+ * Builds a column index map from the header row (Row 1)
+ */
+function buildHeaderMap(headerCols: string[]): { [key: string]: number } {
+  const map: { [key: string]: number } = {};
+
+  headerCols.forEach((colText, idx) => {
+    const col = colText.toLowerCase().replace(/[\r\n_]/g, ' ').trim();
+    if (!col) return;
+
+    if (map['sl'] === undefined && (col.includes('master') || col.includes('sl') || col.includes('ক্রঃ') || col.includes('ক্রমিক') || col === 'no' || col === 'id')) {
+      map['sl'] = idx;
+    } else if (map['region'] === undefined && (col.includes('region') || col.includes('রিজিয়ন') || col.includes('বিভাগ'))) {
+      map['region'] = idx;
+    } else if (map['majlis'] === undefined && (col.includes('majlis') || col.includes('মজলিস') || col.includes('শাখা'))) {
+      map['majlis'] = idx;
+    } else if (map['name'] === undefined && !col.includes('meaning') && (col.includes('name') || col.includes('নাম') || col.includes('member'))) {
+      map['name'] = idx;
+    } else if (map['age'] === undefined && (col.includes('age') || col.includes('বয়স') || col.includes('eqm'))) {
+      map['age'] = idx;
+    } else if (map['baiyat'] === undefined && (col.includes('baiyat') || col.includes('বায়াত') || col.includes('birth'))) {
+      map['baiyat'] = idx;
+    } else if (map['education'] === undefined && (col.includes('educat') || col.includes('শিক্ষাগত') || col.includes('qualification') || col.includes('যোগ্যতা') || col === 'edu')) {
+      map['education'] = idx;
+    } else if (map['occupation'] === undefined && (col.includes('occupat') || col.includes('পেশা') || col.includes('profession') || col.includes('job'))) {
+      map['occupation'] = idx;
+    } else if (map['income'] === undefined && (col.includes('income') || col.includes('আয়') || col.includes('মাসিক') || col.includes('salary') || col.includes('bdt'))) {
+      map['income'] = idx;
+    } else if (map['family'] === undefined && (col.includes('family') || col.includes('পরিবার'))) {
+      map['family'] = idx;
+    } else if (map['regular5Salat'] === undefined && (col.includes('5 daily') || col.includes('5 salat') || col.includes('৫ ওয়াক্ত') || (col.includes('salat') && !col.includes('meaning')) || (col.includes('prayer') && !col.includes('meaning') && !col.includes('friday')))) {
+      map['regular5Salat'] = idx;
+    } else if (map['salatWithMeaning'] === undefined && (col.includes('prayer with meaning') || col.includes('salat with meaning') || col.includes('salat meaning') || col.includes('নামাজের অর্থ') || (col.includes('meaning') && !col.includes('quran')))) {
+      map['salatWithMeaning'] = idx;
+    } else if (map['regularJummah'] === undefined && (col.includes('friday') || col.includes('jummah') || col.includes('জুমুআহ') || col.includes('জুম্মা'))) {
+      map['regularJummah'] = idx;
+    } else if (map['quranNazira'] === undefined && (col.includes('nazira') || col.includes('নাজেরা'))) {
+      map['quranNazira'] = idx;
+    } else if (map['dailyQuranRecitation'] === undefined && (col.includes('daily quran') || col.includes('daily recitation') || col.includes('daily tilawat') || col.includes('দৈনিক তেলাওয়াত') || col.includes('দৈনিক'))) {
+      map['dailyQuranRecitation'] = idx;
+    } else if (map['quranWithMeaning'] === undefined && (col.includes('quran with meaning') || col.includes('quran meaning') || col.includes('অর্থসহ কুরআন') || col.includes('অর্থসহ তেলাওয়াত'))) {
+      map['quranWithMeaning'] = idx;
+    } else if (map['quranTafseer'] === undefined && (col.includes('tafseer') || col.includes('তাফসীর') || col.includes('tafsir'))) {
+      map['quranTafseer'] = idx;
+    } else if (map['readsJamaatBooks'] === undefined && (col.includes('book') || col.includes('পুস্তক') || col.includes('বই'))) {
+      map['readsJamaatBooks'] = idx;
+    } else if (map['doesTableeq'] === undefined && (col.includes('tableeq') || col.includes('তাবলীগ') || col.includes('তাবলীগে'))) {
+      map['doesTableeq'] = idx;
+    } else if (map['watchesMtaSermon'] === undefined && (col.includes('watches mta') || col.includes('mta khutba') || col.includes('mta sermon') || col.includes('mta') || col.includes('এমটিএ'))) {
+      map['watchesMtaSermon'] = idx;
+    } else if (map['readsKhutba'] === undefined && (col.includes('read khutba') || col.includes('reads khutba') || col.includes('খুতবা পাঠ') || (col.includes('khutba') && !col.includes('mta')))) {
+      map['readsKhutba'] = idx;
+    } else if (map['chandaAamBudgeted'] === undefined && (col.includes('chanda aam') || col.includes('aam budgeted') || col.includes('চন্দা আম') || col.includes('ধার্যকৃত'))) {
+      map['chandaAamBudgeted'] = idx;
+    } else if (map['isMusi'] === undefined && (col.includes('musi') || col.includes('wasiyyat') || col.includes('মুসি') || col.includes('ওসিয়ত') || col.includes('ওসিয়াত'))) {
+      map['isMusi'] = idx;
+    } else if (map['tahrikEJadid'] === undefined && (col.includes('tahrik') || col.includes('তাহরীক') || col.includes('তাহরীকে'))) {
+      map['tahrikEJadid'] = idx;
+    } else if (map['waqfEJadid'] === undefined && (col.includes('waqf') || col.includes('ওয়াকফ') || col.includes('ওয়াকফে'))) {
+      map['waqfEJadid'] = idx;
+    } else if (map['majlisChanda'] === undefined && (col.includes('majlis chanda') || col.includes('মজলিস চন্দা') || col.includes('chanda majlis'))) {
+      map['majlisChanda'] = idx;
+    } else if (map['ijtemaChanda'] === undefined && (col.includes('ijtema') || col.includes('ইজতেমা') || col.includes('chanda ijtema'))) {
+      map['ijtemaChanda'] = idx;
+    } else if (map['bulletinChanda'] === undefined && (col.includes('bulletin') || col.includes('বুলেটিন') || col.includes('chanda bulletin'))) {
+      map['bulletinChanda'] = idx;
+    }
+  });
+
+  return map;
+}
+
+/**
  * Parses full raw CSV text into Member[]
+ *
+ * NOTE ON SCHEMA FORMAT:
+ * - Only Row 1 is the header row. Member records begin immediately on Row 2.
+ * - From Column L alternate blank header columns (L, N, etc.) are deleted across all rows.
+ * - Survey indicators are contiguous starting at Column K (index 10) through Column AB (index 27):
+ *     10: 5 Daily Prayers
+ *     11: Prayer with Meaning
+ *     12: Regular Friday Prayer
+ *     13: Quran Nazira
+ *     14: Daily Quran Recitation
+ *     15: Quran with Meaning
+ *     16: Quran Tafseer
+ *     17: Reads Jamaat Books
+ *     18: Tableeq Participation
+ *     19: Watches MTA Khutba
+ *     20: Reads Khutba
+ *     21: Chanda Aam Budgeted
+ *     22: Wasiyyat (Musi)
+ *     23: Tahrik-e-Jadid
+ *     24: Waqf-e-Jadid
+ *     25: Majlis Chanda
+ *     26: Ijtema Chanda
+ *     27: Bulletin Chanda
  */
 export function parseMembersCSV(csvText: string): Member[] {
-  const lines = csvText.split(/\r?\n/);
+  const rawLines = csvText.split(/\r?\n/);
   const members: Member[] = [];
 
-  for (let i = 0; i < lines.length; i++) {
-    const line = lines[i].trim();
+  let headerMap: { [key: string]: number } | null = null;
+  let isLegacyPairedFormat = false;
+
+  for (let i = 0; i < rawLines.length; i++) {
+    const line = rawLines[i].trim();
     if (!line) continue;
 
     const cols = parseCSVLine(line);
-    const firstCol = cols[0]?.trim();
+    if (!cols || cols.length === 0) continue;
 
-    // Check if header row
-    if (firstCol.toLowerCase().includes('master') || firstCol.toLowerCase().includes('sl') || isNaN(parseInt(firstCol, 10))) {
+    const firstCol = cols[0]?.trim().replace(/^\uFEFF/, '') || '';
+    const isFirstColInteger = /^\d+$/.test(firstCol);
+
+    // Row 1 detection: only row-1 is the header row
+    if (!headerMap) {
+      if (!isFirstColInteger || firstCol.toLowerCase().includes('master') || firstCol.toLowerCase().includes('sl') || firstCol.includes('ক্রঃ')) {
+        headerMap = buildHeaderMap(cols);
+        continue;
+      }
+    }
+
+    // Helper functions for column access
+    const getCol = (key: string, defaultIdx: number): string => {
+      if (headerMap && headerMap[key] !== undefined && cols[headerMap[key]] !== undefined) {
+        return cols[headerMap[key]] || '';
+      }
+      return cols[defaultIdx] || '';
+    };
+
+    const getBoolCol = (key: string, contiguousIdx: number, legacyPairedIdx: number): boolean => {
+      if (headerMap && headerMap[key] !== undefined && cols[headerMap[key]] !== undefined) {
+        return parseBool(cols[headerMap[key]]);
+      }
+      if (isLegacyPairedFormat) {
+        return parseBool(cols[legacyPairedIdx]);
+      }
+      return parseBool(cols[contiguousIdx]);
+    };
+
+    const region = getCol('region', 1).trim();
+    const majlis = getCol('majlis', 2).trim();
+    const name = getCol('name', 3).trim();
+
+    // Skip if empty data row
+    if (!name && !majlis && !region) continue;
+
+    // Skip secondary or repeated header rows
+    if (name.toLowerCase().includes('members name') || name.toLowerCase().includes('সদস্যের নাম') ||
+        majlis.toLowerCase().includes('majlis (ড্রপ') || region.toLowerCase().includes('region (ড্রপ')) {
       continue;
     }
 
-    const sl = parseInt(firstCol, 10);
-    if (isNaN(sl)) continue;
+    // Extract serial number or fallback to sequential count
+    let sl: number;
+    const numMatch = firstCol.match(/\d+/);
+    if (numMatch) {
+      sl = parseInt(numMatch[0], 10);
+    } else {
+      sl = members.length + 1;
+    }
 
-    const region = cols[1] || '';
-    const majlis = cols[2] || '';
-    const name = cols[3] || '';
-    if (!name && !majlis && !region) continue;
+    // Detect legacy 46-column paired [Yes, No] format if no header was matched and line has >= 40 columns
+    if (!headerMap && cols.length >= 40) {
+      isLegacyPairedFormat = true;
+    }
 
-    const ageRaw = cols[4] ? parseInt(cols[4], 10) : null;
+    const ageStr = getCol('age', 4);
+    const ageRaw = ageStr ? parseInt(ageStr, 10) : null;
     const age = (ageRaw !== null && !isNaN(ageRaw) && ageRaw > 0 && ageRaw < 130) ? ageRaw : null;
 
-    const baiyat = cols[5] || '';
-    const education = cols[6] || '';
-    const occupation = cols[7] || '';
-    const monthlyIncome = parseIncome(cols[8]);
-    const familyMembers = cols[9] ? parseInt(cols[9], 10) || 0 : 0;
-
-    // Survey indicators:
-    // In the sheet columns are paired [Yes, No]:
-    // Col 10: 5 Salat Yes, Col 11: No
-    // Col 12: Salat Meaning Yes, Col 13: No
-    // Col 14: Jummah Yes, Col 15: No
-    // Col 16: Quran Nazira Yes, Col 17: No
-    // Col 18: Daily Tilawat Yes, Col 19: No
-    // Col 20: Quran Meaning Yes, Col 21: No
-    // Col 22: Quran Tafseer Yes, Col 23: No
-    // Col 24: Jamaat Books Yes, Col 25: No
-    // Col 26: Tableeq Yes, Col 27: No
-    // Col 28: MTA Sermon Yes, Col 29: No
-    // Col 30: Read Khutba Yes, Col 31: No
-    // Col 32: Chanda Aam Budgeted Yes, Col 33: No
-    // Col 34: Musi Yes, Col 35: No
-    // Col 36: Tahrik-e-Jadid Yes, Col 37: No
-    // Col 38: Waqf-e-Jadid Yes, Col 39: No
-    // Col 40: Majlis Chanda Yes, Col 41: No
-    // Col 42: Ijtema Chanda Yes, Col 43: No
-    // Col 44: Bulletin Chanda Yes, Col 45: No
+    const baiyat = getCol('baiyat', 5);
+    const education = getCol('education', 6);
+    const occupation = getCol('occupation', 7);
+    const monthlyIncome = parseIncome(getCol('income', 8));
+    const familyStr = getCol('family', 9);
+    const familyMembers = familyStr ? parseInt(familyStr, 10) || 0 : 0;
 
     const member: Member = {
       id: `mem-${sl}-${Math.random().toString(36).substring(2, 7)}`,
@@ -117,27 +239,28 @@ export function parseMembersCSV(csvText: string): Member[] {
       monthlyIncome,
       familyMembers: isNaN(familyMembers) ? 0 : familyMembers,
 
-      regular5Salat: parseBool(cols[10]),
-      salatWithMeaning: parseBool(cols[12]),
-      regularJummah: parseBool(cols[14]),
+      // Indicator columns: contiguous indices 10 through 27
+      regular5Salat: getBoolCol('regular5Salat', 10, 10),
+      salatWithMeaning: getBoolCol('salatWithMeaning', 11, 12),
+      regularJummah: getBoolCol('regularJummah', 12, 14),
 
-      quranNazira: parseBool(cols[16]),
-      dailyQuranRecitation: parseBool(cols[18]),
-      quranWithMeaning: parseBool(cols[20]),
-      quranTafseer: parseBool(cols[22]),
+      quranNazira: getBoolCol('quranNazira', 13, 16),
+      dailyQuranRecitation: getBoolCol('dailyQuranRecitation', 14, 18),
+      quranWithMeaning: getBoolCol('quranWithMeaning', 15, 20),
+      quranTafseer: getBoolCol('quranTafseer', 16, 22),
 
-      readsJamaatBooks: parseBool(cols[24]),
-      doesTableeq: parseBool(cols[26]),
-      watchesMtaSermon: parseBool(cols[28]),
-      readsKhutba: parseBool(cols[30]),
+      readsJamaatBooks: getBoolCol('readsJamaatBooks', 17, 24),
+      doesTableeq: getBoolCol('doesTableeq', 18, 26),
+      watchesMtaSermon: getBoolCol('watchesMtaSermon', 19, 28),
+      readsKhutba: getBoolCol('readsKhutba', 20, 30),
 
-      chandaAamBudgeted: parseBool(cols[32]),
-      isMusi: parseBool(cols[34]),
-      tahrikEJadid: parseBool(cols[36]),
-      waqfEJadid: parseBool(cols[38]),
-      majlisChanda: parseBool(cols[40]),
-      ijtemaChanda: parseBool(cols[42]),
-      bulletinChanda: parseBool(cols[44]),
+      chandaAamBudgeted: getBoolCol('chandaAamBudgeted', 21, 32),
+      isMusi: getBoolCol('isMusi', 22, 34),
+      tahrikEJadid: getBoolCol('tahrikEJadid', 23, 36),
+      waqfEJadid: getBoolCol('waqfEJadid', 24, 38),
+      majlisChanda: getBoolCol('majlisChanda', 25, 40),
+      ijtemaChanda: getBoolCol('ijtemaChanda', 26, 42),
+      bulletinChanda: getBoolCol('bulletinChanda', 27, 44),
     };
 
     members.push(member);
@@ -147,7 +270,7 @@ export function parseMembersCSV(csvText: string): Member[] {
 }
 
 /**
- * Export member list to CSV string
+ * Export member list to CSV string with a single header row and contiguous columns
  */
 export function exportMembersToCSV(members: Member[]): string {
   const header1 = [
@@ -161,7 +284,7 @@ export function exportMembersToCSV(members: Member[]): string {
     'Occupation',
     'Monthly Income (BDT)',
     'Family Members',
-    '5 Daily Prayers (Yes/No)',
+    '5 Daily Prayers',
     'Prayer with Meaning',
     'Regular Friday Prayer',
     'Quran Nazira',

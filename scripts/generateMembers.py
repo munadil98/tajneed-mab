@@ -127,11 +127,21 @@ num_majlises = len(all_majlises)
 # Base distribution: larger centers get more members
 random.seed(1889) # Founding year of Jama'at
 
+# Explicit counts for known majlises as specified by user
+explicit_counts = {
+    ('Greater Dhaka', 'DHAKA'): 385,
+    ('Greater Dhaka', 'MIRPUR'): 128,
+}
+
+# Distribute remaining members across the rest of majlises
+remaining_total = TARGET_TOTAL - sum(explicit_counts.values())
+
+other_majlises = [pair for pair in all_majlises if pair not in explicit_counts]
 weights = []
-for reg, maj in all_majlises:
+for reg, maj in other_majlises:
     weight = 1.0
     if reg == 'Greater Dhaka':
-        weight = 2.5 if maj in ['DHAKA', 'MIRPUR', 'TEJGAON', 'NARAYANGONJ'] else 1.6
+        weight = 2.4 if maj in ['MIRPUR', 'TEJGAON', 'NARAYANGONJ'] else 1.4
     elif reg == 'B.Baria Region':
         weight = 2.2 if maj in ['B.BARIA', 'NATAI', 'GHATURA', 'TARUA'] else 1.4
     elif reg == 'Dinajpur Region':
@@ -152,15 +162,25 @@ for reg, maj in all_majlises:
 
 # Normalize and allocate counts
 total_weight = sum(weights)
-allocated = [max(8, int((w / total_weight) * TARGET_TOTAL)) for w in weights]
-diff = TARGET_TOTAL - sum(allocated)
+allocated_others = [max(6, int((w / total_weight) * remaining_total)) for w in weights]
+diff = remaining_total - sum(allocated_others)
 
-# Adjust remainder to reach exactly 3394
+# Adjust remainder to reach exactly remaining_total
 idx = 0
 step = 1 if diff > 0 else -1
 for _ in range(abs(diff)):
-    allocated[idx % num_majlises] += step
+    allocated_others[idx % len(other_majlises)] += step
     idx += 1
+
+# Combine into final allocation preserving all_majlises ordering
+allocated = []
+other_idx = 0
+for pair in all_majlises:
+    if pair in explicit_counts:
+        allocated.append(explicit_counts[pair])
+    else:
+        allocated.append(allocated_others[other_idx])
+        other_idx += 1
 
 assert sum(allocated) == TARGET_TOTAL, f"Sum {sum(allocated)} != {TARGET_TOTAL}"
 

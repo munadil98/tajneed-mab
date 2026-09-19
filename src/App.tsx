@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { TajneedProvider, useTajneed } from './context/TajneedContext';
+import { AuthProvider, useAuth } from './context/AuthContext';
+import { AdminLogin } from './components/AdminLogin';
 import { Navbar } from './components/Navbar';
 import { Dashboard } from './components/Dashboard';
 import { MemberRegistry } from './components/MemberRegistry';
@@ -10,11 +12,16 @@ import { Member } from './types/tajneed';
 import { CheckCircle, Info } from 'lucide-react';
 
 const TajneedAppContent: React.FC = () => {
+  const { isAuthenticated } = useAuth();
   const [activeTab, setActiveTab] = useState<'dashboard' | 'registry' | 'customWidgets' | 'importExport'>('dashboard');
   const [isFormModalOpen, setIsFormModalOpen] = useState(false);
   const [memberToEdit, setMemberToEdit] = useState<Member | null>(null);
 
   const { toastMessage } = useTajneed();
+
+  if (!isAuthenticated) {
+    return <AdminLogin />;
+  }
 
   const handleOpenAddModal = () => {
     setMemberToEdit(null);
@@ -95,8 +102,10 @@ const TajneedAppContent: React.FC = () => {
 
 export default function App() {
   return (
-    <TajneedProvider>
-      <TajneedAppContent />
-    </TajneedProvider>
+    <AuthProvider>
+      <TajneedProvider>
+        <TajneedAppContent />
+      </TajneedProvider>
+    </AuthProvider>
   );
 }

@@ -58,6 +58,25 @@ export const MemberRegistry: React.FC<MemberRegistryProps> = ({
   // Selected Member for details modal
   const [selectedMember, setSelectedMember] = useState<Member | null>(null);
 
+  // Region and Majlis member counts for intuitive selection
+  const regionCounts = useMemo(() => {
+    const counts: Record<string, number> = {};
+    for (const m of members) {
+      const reg = m.region?.trim() || '';
+      counts[reg] = (counts[reg] || 0) + 1;
+    }
+    return counts;
+  }, [members]);
+
+  const majlisCounts = useMemo(() => {
+    const counts: Record<string, number> = {};
+    for (const m of members) {
+      const maj = m.majlis?.trim() || '';
+      counts[maj] = (counts[maj] || 0) + 1;
+    }
+    return counts;
+  }, [members]);
+
   // Majlis PDF Export Modal
   const [isPdfModalOpen, setIsPdfModalOpen] = useState<boolean>(false);
 
@@ -161,7 +180,7 @@ export const MemberRegistry: React.FC<MemberRegistryProps> = ({
           </div>
 
           {/* Region Dropdown Filter */}
-          <div className="w-full sm:w-48">
+          <div className="w-full sm:w-56">
             <select
               id="select-filter-region"
               value={filters.region}
@@ -171,15 +190,17 @@ export const MemberRegistry: React.FC<MemberRegistryProps> = ({
               }}
               className="w-full text-xs px-3 py-2 border border-slate-300 rounded-xl bg-white font-medium text-slate-700 shadow-2xs focus:outline-none focus:ring-1 focus:ring-emerald-500 truncate"
             >
-              <option value="">All Regions ({ALL_REGIONS.length})</option>
+              <option value="">All Regions ({members.length})</option>
               {ALL_REGIONS.map(reg => (
-                <option key={reg} value={reg}>{reg}</option>
+                <option key={reg} value={reg}>
+                  {reg} ({regionCounts[reg] || 0})
+                </option>
               ))}
             </select>
           </div>
 
-          {/* Majlis Dropdown Filter (Populated dynamically) */}
-          <div className="w-full sm:w-48">
+          {/* Majlis Dropdown Filter (Populated dynamically with member count) */}
+          <div className="w-full sm:w-56">
             <select
               id="select-filter-majlis"
               value={filters.majlis}
@@ -190,10 +211,14 @@ export const MemberRegistry: React.FC<MemberRegistryProps> = ({
               className="w-full text-xs px-3 py-2 border border-slate-300 rounded-xl bg-white font-medium text-slate-700 shadow-2xs focus:outline-none focus:ring-1 focus:ring-emerald-500 truncate"
             >
               <option value="">
-                {filters.region ? `All Majlises (${availableMajlises.length})` : 'All Majlises'}
+                {filters.region 
+                  ? `All Majlises in ${filters.region} (${regionCounts[filters.region] || 0})` 
+                  : `All Majlises (${members.length})`}
               </option>
               {availableMajlises.map(maj => (
-                <option key={maj} value={maj}>{maj}</option>
+                <option key={maj} value={maj}>
+                  {maj} ({majlisCounts[maj] || 0})
+                </option>
               ))}
             </select>
           </div>

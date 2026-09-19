@@ -8,9 +8,12 @@ import {
   FileSpreadsheet,
   Menu,
   X,
-  ChevronRight
+  ChevronRight,
+  ShieldCheck,
+  LogOut
 } from 'lucide-react';
 import { useTajneed } from '../context/TajneedContext';
+import { useAuth } from '../context/AuthContext';
 
 interface NavbarProps {
   activeTab: 'dashboard' | 'registry' | 'customWidgets' | 'importExport';
@@ -24,6 +27,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   onOpenAddModal
 }) => {
   const { stats, downloadCSV } = useTajneed();
+  const { logout, adminUser } = useAuth();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleTabClick = (tab: 'dashboard' | 'registry' | 'customWidgets' | 'importExport') => {
@@ -131,6 +135,26 @@ export const Navbar: React.FC<NavbarProps> = ({
                 <span className="sm:hidden">Add</span>
               </button>
 
+              {/* Admin Badge & Logout (Desktop) */}
+              <div className="hidden sm:flex items-center gap-1.5 border-l border-slate-800 pl-2 ml-1">
+                <div 
+                  className="flex items-center gap-1 px-2 py-1 bg-emerald-950/80 border border-emerald-700/70 rounded-lg text-xs" 
+                  title="Signed in as Administrator"
+                >
+                  <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
+                  <span className="text-emerald-300 font-semibold text-[11px]">{adminUser?.username || 'admin'}</span>
+                </div>
+                <button
+                  id="btn-admin-logout-desktop"
+                  onClick={logout}
+                  title="Sign out of Admin account"
+                  className="flex items-center gap-1 px-2.5 py-1.5 bg-slate-800 hover:bg-red-950/60 hover:text-red-300 hover:border-red-800/80 text-slate-300 text-xs font-medium rounded-lg border border-slate-700 transition"
+                >
+                  <LogOut className="w-3.5 h-3.5" />
+                  <span className="hidden xl:inline">Logout</span>
+                </button>
+              </div>
+
               {/* Mobile Menu Toggle Button (Hamburger) */}
               <button
                 id="btn-mobile-menu-toggle"
@@ -154,17 +178,27 @@ export const Navbar: React.FC<NavbarProps> = ({
         {isMobileMenuOpen && (
           <div className="md:hidden border-t border-slate-800 bg-slate-900/98 backdrop-blur-md px-4 py-4 space-y-3 animate-in slide-in-from-top-2 duration-200 shadow-xl">
             
-            {/* Quick Registry Status */}
+            {/* Quick Registry Status & Admin Logout */}
             <div className="p-3 bg-slate-800/60 rounded-xl border border-slate-700/60 flex items-center justify-between">
               <div>
-                <span className="text-[11px] text-slate-400 font-medium block">Active Database</span>
+                <span className="text-[11px] text-slate-400 font-medium block">
+                  Logged in as <span className="text-emerald-400 font-semibold">{adminUser?.username || 'admin'}</span>
+                </span>
                 <span className="text-xs font-bold text-white">
-                  {stats.totalMembers.toLocaleString()} Registered Members
+                  {stats.totalMembers.toLocaleString()} Members • Live
                 </span>
               </div>
-              <span className="text-[10px] px-2 py-0.5 rounded-md bg-emerald-900/80 text-emerald-300 border border-emerald-700 font-semibold">
-                Live
-              </span>
+              <button
+                id="btn-admin-logout-mobile"
+                onClick={() => {
+                  logout();
+                  setIsMobileMenuOpen(false);
+                }}
+                className="text-[11px] px-2.5 py-1.5 bg-red-950/70 hover:bg-red-900/80 text-red-300 border border-red-800/70 rounded-lg font-semibold flex items-center gap-1 transition"
+              >
+                <LogOut className="w-3 h-3" />
+                <span>Logout</span>
+              </button>
             </div>
 
             {/* Navigation List */}

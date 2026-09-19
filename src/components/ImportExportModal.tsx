@@ -333,46 +333,83 @@ export const ImportExportModal: React.FC = () => {
 
       {/* Schema Reference Table */}
       <div className="bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-3">
-        <h3 className="text-xs font-bold uppercase tracking-wider text-slate-700 flex items-center gap-1.5">
-          <Table className="w-3.5 h-3.5 text-emerald-600" />
-          <span>Google Sheet Column Mapping Reference</span>
-        </h3>
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+          <h3 className="text-xs font-bold uppercase tracking-wider text-slate-700 flex items-center gap-1.5">
+            <Table className="w-3.5 h-3.5 text-emerald-600" />
+            <span>Google Sheet Column Mapping & Structure</span>
+          </h3>
+          <span className="text-[11px] font-medium text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full w-fit">
+            Row 1 = Header Row • Data starts at Row 2
+          </span>
+        </div>
         <p className="text-xs text-slate-500">
-          The app automatically detects Google Sheet headers including Bengali and English aliases:
+          Only <strong>Row 1</strong> is the header row. Alternate blank columns from Column L onwards (L, N, P, etc.) are deleted, so all survey indicators are contiguous columns:
         </p>
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-[11px] text-slate-600">
           <div className="p-2 bg-white rounded border border-slate-200">
-            <span className="font-mono font-bold text-slate-800 block">Master SL No.</span>
+            <span className="font-mono font-bold text-slate-800 block">Col A: Master SL No.</span>
             <span>ক্রঃ নং / Master SL</span>
           </div>
           <div className="p-2 bg-white rounded border border-slate-200">
-            <span className="font-mono font-bold text-emerald-700 block">REGION</span>
+            <span className="font-mono font-bold text-emerald-700 block">Col B: REGION</span>
             <span>রিজিয়ন (ড্রপ-ডাউন)</span>
           </div>
           <div className="p-2 bg-white rounded border border-slate-200">
-            <span className="font-mono font-bold text-emerald-700 block">MAJLIS</span>
+            <span className="font-mono font-bold text-emerald-700 block">Col C: MAJLIS</span>
             <span>মজলিস (ড্রপ-ডাউন)</span>
           </div>
           <div className="p-2 bg-white rounded border border-slate-200">
-            <span className="font-mono font-bold text-slate-800 block">MEMBERS NAME</span>
+            <span className="font-mono font-bold text-slate-800 block">Col D: MEMBERS NAME</span>
             <span>সদস্যের নাম</span>
           </div>
           <div className="p-2 bg-white rounded border border-slate-200">
-            <span className="font-mono font-bold text-slate-800 block">eqm (Age)</span>
+            <span className="font-mono font-bold text-slate-800 block">Col E: eqm (Age)</span>
             <span>বয়স (Years)</span>
           </div>
           <div className="p-2 bg-white rounded border border-slate-200">
-            <span className="font-mono font-bold text-slate-800 block">Date of Baiyat</span>
+            <span className="font-mono font-bold text-slate-800 block">Col F: Date of Baiyat</span>
             <span>বায়াত গ্রহণের তারিখ</span>
           </div>
           <div className="p-2 bg-white rounded border border-slate-200">
-            <span className="font-mono font-bold text-slate-800 block">Occupation</span>
+            <span className="font-mono font-bold text-slate-800 block">Col G: Education</span>
+            <span>শিক্ষাগত যোগ্যতা</span>
+          </div>
+          <div className="p-2 bg-white rounded border border-slate-200">
+            <span className="font-mono font-bold text-slate-800 block">Col H: Occupation</span>
             <span>পেশা (Service, etc.)</span>
           </div>
           <div className="p-2 bg-white rounded border border-slate-200">
-            <span className="font-mono font-bold text-slate-800 block">Monthly Income</span>
+            <span className="font-mono font-bold text-slate-800 block">Col I: Monthly Income</span>
             <span>মাসিক আয় (BDT)</span>
+          </div>
+          <div className="p-2 bg-white rounded border border-slate-200">
+            <span className="font-mono font-bold text-slate-800 block">Col J: Family Members</span>
+            <span>পরিবারের সদস্য সংখ্যা</span>
+          </div>
+          <div className="p-2 bg-white rounded border border-slate-200">
+            <span className="font-mono font-bold text-slate-800 block">Col K: 5 Daily Prayers</span>
+            <span>৫ ওয়াক্ত নামাজ (1 / 0)</span>
+          </div>
+          <div className="p-2 bg-white rounded border border-slate-200">
+            <span className="font-mono font-bold text-slate-800 block">Col L: Prayer with Meaning</span>
+            <span>নামাজের অর্থ (1 / 0)</span>
+          </div>
+          <div className="p-2 bg-white rounded border border-slate-200">
+            <span className="font-mono font-bold text-slate-800 block">Col M: Friday Prayer</span>
+            <span>নিয়মিত জুমুআহ (1 / 0)</span>
+          </div>
+          <div className="p-2 bg-white rounded border border-slate-200">
+            <span className="font-mono font-bold text-slate-800 block">Col N: Quran Nazira</span>
+            <span>নাজেরা কুরআন (1 / 0)</span>
+          </div>
+          <div className="p-2 bg-white rounded border border-slate-200">
+            <span className="font-mono font-bold text-slate-800 block">Col O: Daily Recitation</span>
+            <span>দৈনিক তেলাওয়াত (1 / 0)</span>
+          </div>
+          <div className="p-2 bg-white rounded border border-slate-200">
+            <span className="font-mono font-bold text-slate-800 block">Col P–AB: Other Survey</span>
+            <span>MTA, চন্দা, মুসি, ইত্যাদি (1/0)</span>
           </div>
         </div>
       </div>

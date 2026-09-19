@@ -217,7 +217,9 @@ export const MajlisPdfExportModal: React.FC<MajlisPdfExportModalProps> = ({
                   className="w-full text-xs px-3 py-2 border border-slate-300 rounded-xl bg-white font-medium text-slate-800 focus:ring-1 focus:ring-emerald-500 disabled:bg-slate-100 disabled:text-slate-400"
                 >
                   {availableMajlises.map(maj => (
-                    <option key={maj} value={maj}>{maj}</option>
+                    <option key={maj} value={maj}>
+                      {maj} ({(regionMembersByMajlis[maj] || []).length} members)
+                    </option>
                   ))}
                 </select>
               </div>
