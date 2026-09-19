@@ -119,7 +119,7 @@ export const ImportExportModal: React.FC = () => {
             Majlis-Wise PDF Census & Roster Generator
           </h2>
           <p className="text-xs text-emerald-100/80 leading-relaxed">
-            Generate formal, high-resolution Landscape A4 PDFs for any Majlis or entire Regions. Includes official Jama'at letterhead, executive KPI statistics, attendance signature blocks, and customized column presets (Comprehensive, Spiritual Observance, or Financial Sacrifice).
+            Generate formal, high-resolution Landscape A4 PDFs for any Majlis or entire Regions. Includes official Majlis Ansarullah letterhead, executive KPI statistics, attendance signature blocks, and customized column presets (All Sections Accumulated, Comprehensive, Spiritual Observance, or Financial Sacrifice).
           </p>
         </div>
 

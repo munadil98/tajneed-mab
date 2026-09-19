@@ -54,7 +54,7 @@ export const AdminLogin: React.FC = () => {
               Tajneed App
             </span>
             <span className="text-[11px] text-slate-400 block leading-none">
-              Ahmadiyya Muslim Jama'at Bangladesh
+              Majlis Ansarullah Bangladesh
             </span>
           </div>
         </div>
@@ -179,7 +179,7 @@ export const AdminLogin: React.FC = () => {
 
       {/* Footer */}
       <footer className="w-full max-w-5xl mx-auto py-3 text-center text-xs text-slate-600 relative z-10">
-        Tajneed Management System • Ahmadiyya Muslim Jama'at Bangladesh
+        Tajneed Management System • Majlis Ansarullah Bangladesh
       </footer>
 
     </div>

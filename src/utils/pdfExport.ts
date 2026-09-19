@@ -2,7 +2,7 @@ import { jsPDF } from 'jspdf';
 import autoTable from 'jspdf-autotable';
 import { Member } from '../types/tajneed';
 
-export type MajlisReportType = 'comprehensive' | 'spiritual' | 'financial' | 'attendance';
+export type MajlisReportType = 'accumulated' | 'comprehensive' | 'spiritual' | 'financial' | 'attendance';
 
 interface ExportMajlisPdfOptions {
   region: string;
@@ -46,7 +46,7 @@ export function generateMajlisPdfDoc(options: ExportMajlisPdfOptions): jsPDF {
     majlis,
     members,
     reportType = 'comprehensive',
-    title = "Ahmadiyya Muslim Jama'at Bangladesh",
+    title = "Majlis Ansarullah Bangladesh",
     preparedBy = 'Secretary Tajneed'
   } = options;
 
@@ -111,7 +111,10 @@ function buildMajlisPage(
   doc.setFontSize(10);
   doc.setFont('helvetica', 'normal');
   doc.setTextColor(209, 250, 229); // Light emerald
-  doc.text(`TAJNEED & CENSUS REGISTRY • MAJLIS REPORT (${reportType.toUpperCase()})`, 14, 24);
+  const reportHeaderLabel = reportType === 'accumulated' 
+    ? 'ALL SECTIONS ACCUMULATED (MASTER CENSUS)' 
+    : reportType.toUpperCase();
+  doc.text(`TAJNEED & CENSUS REGISTRY • MAJLIS REPORT (${reportHeaderLabel})`, 14, 24);
 
   // Majlis & Region Pills in Header (Right aligned)
   doc.setFontSize(9);
@@ -164,11 +167,111 @@ function buildMajlisPage(
   });
 
   // Table Configuration Based on Report Type
-  let head: string[][] = [];
+  let head: any[] = [];
   let body: (string | number)[][] = [];
   let colStyles: Record<number, { cellWidth?: number | 'auto'; halign?: 'left' | 'center' | 'right' }> = {};
 
-  if (reportType === 'comprehensive') {
+  if (reportType === 'accumulated') {
+    head = [
+      [
+        { content: '1. DEMOGRAPHICS', colSpan: 8, styles: { halign: 'center', fillColor: [15, 76, 58], textColor: [255, 255, 255], fontStyle: 'bold' } },
+        { content: '2. SALAT', colSpan: 3, styles: { halign: 'center', fillColor: [13, 148, 136], textColor: [255, 255, 255], fontStyle: 'bold' } },
+        { content: '3. HOLY QURAN', colSpan: 4, styles: { halign: 'center', fillColor: [5, 150, 105], textColor: [255, 255, 255], fontStyle: 'bold' } },
+        { content: '4. MTA & TABLIGH', colSpan: 4, styles: { halign: 'center', fillColor: [14, 116, 144], textColor: [255, 255, 255], fontStyle: 'bold' } },
+        { content: '5. CHANDA & WASIYYAT', colSpan: 7, styles: { halign: 'center', fillColor: [67, 56, 202], textColor: [255, 255, 255], fontStyle: 'bold' } },
+        { content: '6. VERIFY', colSpan: 1, styles: { halign: 'center', fillColor: [71, 85, 105], textColor: [255, 255, 255], fontStyle: 'bold' } }
+      ],
+      [
+        'SL',
+        'Name',
+        'Age',
+        'Baiyat',
+        'Edu',
+        'Occupation',
+        'Income',
+        'Fam',
+        '5 Salat',
+        'Meaning',
+        'Jummah',
+        'Nazira',
+        'Daily',
+        'Meaning',
+        'Tafseer',
+        'Books',
+        'Tableeq',
+        'MTA',
+        'Khutba',
+        'Ch. Aam',
+        'Musi',
+        'Tahrik',
+        'Waqf',
+        'Majlis',
+        'Ijtema',
+        'Bulletin',
+        'Signature'
+      ]
+    ];
+
+    body = members.map((m, idx) => [
+      idx + 1,
+      m.name,
+      m.age ? `${m.age}` : '-',
+      m.baiyatDateOrBirth || '-',
+      m.education || '-',
+      m.occupation || '-',
+      m.monthlyIncome ? m.monthlyIncome.toLocaleString() : '0',
+      m.familyMembers || 1,
+      boolStr(m.regular5Salat),
+      boolStr(m.salatWithMeaning),
+      boolStr(m.regularJummah),
+      boolStr(m.quranNazira),
+      boolStr(m.dailyQuranRecitation),
+      boolStr(m.quranWithMeaning),
+      boolStr(m.quranTafseer),
+      boolStr(m.readsJamaatBooks),
+      boolStr(m.doesTableeq),
+      boolStr(m.watchesMtaSermon),
+      boolStr(m.readsKhutba),
+      boolStr(m.chandaAamBudgeted),
+      boolStr(m.isMusi),
+      boolStr(m.tahrikEJadid),
+      boolStr(m.waqfEJadid),
+      boolStr(m.majlisChanda),
+      boolStr(m.ijtemaChanda),
+      boolStr(m.bulletinChanda),
+      ''
+    ]);
+
+    colStyles = {
+      0: { cellWidth: 7, halign: 'center' },
+      1: { cellWidth: 26, halign: 'left' },
+      2: { cellWidth: 7, halign: 'center' },
+      3: { cellWidth: 10, halign: 'center' },
+      4: { cellWidth: 13, halign: 'left' },
+      5: { cellWidth: 15, halign: 'left' },
+      6: { cellWidth: 13, halign: 'right' },
+      7: { cellWidth: 7, halign: 'center' },
+      8: { cellWidth: 8, halign: 'center' },
+      9: { cellWidth: 8, halign: 'center' },
+      10: { cellWidth: 8, halign: 'center' },
+      11: { cellWidth: 8, halign: 'center' },
+      12: { cellWidth: 8, halign: 'center' },
+      13: { cellWidth: 8, halign: 'center' },
+      14: { cellWidth: 8, halign: 'center' },
+      15: { cellWidth: 8, halign: 'center' },
+      16: { cellWidth: 8, halign: 'center' },
+      17: { cellWidth: 8, halign: 'center' },
+      18: { cellWidth: 8, halign: 'center' },
+      19: { cellWidth: 8, halign: 'center' },
+      20: { cellWidth: 8, halign: 'center' },
+      21: { cellWidth: 8, halign: 'center' },
+      22: { cellWidth: 8, halign: 'center' },
+      23: { cellWidth: 8, halign: 'center' },
+      24: { cellWidth: 8, halign: 'center' },
+      25: { cellWidth: 8, halign: 'center' },
+      26: { cellWidth: 13, halign: 'center' }
+    };
+  } else if (reportType === 'comprehensive') {
     head = [[
       'SL',
       'Name',
@@ -348,6 +451,8 @@ function buildMajlisPage(
     };
   }
 
+  const isAccumulated = reportType === 'accumulated';
+
   // Draw Table using jspdf-autotable
   autoTable(doc, {
     startY: 53,
@@ -355,8 +460,8 @@ function buildMajlisPage(
     body: body,
     theme: 'grid',
     styles: {
-      fontSize: 7.5,
-      cellPadding: 1.6,
+      fontSize: isAccumulated ? 5.5 : 7.5,
+      cellPadding: isAccumulated ? 0.9 : 1.6,
       textColor: [30, 41, 59],
       lineColor: [226, 232, 240],
       lineWidth: 0.2
@@ -365,14 +470,14 @@ function buildMajlisPage(
       fillColor: [15, 76, 58],
       textColor: [255, 255, 255],
       fontStyle: 'bold',
-      fontSize: 7.5,
+      fontSize: isAccumulated ? 5.5 : 7.5,
       halign: 'center'
     },
     alternateRowStyles: {
       fillColor: [248, 250, 252]
     },
     columnStyles: colStyles,
-    margin: { left: 10, right: 10, bottom: 18 },
+    margin: { left: isAccumulated ? 8 : 10, right: isAccumulated ? 8 : 10, bottom: 18 },
     didDrawPage: (data) => {
       // Footer with signature lines and page number
       const pageHeight = doc.internal.pageSize.getHeight();
@@ -385,7 +490,7 @@ function buildMajlisPage(
       doc.setFont('helvetica', 'normal');
       doc.setTextColor(100, 116, 139);
       doc.text(
-        `Tajneed Registry • Region: ${region} • Majlis: ${majlis} • Confidential Document for Official Jama'at Use Only`,
+        `Tajneed Registry • Region: ${region} • Majlis: ${majlis} • Confidential Document for Official Majlis Ansarullah Use Only`,
         12,
         pageHeight - 7
       );
@@ -429,7 +534,7 @@ export function exportBatchRegionPDF(options: BatchExportOptions): void {
       majlis,
       members: list,
       reportType,
-      title: "Ahmadiyya Muslim Jama'at Bangladesh",
+      title: "Majlis Ansarullah Bangladesh",
       preparedBy,
       isFirstPage: isFirst
     });

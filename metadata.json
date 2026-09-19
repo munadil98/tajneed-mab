@@ -1,6 +1,6 @@
 {
   "name": "Tajneed Management App",
-  "description": "Member registry, analytics dashboard, and statistics management system for Tajneed data with region and majlis filtering, custom metrics, and record editing.",
+  "description": "Member registry, analytics dashboard, and statistics management system for Majlis Ansarullah Bangladesh Tajneed data with region and majlis filtering, custom metrics, and record editing.",
   "requestFramePermissions": [],
   "majorCapabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"

@@ -83,7 +83,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   </span>
                 </div>
                 <p className="text-[11px] text-slate-400 hidden md:block truncate">
-                  Registry & Statistics Management System
+                  Majlis Ansarullah Bangladesh • Registry & Statistics
                 </p>
               </div>
             </div>

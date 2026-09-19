@@ -52,7 +52,7 @@ export const MajlisPdfExportModal: React.FC<MajlisPdfExportModalProps> = ({
   });
 
   // Report Type
-  const [reportType, setReportType] = useState<MajlisReportType>('comprehensive');
+  const [reportType, setReportType] = useState<MajlisReportType>('accumulated');
   
   // Batch Mode Toggle
   const [isBatchRegion, setIsBatchRegion] = useState<boolean>(false);
@@ -260,12 +260,25 @@ export const MajlisPdfExportModal: React.FC<MajlisPdfExportModalProps> = ({
 
             {/* Report Layout Presets */}
             <div className="pt-3 border-t border-slate-100">
-              <label className="block text-xs font-bold text-slate-700 mb-2">
-                Choose Report Layout & Data Columns
-              </label>
+              <div className="flex items-center justify-between mb-2">
+                <label className="block text-xs font-bold text-slate-700">
+                  Choose Report Layout & Data Columns
+                </label>
+                {reportType === 'accumulated' && (
+                  <span className="text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200">
+                    All 6 Sections Accumulated (27 Columns)
+                  </span>
+                )}
+              </div>
 
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2.5">
                 {[
+                  {
+                    id: 'accumulated' as MajlisReportType,
+                    name: 'All Sections (Accumulated)',
+                    desc: 'Demographics, Salat, Quran, MTA, Chanda & Verification in one master roster',
+                    badge: 'Consolidated'
+                  },
                   {
                     id: 'comprehensive' as MajlisReportType,
                     name: 'Comprehensive',
@@ -291,24 +304,72 @@ export const MajlisPdfExportModal: React.FC<MajlisPdfExportModalProps> = ({
                     key={preset.id}
                     type="button"
                     onClick={() => setReportType(preset.id)}
-                    className={`p-3 text-left rounded-xl border transition flex flex-col justify-between ${
+                    className={`p-3 text-left rounded-xl border transition flex flex-col justify-between relative ${
                       reportType === preset.id
-                        ? 'bg-emerald-50/80 border-emerald-500 text-emerald-950 shadow-2xs'
+                        ? 'bg-emerald-50/90 border-emerald-500 text-emerald-950 shadow-2xs ring-1 ring-emerald-400/40'
                         : 'bg-white border-slate-200 text-slate-700 hover:border-slate-300'
                     }`}
                   >
-                    <div className="flex items-center justify-between mb-1">
-                      <span className="text-xs font-bold">{preset.name}</span>
-                      {reportType === preset.id && (
-                        <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
+                    <div>
+                      <div className="flex items-center justify-between mb-1">
+                        <span className="text-xs font-bold">{preset.name}</span>
+                        {reportType === preset.id && (
+                          <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" />
+                        )}
+                      </div>
+                      {preset.badge && (
+                        <span className="inline-block text-[9px] font-semibold text-emerald-700 bg-emerald-100/70 px-1.5 py-0.2 rounded mb-1">
+                          {preset.badge}
+                        </span>
                       )}
+                      <p className="text-[10px] text-slate-500 leading-tight">
+                        {preset.desc}
+                      </p>
                     </div>
-                    <p className="text-[10px] text-slate-500 leading-tight">
-                      {preset.desc}
-                    </p>
                   </button>
                 ))}
               </div>
+
+              {/* Accumulated Sections Details Pill */}
+              {reportType === 'accumulated' && (
+                <div className="mt-3 p-3 bg-emerald-50/50 border border-emerald-200 rounded-xl text-xs text-emerald-950">
+                  <div className="flex items-center justify-between font-bold mb-2">
+                    <span className="flex items-center gap-1.5 text-emerald-900">
+                      <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
+                      All 6 Census Data Sections Accumulated in Single Master Document:
+                    </span>
+                    <span className="text-[10px] font-mono bg-emerald-200/60 text-emerald-900 px-2 py-0.5 rounded-full font-bold">
+                      27 Data Columns
+                    </span>
+                  </div>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 text-[11px]">
+                    <div className="p-2 bg-white rounded-lg border border-emerald-100 shadow-2xs">
+                      <div className="font-bold text-emerald-900 text-[10px]">1. Demographics</div>
+                      <div className="text-[9px] text-slate-500">SL, Bio, Edu, Occ, Inc (8 cols)</div>
+                    </div>
+                    <div className="p-2 bg-white rounded-lg border border-teal-100 shadow-2xs">
+                      <div className="font-bold text-teal-900 text-[10px]">2. Salat Observance</div>
+                      <div className="text-[9px] text-slate-500">5 Salat, Meaning, Jummah (3 cols)</div>
+                    </div>
+                    <div className="p-2 bg-white rounded-lg border border-emerald-100 shadow-2xs">
+                      <div className="font-bold text-emerald-900 text-[10px]">3. Holy Quran</div>
+                      <div className="text-[9px] text-slate-500">Nazira, Recite, Tafseer (4 cols)</div>
+                    </div>
+                    <div className="p-2 bg-white rounded-lg border border-cyan-100 shadow-2xs">
+                      <div className="font-bold text-cyan-900 text-[10px]">4. MTA & Literature</div>
+                      <div className="text-[9px] text-slate-500">Books, Tableeq, Khutba (4 cols)</div>
+                    </div>
+                    <div className="p-2 bg-white rounded-lg border border-indigo-100 shadow-2xs">
+                      <div className="font-bold text-indigo-900 text-[10px]">5. Chanda & Musi</div>
+                      <div className="text-[9px] text-slate-500">Aam, Musi, Tahrik, Waqf (7 cols)</div>
+                    </div>
+                    <div className="p-2 bg-white rounded-lg border border-slate-200 shadow-2xs">
+                      <div className="font-bold text-slate-900 text-[10px]">6. Verification</div>
+                      <div className="text-[9px] text-slate-500">Sign & Notes (1 col)</div>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
 
           </div>
@@ -399,9 +460,9 @@ export const MajlisPdfExportModal: React.FC<MajlisPdfExportModalProps> = ({
               {/* Document Header */}
               <div className="bg-emerald-900 text-white p-3.5 rounded-lg flex items-center justify-between">
                 <div>
-                  <div className="text-xs font-bold tracking-wider">AHMADIYYA MUSLIM JAMA'AT BANGLADESH</div>
+                  <div className="text-xs font-bold tracking-wider">MAJLIS ANSARULLAH BANGLADESH</div>
                   <div className="text-[10px] text-emerald-200 font-medium">
-                    TAJNEED & CENSUS REGISTRY • MAJLIS {isBatchRegion ? 'ALL MAJLISES' : selectedMajlis.toUpperCase()} ({reportType.toUpperCase()})
+                    TAJNEED & CENSUS REGISTRY • MAJLIS {isBatchRegion ? 'ALL MAJLISES' : selectedMajlis.toUpperCase()} ({reportType === 'accumulated' ? 'ALL SECTIONS ACCUMULATED (MASTER CENSUS)' : reportType.toUpperCase()})
                   </div>
                 </div>
                 <div className="text-right text-[10px] text-emerald-100 font-medium">
@@ -411,50 +472,148 @@ export const MajlisPdfExportModal: React.FC<MajlisPdfExportModalProps> = ({
               </div>
 
               {/* Sample Table Rows Preview */}
-              <div className="overflow-x-auto border border-slate-200 rounded-lg">
-                <table className="w-full text-left text-[11px]">
-                  <thead className="bg-emerald-900 text-white font-semibold text-[10px]">
-                    <tr>
-                      <th className="py-1.5 px-2 text-center w-8">SL</th>
-                      <th className="py-1.5 px-2">Member Name</th>
-                      <th className="py-1.5 px-2 text-center w-12">Age</th>
-                      <th className="py-1.5 px-2">Occupation</th>
-                      <th className="py-1.5 px-2 text-right">Income</th>
-                      <th className="py-1.5 px-2 text-center">Salat</th>
-                      <th className="py-1.5 px-2 text-center">Musi</th>
-                      <th className="py-1.5 px-2 text-center">Chanda Aam</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-slate-100 text-slate-700">
-                    {majlisMembers.slice(0, 5).map((m, idx) => (
-                      <tr key={m.id} className={idx % 2 === 1 ? 'bg-slate-50' : 'bg-white'}>
-                        <td className="py-1 px-2 text-center font-mono text-[10px] text-slate-500">{idx + 1}</td>
-                        <td className="py-1 px-2 font-medium text-slate-900">{m.name}</td>
-                        <td className="py-1 px-2 text-center">{m.age || '-'}</td>
-                        <td className="py-1 px-2 truncate max-w-[120px]">{m.occupation || '-'}</td>
-                        <td className="py-1 px-2 text-right font-mono text-[10px]">
-                          {m.monthlyIncome ? `${m.monthlyIncome.toLocaleString()} Tk` : '-'}
-                        </td>
-                        <td className="py-1 px-2 text-center font-bold text-emerald-700">
-                          {m.regular5Salat ? 'Yes' : '-'}
-                        </td>
-                        <td className="py-1 px-2 text-center font-bold text-indigo-700">
-                          {m.isMusi ? 'Yes' : '-'}
-                        </td>
-                        <td className="py-1 px-2 text-center font-bold text-slate-700">
-                          {m.chandaAamBudgeted ? 'Yes' : '-'}
-                        </td>
+              <div className="overflow-x-auto border border-slate-200 rounded-lg max-h-72">
+                {reportType === 'accumulated' ? (
+                  <table className="w-full text-left text-[10px] min-w-[1100px] border-collapse">
+                    <thead>
+                      <tr className="text-white text-[9px] font-bold uppercase tracking-wider text-center">
+                        <th colSpan={8} className="py-1 px-2 bg-emerald-900 border-r border-emerald-800">
+                          1. Demographics & Bio (8 cols)
+                        </th>
+                        <th colSpan={3} className="py-1 px-2 bg-teal-800 border-r border-teal-700">
+                          2. Salat Observance (3 cols)
+                        </th>
+                        <th colSpan={4} className="py-1 px-2 bg-emerald-700 border-r border-emerald-600">
+                          3. Holy Quran (4 cols)
+                        </th>
+                        <th colSpan={4} className="py-1 px-2 bg-cyan-800 border-r border-cyan-700">
+                          4. MTA & Literature (4 cols)
+                        </th>
+                        <th colSpan={7} className="py-1 px-2 bg-indigo-900 border-r border-indigo-800">
+                          5. Chanda Schemes (7 cols)
+                        </th>
+                        <th colSpan={1} className="py-1 px-2 bg-slate-700">
+                          6. Verification
+                        </th>
                       </tr>
-                    ))}
-                    {majlisMembers.length === 0 && (
+                      <tr className="bg-slate-800 text-white font-semibold text-[9px] whitespace-nowrap">
+                        <th className="py-1 px-1.5 text-center w-7">SL</th>
+                        <th className="py-1 px-2 min-w-[130px]">Name</th>
+                        <th className="py-1 px-1.5 text-center">Age</th>
+                        <th className="py-1 px-1.5">Baiyat</th>
+                        <th className="py-1 px-2">Edu</th>
+                        <th className="py-1 px-2">Occupation</th>
+                        <th className="py-1 px-2 text-right">Income</th>
+                        <th className="py-1 px-1.5 text-center border-r border-slate-700">Fam</th>
+                        <th className="py-1 px-1.5 text-center">5 Salat</th>
+                        <th className="py-1 px-1.5 text-center">Meaning</th>
+                        <th className="py-1 px-1.5 text-center border-r border-slate-700">Jummah</th>
+                        <th className="py-1 px-1.5 text-center">Nazira</th>
+                        <th className="py-1 px-1.5 text-center">Daily</th>
+                        <th className="py-1 px-1.5 text-center">Meaning</th>
+                        <th className="py-1 px-1.5 text-center border-r border-slate-700">Tafseer</th>
+                        <th className="py-1 px-1.5 text-center">Books</th>
+                        <th className="py-1 px-1.5 text-center">Tableeq</th>
+                        <th className="py-1 px-1.5 text-center">MTA</th>
+                        <th className="py-1 px-1.5 text-center border-r border-slate-700">Khutba</th>
+                        <th className="py-1 px-1.5 text-center">Aam</th>
+                        <th className="py-1 px-1.5 text-center">Musi</th>
+                        <th className="py-1 px-1.5 text-center">Tahrik</th>
+                        <th className="py-1 px-1.5 text-center">Waqf</th>
+                        <th className="py-1 px-1.5 text-center">Majlis</th>
+                        <th className="py-1 px-1.5 text-center">Ijtema</th>
+                        <th className="py-1 px-1.5 text-center border-r border-slate-700">Bulletin</th>
+                        <th className="py-1 px-2 text-center min-w-[70px]">Signature</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-slate-100 text-slate-700 whitespace-nowrap">
+                      {majlisMembers.slice(0, 5).map((m, idx) => (
+                        <tr key={m.id} className={idx % 2 === 1 ? 'bg-slate-50' : 'bg-white'}>
+                          <td className="py-1 px-1 text-center font-mono text-[9px] text-slate-500">{idx + 1}</td>
+                          <td className="py-1 px-2 font-medium text-slate-900">{m.name}</td>
+                          <td className="py-1 px-1 text-center">{m.age || '-'}</td>
+                          <td className="py-1 px-1 text-slate-600 text-[9px]">{m.baiyatDateOrBirth || '-'}</td>
+                          <td className="py-1 px-2 text-slate-600 text-[9px]">{m.education || '-'}</td>
+                          <td className="py-1 px-2 truncate max-w-[100px]">{m.occupation || '-'}</td>
+                          <td className="py-1 px-2 text-right font-mono text-[9px] text-slate-800">
+                            {m.monthlyIncome ? m.monthlyIncome.toLocaleString() : '0'}
+                          </td>
+                          <td className="py-1 px-1 text-center border-r border-slate-200">{m.familyMembers || 1}</td>
+                          <td className="py-1 px-1 text-center font-bold text-emerald-700">{m.regular5Salat ? 'Yes' : '-'}</td>
+                          <td className="py-1 px-1 text-center text-slate-600">{m.salatWithMeaning ? 'Yes' : '-'}</td>
+                          <td className="py-1 px-1 text-center border-r border-slate-200 text-slate-600">{m.regularJummah ? 'Yes' : '-'}</td>
+                          <td className="py-1 px-1 text-center text-slate-600">{m.quranNazira ? 'Yes' : '-'}</td>
+                          <td className="py-1 px-1 text-center text-slate-600">{m.dailyQuranRecitation ? 'Yes' : '-'}</td>
+                          <td className="py-1 px-1 text-center text-slate-600">{m.quranWithMeaning ? 'Yes' : '-'}</td>
+                          <td className="py-1 px-1 text-center border-r border-slate-200 text-slate-600">{m.quranTafseer ? 'Yes' : '-'}</td>
+                          <td className="py-1 px-1 text-center text-slate-600">{m.readsJamaatBooks ? 'Yes' : '-'}</td>
+                          <td className="py-1 px-1 text-center text-slate-600">{m.doesTableeq ? 'Yes' : '-'}</td>
+                          <td className="py-1 px-1 text-center text-slate-600">{m.watchesMtaSermon ? 'Yes' : '-'}</td>
+                          <td className="py-1 px-1 text-center border-r border-slate-200 text-slate-600">{m.readsKhutba ? 'Yes' : '-'}</td>
+                          <td className="py-1 px-1 text-center text-slate-600">{m.chandaAamBudgeted ? 'Yes' : '-'}</td>
+                          <td className="py-1 px-1 text-center font-bold text-indigo-700">{m.isMusi ? 'Yes' : '-'}</td>
+                          <td className="py-1 px-1 text-center text-slate-600">{m.tahrikEJadid ? 'Yes' : '-'}</td>
+                          <td className="py-1 px-1 text-center text-slate-600">{m.waqfEJadid ? 'Yes' : '-'}</td>
+                          <td className="py-1 px-1 text-center text-slate-600">{m.majlisChanda ? 'Yes' : '-'}</td>
+                          <td className="py-1 px-1 text-center text-slate-600">{m.ijtemaChanda ? 'Yes' : '-'}</td>
+                          <td className="py-1 px-1 text-center border-r border-slate-200 text-slate-600">{m.bulletinChanda ? 'Yes' : '-'}</td>
+                          <td className="py-1 px-2 text-center text-[9px] text-slate-400 italic">Signature</td>
+                        </tr>
+                      ))}
+                      {majlisMembers.length === 0 && (
+                        <tr>
+                          <td colSpan={27} className="py-6 text-center text-slate-400 text-xs">
+                            No members found in this Majlis. Please select another Majlis or Region.
+                          </td>
+                        </tr>
+                      )}
+                    </tbody>
+                  </table>
+                ) : (
+                  <table className="w-full text-left text-[11px]">
+                    <thead className="bg-emerald-900 text-white font-semibold text-[10px]">
                       <tr>
-                        <td colSpan={8} className="py-6 text-center text-slate-400 text-xs">
-                          No members found in this Majlis. Please select another Majlis or Region.
-                        </td>
+                        <th className="py-1.5 px-2 text-center w-8">SL</th>
+                        <th className="py-1.5 px-2">Member Name</th>
+                        <th className="py-1.5 px-2 text-center w-12">Age</th>
+                        <th className="py-1.5 px-2">Occupation</th>
+                        <th className="py-1.5 px-2 text-right">Income</th>
+                        <th className="py-1.5 px-2 text-center">Salat</th>
+                        <th className="py-1.5 px-2 text-center">Musi</th>
+                        <th className="py-1.5 px-2 text-center">Chanda Aam</th>
                       </tr>
-                    )}
-                  </tbody>
-                </table>
+                    </thead>
+                    <tbody className="divide-y divide-slate-100 text-slate-700">
+                      {majlisMembers.slice(0, 5).map((m, idx) => (
+                        <tr key={m.id} className={idx % 2 === 1 ? 'bg-slate-50' : 'bg-white'}>
+                          <td className="py-1 px-2 text-center font-mono text-[10px] text-slate-500">{idx + 1}</td>
+                          <td className="py-1 px-2 font-medium text-slate-900">{m.name}</td>
+                          <td className="py-1 px-2 text-center">{m.age || '-'}</td>
+                          <td className="py-1 px-2 truncate max-w-[120px]">{m.occupation || '-'}</td>
+                          <td className="py-1 px-2 text-right font-mono text-[10px]">
+                            {m.monthlyIncome ? `${m.monthlyIncome.toLocaleString()} Tk` : '-'}
+                          </td>
+                          <td className="py-1 px-2 text-center font-bold text-emerald-700">
+                            {m.regular5Salat ? 'Yes' : '-'}
+                          </td>
+                          <td className="py-1 px-2 text-center font-bold text-indigo-700">
+                            {m.isMusi ? 'Yes' : '-'}
+                          </td>
+                          <td className="py-1 px-2 text-center font-bold text-slate-700">
+                            {m.chandaAamBudgeted ? 'Yes' : '-'}
+                          </td>
+                        </tr>
+                      ))}
+                      {majlisMembers.length === 0 && (
+                        <tr>
+                          <td colSpan={8} className="py-6 text-center text-slate-400 text-xs">
+                            No members found in this Majlis. Please select another Majlis or Region.
+                          </td>
+                        </tr>
+                      )}
+                    </tbody>
+                  </table>
+                )}
               </div>
 
               {majlisMembers.length > 5 && (
@@ -472,7 +631,7 @@ export const MajlisPdfExportModal: React.FC<MajlisPdfExportModalProps> = ({
           <div className="text-xs text-slate-500 flex items-center gap-2">
             <Sparkles className="w-4 h-4 text-emerald-600" />
             <span>
-              Format: <strong>Landscape A4 PDF</strong> with official Jama'at letterhead and signatures
+              Format: <strong>Landscape A4 PDF</strong> with official Majlis Ansarullah letterhead and signatures
             </span>
           </div>
 
